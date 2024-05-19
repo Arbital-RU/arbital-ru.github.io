@@ -1,0 +1,288 @@
+---
+- {id: "ai_alignment", title: "AI alignment", description: "The great civilizational problem of creating artificially intelligent computer systems such that running them is a good idea.", domains: "AI", children: ["advanced_safety", "complexity_of_value", "corrigibility", "development_phase_unpredictable", "value_alignment_glossary", "5b", "mindcrime", "distant_SIs", "patch_resistant", "alignment_principle", "value_alignment_researchers", "AGI_typology", "task_agi", "advanced_agent_theory", "unforeseen_maximum", "value_alignment_value", "value_achievement_dilemma", "value_alignment_problem", "value_identification", "Vingean_reflection", "value_alignment_open_problem", "ai_arms_race", "4j", "correlated_coverage", "alignment_difficulty", "executable_philosophy", "inductive_ambiguity", "informed_oversight", "intended_goal", "value_alignment_subject_list", "4s", "bostrom_superintelligence", "object_level_goal", "value_alignment_programmer", "relevant_limited_AI", "relevant_powerful_agent", "powerful_agent_highly_optimized", "reliable_prediction", "4l", "safe_training_for_imitators", "selective_similarity_metric", "some_computations_are_people", "strong_uncontainability", "optimized_agent_appears_coherent", "rocket_alignment_metaphor", "3ck"], translated: true, ru_description: "Великая цивилизационная задача создания искусственных интеллектуальных компьютерных систем, запускать которые было бы хорошей идеей."}
+
+- {id: "advanced_safety", title: "Advanced safety", description: "An agent is *really* safe when it has the capacity to do anything, but chooses to do what the programmer wants.", domains: "AI"}
+
+- {id: "AI_safety_mindset", title: "AI safety mindset", description: "Asking how AI designs could go wrong, instead of imagining them going right.", domains: "AI"}
+
+- {id: "unbounded_analysis", title: "Methodology of unbounded analysis", description: "What we do and don't understand how to do, using unlimited computing power, is a critical distinction and important frontier.", domains: "AI"}
+
+- {id: "AIXI", title: "AIXI", description: "How to build an (evil) superintelligent AI using unlimited computing power and one page of Python code.", domains: "AI", translated: true, ru_description: "Как создать (злой) сверхразумный ИИ с помощью неограниченной вычислительной мощности и одной страницы кода на Python."}
+
+- {id: "solomonoff_induction", title: "Solomonoff induction", description: "A simple way to superintelligently predict sequences of data, given unlimited computing power.", domains: "AI", translated: true, ru_description: "Как просто и сверхразумно предсказывать последовательности данных, имея неограниченную вычислительную мощность."}
+
+###
+
+- {id: "complexity_of_value", title: "Complexity of value", description: "There's no simple way to describe the goals we want Artificial Intelligences to want.", domains: "AI", children: ["meta_unsolved", "underestimate_value_complexity_perceputal_property"], explore: "5l"}
+
+- {id: "meta_unsolved", title: "Meta-rules for (narrow) value learning are still unsolved", description: "We don't currently know a simple meta-utility function that would take in observation of humans and spit out our true values, or even a good target for a Task AGI.", domains: "AI"}
+
+- {id: "underestimate_value_complexity_perceputal_property", title: "Underestimating complexity of value because goodness feels like a simple property", description: "When you just want to yell at the AI, \"Just do normal high-value X, dammit, not weird low-value X!\" and that 'high versus low value' boundary is way more complicated than your brain wants to think.", domains: "AI"}
+
+- {id: "corrigibility", title: "Corrigibility", description: "\"I can't let you do that, Dave.\"", domains: "AI", children: ["programmer_deception", "shutdown_problem", "user_manipulation", "avert_instrumental_pressure", "avert_self_improvement", "hard_corrigibility", "interruptibility", "updated_deference", "utility_indifference"], explore: "45"}
+
+- {id: "programmer_deception", title: "Programmer deception", domains: "AI", children: "cognitive_steganography", explore: "10f"}
+
+- {id: "cognitive_steganography", title: "Cognitive steganography", description: "Disaligned AIs that are modeling human psychology and trying to deceive their programmers will want to hide their internal thought processes from their programmers.", domains: "AI"}
+
+- {id: "shutdown_problem", title: "Shutdown problem", decription: "How to build an AGI that lets you shut it down, despite the obvious fact that this will interfere with whatever the AGI's goals are.", domains: "AI", children: "no_coffee_if_dead", explore: "2xd"}
+
+- {id: "no_coffee_if_dead", title: "You can't get the coffee if you're dead", description: "An AI given the goal of 'get the coffee' can't achieve that goal if it has been turned off; so even an AI whose goal is just to fetch the coffee may try to avert a shutdown button being pressed.", domains: "AI"}
+
+- {id: "user_manipulation", title: "User manipulation", domains: "AI", description: "If not otherwise averted, many of an AGI's desired outcomes are likely to interact with users and hence imply an incentive to manipulate users.", children: "30b", explore: "309"}
+
+- {id: "30b", title: "User maximization", description: "A sub-principle of avoiding user manipulation - if you see an argmax over X or 'optimize X' instruction and X includes a user interaction, you've just told the AI to optimize the user.", domains: "AI"}
+
+- {id: "avert_instrumental_pressure", title: "Averting instrumental pressures", description: "Almost-any utility function for an AI, whether the target is diamonds or paperclips or eudaimonia, implies subgoals like rapidly self-improving and refusing to shut down. Can we make that not happen?", domains: "AI"}
+
+- {id: "avert_self_improvement", title: "Averting the convergent instrumental strategy of self-improvement", description: "We probably want the first AGI to *not* improve as fast as possible, but improving as fast as possible is a convergent strategy for accomplishing most things.", domains: "AI"}
+
+- {id: "hard_corrigibility", title: "Hard problem of corrigibility", description: "Can you build an agent that reasons as if it knows itself to be incomplete and sympathizes with your wanting to rebuild or correct it?", domains: "AI"}
+
+- {id: "interruptibility", title: "Interruptibility", description: "A subproblem of corrigibility under the machine learning paradigm: when the agent is interrupted, it must not learn to prevent future interruptions.", domains: "AI"}
+
+- {id: "updated_deference", title: "Problem of fully updated deference", description: "Why moral uncertainty doesn't stop an AI from defending its off-switch.", domains: "AI"}
+
+- {id: "utility_indifference", title: "Utility indifference", description: "How can we make an AI indifferent to whether we press a button that changes its goals?", domains: "AI"}
+
+- {id: "development_phase_unpredictable", title: "Development phase unpredictable", domains: "AI", children: "unforeseen_maximum", explore: "5d"}
+
+- {id: "value_alignment_glossary", title: "Glossary (Value Alignment Theory)", description: "Words that have a special meaning in the context of creating nice AIs.", domains: "AI", children: ["cognitive_domain", "ai_concept", "FAI"], explore: "9m"}
+
+- {id: "cognitive_domain", title: "Cognitive domain", description: "An allegedly compact unit of knowledge, such that ideas inside the unit interact mainly with each other and less with ideas in other domains.", domains: "AI", children: "domain_distance", explore: "7vf"}
+
+- {id: "domain_distance", title: "Distances between cognitive domains", description: "Often in AI alignment we want to ask, \"How close is 'being able to do X' to 'being able to do Y'?\"", domains: "AI"}
+
+- {id: "ai_concept", title: "'Concept'", description: "In the context of Artificial Intelligence, a 'concept' is a category, something that identifies thingies as being inside or outside the concept.", domains: "AI"}
+
+- {id: "FAI", title: "Friendly AI", description: "Old terminology for an AI whose preferences have been successfully aligned with idealized human values.", domains: "AI"}
+
+- {id: "5b", title: "Linguistic conventions in value alignment", description: "How and why to use precise language and words with special meaning when talking about value alignment.", domains: "AI", children: "value_alignment_utility", explore: "5b"}
+
+- {id: "value_alignment_utility", title: "Utility", description: "What is \"utility\" in the context of Value Alignment Theory?", domains: "AI"}
+
+- {id: "mindcrime", title: "Mindcrime", description: "Might a machine intelligence contain vast numbers of unhappy conscious subprocesses?", domains: "AI", children: ["mindcrime_introduction", "nonperson_predicate"], explore: "6v"}
+
+- {id: "mindcrime_introduction", title: "Mindcrime: Introduction", description: "", domains: "AI"}
+
+- {id: "nonperson_predicate", title: "Nonperson predicate", description: "If we knew which computations were definitely not people, we could tell AIs which programs they were definitely allowed to compute.", domains: "AI"}
+
+- {id: "distant_SIs", title: "Modeling distant superintelligences", description: "The several large problems that might occur if an AI starts to think about alien superintelligences.", domains: "AI", children: "probable_environment_hacking", explore: "1fz"}
+
+- {id: "probable_environment_hacking", title: "Distant superintelligences can coerce the most probable environment of your AI", description: "Distant superintelligences may be able to hack your local AI, if your AI's preference framework depends on its most probable environment.", domains: "AI"}
+
+- {id: "patch_resistant", title: "Patch resistance", description: "One does not simply solve the value alignment problem.", domains: "AI", children: "unforeseen_maximum", explore: "48"}
+
+###
+
+- {id: "alignment_principle", title: "Principles in AI alignment", description: "A 'principle' of AI alignment is a very general design goal like 'understand what the heck is going on inside the AI' that has informed a wide set of specific design proposals.", domains: "AI"}
+
+- {id: "nonadversarial", title: "Non-adversarial principle", description: "At no point in constructing an Artificial General Intelligence should we construct a computation that tries to hurt us, and then try to stop it from hurting us.", domains: "AI"}
+
+###
+
+- {id: "value_alignment_researchers", title: "Researchers in value alignment theory", description: "Who's working full-time in value alignment theory?", domains: "AI", children: "NickBostrom", explore: "18m"}
+
+- {id: "NickBostrom", title: "Nick Bostrom", description: "Nick Bostrom, secretly the inventor of Friendly AI", domains: "AI"}
+
+###
+
+- {id: "AGI_typology", title: "Strategic AGI typology", description: "What broad types of advanced AIs, corresponding to which strategic scenarios, might it be possible or wise to create?", domains: "AI"}
+
+- {id: "task_agi", title: "Task-directed AGI", description: "An advanced AI that's meant to pursue a series of limited-scope goals given it by the user. In Bostrom's terminology, a Genie.", domains: "AI"}
+
+- {id: "advanced_agent_theory", title: "Theory of (advanced) agents", description: "One of the research subproblems of building powerful nice AIs, is the theory of (sufficiently advanced) minds in general.", domains: "AI", children: ["advanced_agent", "instrumental_convergence", "orthogonality"], explore: "7vg"}
+
+- {id: "advanced_agent", title: "Advanced agent properties", description: "How smart does a machine intelligence need to be, for its niceness to become an issue? \"Advanced\" is a broad term to cover cognitive abilities such that we'd need to start considering AI alignment.", domains: "AI", children: [], explore: ""}
+
+- {id: "uncontainability", title: "Cognitive uncontainability", description: "'Cognitive uncontainability' is when we can't hold all of an agent's possibilities inside our own minds.", domains: "AI", children: "rich_domain", explore: "9f"}
+
+- {id: "rich_domain", title: "Rich domain", description: "", domains: "AI"}
+
+- {id: "efficiency", title: "Epistemic and instrumental efficiency", description: "An efficient agent never makes a mistake you can predict. You can never successfully predict a directional bias in its estimates.", domains: "AI"}
+
+- {id: "Vingean_uncertainty", title: "Vingean uncertainty", description: "You can't predict the exact actions of an agent smarter than you - so is there anything you _can_ say about them?", domains: "AI",  translated: true, ru_description: "Вы не можете предсказать точные действия агентов умнее вас - но есть ли что-то, что вы _можете_ сказать о них?"}
+
+- {id: "deep_blue", title: "Deep Blue", description: "The chess-playing program, built by IBM, that first won the world chess championship from Garry Kasparov in 1996.", domains: "AI"}
+
+- {id: "Vinge_law", title: "Vinge's Law", description: "You can't predict exactly what someone smarter than you would do, because if you could, you'd be that smart yourself.", domains: "AI", translated: true, ru_description: "Вы не можете точно предсказать действия того, кто умнее вас, потому что если бы вы могли, вы и сами были бы столь же умны."}
+
+- {id: "consequentialist", title: "Consequentialist cognition", description: "The cognitive ability to foresee the consequences of actions, prefer some outcomes to others, and output actions leading to the preferred outcomes.", domains: "AI"} 
+
+- {id: "big_picture_awareness", title: "Big-picture strategic awareness", description: "We start encountering new AI alignment issues at the point where a machine intelligence recognizes the existence of a real world, the existence of programmers, and how these relate to its goals.", domains: "AI"} 
+
+- {id: "sufficiently_advanced_ai", title: "Sufficiently advanced Artificial Intelligence", description: "'Sufficiently advanced Artificial Intelligences' are AIs with enough 'advanced agent properties' that we start needing to do 'AI alignment' to them.", domains: "AI"} 
+
+- {id: "instrumental_convergence", title: "Instrumental convergence", description: "Some strategies can help achieve most possible simple goals. E.g., acquiring more computing power or more material resources. By default, unless averted, we can expect advanced AIs to do that.", domains: "AI", children: [], explore: ""}
+
+- {id: "convergent_strategies", title: "Convergent instrumental strategies", description: "Paperclip maximizers can make more paperclips by improving their cognitive abilities or controlling more resources. What other strategies would almost-any AI try to use?", domains: "AI", children: [], explore: ""}
+
+- {id: "preference_stability", title: "Consequentialist preferences are reflectively stable by default", description: "Gandhi wouldn't take a pill that made him want to kill people, because he knows in that case more people will be murdered. A paperclip maximizer doesn't want to stop maximizing paperclips.", domains: "AI", translated: true, ru_description: "Ганди не принял бы таблетку, вызывающую желание убивать людей, потому что знает, что в этом случае умерло бы больше людей. Максимизатор скрепок не хочет прекращать максимизировать скрепки."}
+
+- {id: "paperclip_maximizer", title: "Paperclip maximizer", description: "This agent will not stop until the entire universe is filled with paperclips.", domains: "AI", translated: true, ru_description: "Этот агент не остановится, пока вся вселенная не будет заполнена скрепками."}
+
+- {id: "paperclip", title: "Paperclip", description: "A configuration of matter that we'd see as being worthless even from a very cosmopolitan perspective.", domains: "AI"}
+
+- {id: "orthogonality", title: "Orthogonality Thesis", description: "Will smart AIs automatically become benevolent, or automatically become hostile? Or do different AI designs imply different goals?", domains: "AI", children: ["paperclip_maximizer", "instrumental_goals_equally_tractable", ], explore: "1y"}
+
+###
+
+- {id: "unforeseen_maximum", title: "Unforeseen maximum", description: "When you tell AI to produce world peace and it kills everyone. (Okay, some SF writers saw that one coming.)", domains: "AI", children: "missing_weird", explore: "47"}
+
+- {id: "missing_weird", title: "Missing the weird alternative", description: "People might systematically overlook \"make tiny molecular smileyfaces\" as a way of \"producing smiles\", because our brains automatically search for high-utility-to-us ways of \"producing smiles\".", domains: "AI"}
+
+- {id: "value_alignment_value", title: "Value", description: "The word 'value' in the phrase 'value alignment' is a metasyntactic variable that indicates the speaker's future goals for intelligent life.", domains: "AI", children: ["normative_extrapolated_volition", "beneficial", "detrimental", "cev", "value_cosmopolitan", "immediate_goods", "frankena_goods"], explore: "55"}
+
+- {id: "normative_extrapolated_volition", title: "Extrapolated volition (normative moral theory)", description: "If someone asks you for orange juice, and you know that the refrigerator contains no orange juice, should you bring them lemonade?", domains: "AI", children: "rescue_utility", explore: "313"}
+
+- {id: "rescue_utility", title: "Rescuing the utility function", description: "If your utility function values 'heat', and then you discover to your horror that there's no ontologically basic heat, switch to valuing disordered kinetic energy.", domains: "AI"}
+
+- {id: "beneficial", title: "'Beneficial'", description: "Really actually good. A metasyntactic variable to mean \"favoring whatever the speaker wants ideally to accomplish\", although different speakers have different morals and metaethics.", domains: "AI"}
+
+- {id: "detrimental", title: "'Detrimental'", description: "The opposite of beneficial.", domains: "AI"}
+
+- {id: "cev", title: "Coherent extrapolated volition (alignment target)", description: "A proposed direction for an extremely well-aligned autonomous superintelligence - do what humans would want, if we knew what the AI knew, thought that fast, and understood ourselves.", domains: "AI"}
+
+- {id: "value_cosmopolitan", title: "Cosmopolitan value", description: "Intuitively: Value as seen from a broad, embracing standpoint that is aware of how other entities may not always be like us or easily understandable to us, yet still worthwhile.", domains: "AI"}
+
+- {id: "immediate_goods", title: "Immediate goods", description: "", domains: "AI"}
+
+- {id: "frankena_goods", title: "William Frankena's list of terminal values", description: "Life, consciousness, and activity; health and strength; pleasures and satisfactions of all or certain kinds; happiness, beatitude, contentment, etc.; truth; knowledge and true opinions...", domains: "AI", translated: true, ru_description: "Жизнь, сознание и деятельность; здоровье и сила; удовольствия и удовлетворения — все или определенных видов; счастье, блаженство, довольство и т. д.; истина; знание и верные убеждения..."}
+
+- {id: "value_achievement_dilemma", title: "Value achievement dilemma", description: "How can Earth-originating intelligent life achieve most of its potential value, whether by AI or otherwise?", domains: "AI", children: ["aligning_adds_time", "4j", "cosmic_endowment", "moral_hazard", "pivotal"], explore: "2z"}
+
+- {id: "aligning_adds_time", title: "Aligning an AGI adds significant development time", description: "Aligning an advanced AI foreseeably involves extra code and extra testing and not being able to do everything the fastest way, so it takes longer.", domains: "AI"}
+
+- {id: "cosmic_endowment", title: "Cosmic endowment", description: "The 'cosmic endowment' consists of all the stars that could be reached from probes originating on Earth; the sum of all matter and energy potentially available to be transformed into life and fun.", domains: "AI"}
+
+- {id: "moral_hazard", title: "Moral hazards in AGI development", description: "\"Moral hazard\" is when owners of an advanced AGI give in to the temptation to do things with it that the rest of us would regard as 'bad', like, say, declaring themselves God-Emperor.", domains: "AI"}
+
+- {id: "pivotal", title: "Pivotal act", description: "Which types of AIs, if they work, can do things that drastically change the nature of the further game?", domains: "AI"}
+
+- {id: "value_alignment_problem", title: "Value alignment problem", description: "You want to build an advanced AI with the right values... but how?", domains: "AI", children: ["preference_framework", "total_alignment"], explore: "5s"}
+
+- {id: "preference_framework", title: "Preference framework", description: "What's the thing an agent uses to compare its preferences?", domains: "AI", children: ["moral_uncertainty", "attainable_optimum", "meta_utility"], explore: "5f"}
+
+- {id: "moral_uncertainty", title: "Moral uncertainty", description: "A meta-utility function in which the utility function as usually considered, takes on different values in different possible worlds, potentially distinguishable by evidence.", domains: "AI", children: "ideal_target", explore: "7s2"}
+
+- {id: "ideal_target", title: "Ideal target", description: "The 'ideal target' of a meta-utility function is the value the ground-level utility function would take on if the agent updated on all possible evidence; the 'true' utilities under moral uncertainty.", domains: "AI"}
+
+- {id: "attainable_optimum", title: "Attainable optimum", description: "The 'attainable optimum' of an agent's preferences is the best that agent can actually do given its finite intelligence and resources (as opposed to the global maximum of those preferences).", domains: "AI"}
+
+- {id: "meta_utility", title: "Meta-utility function", description: "Preference frameworks built out of simple utility functions, but where, e.g., the 'correct' utility function for a possible world depends on whether a button is pressed.", domains: "AI"}
+
+- {id: "total_alignment", title: "Total alignment", description: "We say that an advanced AI is \"totally aligned\" when it knows *exactly* which outcomes and plans are beneficial, with no further user input.", domains: "AI"}
+
+- {id: "value_identification", title: "Value identification problem", description: "", domains: "AI", children: ["ontology_identification", "edge_instantiation", "environmental_goals", "identify_goal_concept", "happiness_maximizer", "identify_causal_goals"], explore: "6c"}
+
+- {id: "ontology_identification", title: "Ontology identification problem", description: "How do we link an agent's utility function to its model of the world, when we don't know what that model will look like?", domains: "AI", children: ["ontology_identification_technical_tutorial", "diamond_maximizer"], explore: "5c"}
+
+- {id: "ontology_identification_technical_tutorial", title: "Ontology identification problem: Technical tutorial", description: "Technical tutorial for ontology identification problem.", domains: "AI"}
+
+- {id: "diamond_maximizer", title: "Diamond maximizer", description: "How would you build an agent that made as much diamond material as possible, given vast computing power but an otherwise rich and complicated environment?", domains: "AI"}
+
+- {id: "edge_instantiation", title: "Edge instantiation", description: "When you ask the AI to make people happy, and it tiles the universe with the smallest objects that can be happy.", domains: "AI"}
+
+- {id: "environmental_goals", title: "Environmental goals", description: "The problem of having an AI want outcomes that are out in the world, not just want direct sense events.", domains: "AI"}
+
+- {id: "identify_goal_concept", title: "Goal-concept identification", description: "Figuring out how to say \"strawberry\" to an AI that you want to bring you strawberries (and not fake plastic strawberries, either).", domains: "AI"}
+
+- {id: "happiness_maximizer", title: "Happiness maximizer", description: "", domains: "AI"}
+
+- {id: "identify_causal_goals", title: "Identifying causal goal concepts from sensory data", description: "If the intended goal is \"cure cancer\" and you show the AI healthy patients, it sees, say, a pattern of pixels on a webcam. How do you get to a goal concept *about* the real patients?", domains: "AI"}
+
+- {id: "Vingean_reflection", title: "Vingean reflection", description: "The problem of thinking about your future self when it's smarter than you.", domains: ["MIRI", "AI"], children: ["reflective_stability", "reflective_consistency", "tiling_agents", "Vinge_principle"], explore: "1c1", translated: true, ru_description: "Проблема размышлений о будущей версии вас, когда она умнее нынешней."}
+
+- {id: "MIRI", title: "Machine Intelligence Research Institute", description: "", domains: ["MIRI"]}
+
+- {id: "reflective_stability", title: "Reflective stability", description: "Wanting to think the way you currently think, building other agents and self-modifications that think the same way.", domains: "AI", children: ["reflective_degree_of_freedom", "preference_stability", "otherizer"], explore: "1fx", translated: true, ru_description: "Желание в будущем думать также, как и сейчас, создание других агентов и самомодификаций, которые думают также как вы сейчас."}
+
+- {id: "reflective_degree_of_freedom", title: "Reflectively consistent degree of freedom", description: "When an instrumentally efficient, self-modifying AI can be like X or like X' in such a way that X wants to be X and X' wants to be X', that's a reflectively consistent degree of freedom.", domains: "AI", children: ["humean_free_boundary", "value_laden"], explore: "2fr"}
+
+- {id: "humean_free_boundary", title: "Humean degree of freedom", description: "A concept includes 'Humean degrees of freedom' when the intuitive borders of the human version of that concept depend on our values, making that concept less natural for AIs to learn.", domains: "AI"}
+
+- {id: "value_laden", title: "Value-laden", description: "Cure cancer, but avoid any bad side effects? Categorizing \"bad side effects\" requires knowing what's \"bad\". If an agent needs to load complex human goals to evaluate something, it's \"value-laden\".", domains: "AI"}
+
+- {id: "otherizer", title: "Other-izing (wanted: new optimization idiom)", description: "Maximization isn't possible for bounded agents, and satisficing doesn't seem like enough. What other kind of 'izing' might be good for realistic, bounded agents?", domains: "AI"}
+
+- {id: "reflective_consistency", title: "Reflective consistency", description: "A decision system is reflectively consistent if it can approve of itself, or approve the construction of similar decision systems (as well as perhaps approving other decision systems too).", domains: "AI"}
+
+- {id: "tiling_agents", title: "Tiling agents theory", description: "The theory of self-modifying agents that build successors that are very similar to themselves, like repeating tiles on a tesselated plane.", domains: "AI"}
+
+- {id: "Vinge_principle", title: "Vinge's Principle", description: "An agent building another agent must usually approve its design without knowing the agent's exact policy choices.", domains: "AI", translated: true, ru_description: "Агент, создающий другого агента, обычно должен одобрить его конструкцию, не зная его точных будущих действий."}
+
+- {id: "value_alignment_open_problem", title: "AI alignment open problem", description: "Tag for open problems under AI alignment.", domains: "AI"}
+
+- {id: "ai_arms_race", title: "AI arms races", description: "AI arms races are bad", domains: "AI"}
+
+- {id: "4j", title: "Coordinative AI development hypothetical", description: "What would safe AI development look like if we didn't have to worry about anything else?", domains: "AI"}
+
+- {id: "correlated_coverage", title: "Correlated coverage", description: "In which parts of AI alignment can we hope that getting many things right, will mean the AI gets everything right?", domains: "AI"}
+
+- {id: "alignment_difficulty", title: "Difficulty of AI alignment", description: "How hard is it exactly to point an Artificial General Intelligence in an intuitively okay direction?", domains: "AI"}
+
+- {id: "executable_philosophy", title: "Executable philosophy", description: "Philosophical discourse aimed at producing a trustworthy answer or meta-answer, in limited time, which can used in constructing an Artificial Intelligence.", domains: "AI"}
+
+- {id: "inductive_ambiguity", title: "Identifying ambiguous inductions", description: "What do a \"red strawberry\", a \"red apple\", and a \"red cherry\" have in common that a \"yellow carrot\" doesn't? Are they \"red fruits\" or \"red objects\"?", domains: "AI"}
+
+- {id: "informed_oversight", title: "Informed oversight", description: "Incentivize a reinforcement learner that's less smart than you to accomplish some task", domains: "AI"}
+
+- {id: "intended_goal", title: "Intended goal", description: "", domains: "AI"}
+
+- {id: "value_alignment_subject_list", title: "List: value-alignment subjects", description: "Bullet point list of core VAT subjects.", domains: "AI"}
+
+- {id: "4s", title: "Natural language understanding of \"right\" will yield normativity", description: "What will happen if you tell an advanced agent to do the \"right\" thing?", domains: "AI"}
+
+- {id: "bostrom_superintelligence", title: "Nick Bostrom's book Superintelligence", description: "The current best book-form introduction to AI alignment theory.", domains: "AI"}
+
+- {id: "object_level_goal", title: "Object-level vs. indirect goals", description: "Difference between \"give Alice the apple\" and \"give Alice what she wants\".", domains: "AI"}
+
+- {id: "value_alignment_programmer", title: "Programmer", description: "Who is building these advanced agents?", domains: "AI"}
+
+- {id: "relevant_limited_AI", title: "Relevant limited AI", description: "Can we have a limited AI, that's nonetheless relevant?", domains: "AI"}
+
+- {id: "relevant_powerful_agent", title: "Relevant powerful agent", description: "An agent is relevant if it completely changes the course of history.", domains: "AI"}
+
+- {id: "powerful_agent_highly_optimized", title: "Relevant powerful agents will be highly optimized", description: "", domains: "AI"}
+
+- {id: "reliable_prediction", title: "Reliable prediction", description: "How can we train predictors that reliably predict observable phenomena such as human behavior?", domains: "AI"}
+
+- {id: "4l", title: "Safe impact measure", description: "What can we measure to make sure an agent is acting in a safe manner?", domains: "AI"}
+
+- {id: "safe_training_for_imitators", title: "Safe training procedures for human-imitators", description: "How does one train a reinforcement learner to act like a human?", domains: "AI"}
+
+- {id: "selective_similarity_metric", title: "Selective similarity metrics for imitation", description: "Can we make human-imitators more efficient by scoring them more heavily on imitating the aspects of human behavior we care about more?", domains: "AI"}
+
+- {id: "some_computations_are_people", title: "Some computations are people", description: "It's possible to have a conscious person being simulated inside a computer or other substrate.", domains: "AI", translated: true, ru_description: "Возможна симуляция сознательного существа внутри компьютера или на ином субстрате."}
+
+- {id: "strong_uncontainability", title: "Strong cognitive uncontainability", description: "An advanced agent can win in ways humans can't understand in advance.", domains: "AI"}
+
+- {id: "optimized_agent_appears_coherent", title: "Sufficiently optimized agents appear coherent", description: "If you could think as well as a superintelligence, you'd be at least that smart yourself.", domains: "AI"}
+
+- {id: "rocket_alignment_metaphor", title: "The rocket alignment problem", description: "If people talked about the problem of space travel the way they talked about AI...", domains: "AI"}
+
+- {id: "3ck", title: "VAT playpen", description: "Playpen page for VAT domain.", domains: "AI"}
+
+- {id: "EliezerYudkowsky", title: "Eliezer Yudkowsky", description: "", domains: "AI"}
+
+### MATH
+
+- {id: "Kolmogorov_complexity", title: "Algorithmic complexity", description: "When you compress the information, what you are left with determines the complexity.", domains: "math"}
+
+- {id: "calibrated_probabilities", title: "Well-calibrated probabilities", description: "Even if you're fairly ignorant, you can still strive to ensure that when you say \"70% probability\", it's true 70% of the time.", domains: "math"}
+
+### Decision theory
+
+- {id: "utility_function", title: "Utility function", description: "The only coherent way of wanting things is to assign consistent relative scores to outcomes.", domains: "decision"}
+
+### Without domain
+
+### Written by EY
+
+- {id: "terminal_vs_instrumental", title: "Terminal versus instrumental goals / values / preferences", description: "", translated: true, ru_description: ""}
+
+- {id: "perfect_rolling_sphere", title: "Perfect rolling sphere", description: ""}
+
+- {id: "psychologizing", title: "Psychologizing ", description: ""}
+
+---

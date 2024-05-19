@@ -1,0 +1,6 @@
+{% for p in site.data.p %}
+{% if p.translated %}[{{ p.id }}]: {{ "/p/" | append: p.id | relative_url }}
+{% else %}[{{ p.id }}]: {{ "https://arbital.com/p/" | append: p.id | append: "/" }}
+{% endif %}{% endfor %}
+[explore/ai_alignment]: {{ "explore/ai_alignment" | relative_url }}
+[explore/math]: {{ "explore/math" | relative_url }}

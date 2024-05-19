@@ -1,0 +1,122 @@
+.masthead {
+  margin-bottom: 1rem;
+}
+
+.masthead-title,
+.masthead-title a {
+  text-align: center;
+  color: #097969;
+}
+
+.masthead-title small,
+.masthead-title small a {
+  color: #505050;
+}
+
+a {
+  color: #0000A7;	
+}
+
+/* Взято с http://shpargalkablog.ru/2014/12/tabletree.html: */
+.treeCSS, 
+.treeCSS ul,
+.treeCSS li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  list-style: none;
+}
+.treeCSS ul {
+  margin: 0 0 0 .5em; /* вести линию вниз где-то с полбуквы родителя */
+}
+.treeCSS > li:not(:only-child),
+.treeCSS li li {
+  position: relative;
+  padding: .2em 0 0 1.2em; /* отступ до текста; для раскрывающегося списка в ряде случаев (в Хроме есть баг) padding-top (.2em) лучше указывать в px */
+}
+.treeCSS li:not(:last-child) {
+  border-left: 1px solid #ccc; /* толщина, цвет и стиль (вместо сплошной пунктирная или точечная) вертикальной линии */
+}
+.treeCSS li li:before,
+.treeCSS > li:not(:only-child):before { /* горизонтальная линия */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.1em; /* не более отступа до текста (1.2em) */
+  height: .7em; /* начинается приблизительно с половины высоты буквы (.5em + .2em) */
+  border-bottom: 1px solid #ccc;
+}
+.treeCSS li:last-child:before { /* вертикальная линия последнего пункта в каждом списке */
+  width: calc(1.1em - 1px); /* для перфекционистов */
+  border-left: 1px solid #ccc;
+}
+
+/* Взято с https://xhtml.ru/2022/html/tree-views/: */
+.tree {
+  --spacing : 1.5rem;
+  --radius  : 10px;
+}
+.tree li{
+  display      : block;
+  position     : relative;
+  padding-left : calc(2 * var(--spacing) - var(--radius) - 2px);
+}
+.tree ul{
+  margin-left  : calc(var(--radius) - var(--spacing));
+  padding-left : 0;
+}
+.tree ul li{
+  border-left : 2px solid #ddd;
+}
+.tree ul li:last-child{
+  border-color : transparent;
+}
+.tree ul li::before{
+  content      : '';
+  display      : block;
+  position     : absolute;
+  top          : calc(var(--spacing) / -2);
+  left         : -2px;
+  width        : calc(var(--spacing) + 2px);
+  height       : calc(var(--spacing) + 1px);
+  border       : solid #ddd;
+  border-width : 0 0 2px 2px;
+}
+.tree summary{
+  display : block;
+  cursor  : pointer;
+}
+.tree summary::marker,
+.tree summary::-webkit-details-marker{
+  display : none;
+}
+.tree summary:focus{
+  outline : none;
+}
+.tree summary:focus-visible{
+  outline : 1px dotted #000;
+}
+.tree li::after,
+.tree summary::before{
+  content       : '';
+  display       : block;
+  position      : absolute;
+  top           : calc(var(--spacing) / 2 - var(--radius));
+  left          : calc(var(--spacing) - var(--radius) - 1px);
+  width         : calc(2 * var(--radius));
+  height        : calc(2 * var(--radius));
+  border-radius : 50%;
+  background    : #ddd;
+}
+.tree summary::before{
+  content     : '+';
+  z-index     : 1;
+  background  : #696;
+  color       : #fff;
+  line-height : calc(2 * var(--radius) - 2px);
+  text-align  : center;
+}
+.tree details[open] > summary::before{
+  content : '−';
+}

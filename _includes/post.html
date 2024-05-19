@@ -1,0 +1,4 @@
+{% for t in site.data.p %}{% if t.id == include.id %}
+{% if t.translated %}{% assign tid = "/p/" | append: t.id %}{% for p in site.posts %}{% if p.id == tid %}{% assign title = p.title %}{% endif %}{% endfor %}<a href="{{ tid | append: "/" }}">{{ title }}</a><br><small>{{ t.ru_description }}</small>
+{% else %}{{ t.title }}<br><small>{{ t.description }}</small>
+{% endif %}{% endif %}{% endfor %}

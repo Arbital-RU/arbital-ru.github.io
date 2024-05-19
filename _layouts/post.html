@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="container content">
+
+<h1 class="post-title">{{ page.title }}</h1>
+
+<div class="post">
+
+{{ content }}
+
+<hr>
+{% assign id = page.id | remove_first: "/p/" %}
+{% for p in site.data.p %}{% if p.id == id %}{% assign title = p.title %}{% endif %}{% endfor %}
+<span class="post-info">
+Оригинал: <a href="https://arbital.com/p/{{ id }}">{{ title }} | Arbital</a>, <a href="https://arbital.greaterwrong.com/p/{{ id }}">GreaterWrong</a><br>
+Перевод{% if page.translated_by %}: {{ page.translated_by | split: ", " }}{% endif %}<br>
+Лицензия: <a href="https://creativecommons.org/licenses/by/3.0/deed.ru">CC BY 3.0</a>
+</span>
+
+</div>
+
+</div>
