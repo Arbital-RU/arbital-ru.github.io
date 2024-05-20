@@ -9,7 +9,7 @@
 
 - {id: "AIXI", title: "AIXI", description: "How to build an (evil) superintelligent AI using unlimited computing power and one page of Python code.", domains: "AI", translated: true, ru_description: "Как создать (злой) сверхразумный ИИ с помощью неограниченной вычислительной мощности и одной страницы кода на Python."}
 
-- {id: "solomonoff_induction", title: "Solomonoff induction", description: "A simple way to superintelligently predict sequences of data, given unlimited computing power.", domains: "AI", translated: true, ru_description: "Как просто и сверхразумно предсказывать последовательности данных, имея неограниченную вычислительную мощность."}
+- {id: "solomonoff_induction", title: "Solomonoff induction", description: "A simple way to superintelligently predict sequences of data, given unlimited computing power.", domains: ["math","AI"], translated: true, ru_description: "Как просто и сверхразумно предсказывать последовательности данных, имея неограниченную вычислительную мощность."}
 
 ###
 
@@ -282,6 +282,8 @@
 - {id: "terminal_vs_instrumental", title: "Terminal versus instrumental goals / values / preferences", description: "", translated: true, ru_description: ""}
 
 - {id: "perfect_rolling_sphere", title: "Perfect rolling sphere", description: ""}
+
+- {id: "omega_troll", title: "Omega (alien philosopher-troll)", description: "", translated: true, domains: ""}
 
 - {id: "psychologizing", title: "Psychologizing ", description: ""}
 

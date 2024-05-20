@@ -16,13 +16,13 @@ excerpt: "Здесь выкладываются переводы статей с
 {% assign b = a | where: "translated", true %}
 <div class="post" style="margin:16px 16px 0 0"><a href="/explore/ai_alignment">Согласование ИИ</a> (переведено {{ b.size }} из {{ a.size }}+, данные дополняются)</div>
 
-{% assign a = site.data.p | where: "domain", "math" %}
+{% assign a = site.data.p | where: "domains", "math" %}
 {% assign b = a | where: "translated", true %}
 <div class="post" style="margin:16px 16px 0 0">Математика (переведено {{ b.size }} из ?, данных не хватает)<div>
 
-{% assign a = site.data.p | where: "domain", "decision" %}
+{% assign a = site.data.p | where: "domains", "" %}
 {% assign b = a | where: "translated", true %}
-<div class="post" style="margin:16px 16px 0 0">Теория принятия решений (переведено {{ b.size }} из ?, данных не хватает)<div>
+<div class="post" style="margin:16px 16px 0 0">Прочее (переведено {{ b.size }} из ?, данных не хватает)<div>
 
 <hr style="margin-bottom:16px">
 

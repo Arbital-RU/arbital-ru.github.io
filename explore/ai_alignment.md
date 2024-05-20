@@ -2,6 +2,7 @@
 layout: page
 permalink: /explore/ai_alignment
 title: Согласование ИИ
+excerpt: ""
 ---
 <h2 style="margin-top:0; text-align:center">Согласование ИИ</h2>
 
