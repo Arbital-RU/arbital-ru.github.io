@@ -1,2 +1,2 @@
 # arbital-ru.github.io
-Переводы с сайта Arbital
+Переводы с сайта https://arbital.com
