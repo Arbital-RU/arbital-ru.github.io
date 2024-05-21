@@ -17,7 +17,24 @@ a {
   color: #0000A7;	
 }
 
-/* Взято с http://shpargalkablog.ru/2014/12/tabletree.html: */
+.post {
+  margin-bottom: 0;
+}
+
+.hrdark {
+  position: relative;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #BEBEBE;
+}
+
+/*
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+*/
+
+/* Взято с http://shpargalkablog.ru/2014/12/tabletree.html, не используется */
 .treeCSS, 
 .treeCSS ul,
 .treeCSS li {
