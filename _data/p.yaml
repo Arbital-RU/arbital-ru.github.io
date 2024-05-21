@@ -145,7 +145,7 @@
 
 - {id: "NickBostrom", title: "Nick Bostrom", description: "Nick Bostrom, secretly the inventor of Friendly AI", domains: "AI"}
 
-- {id: "AGI_typology", title: "Strategic AGI typology", description: "What broad types of advanced AIs, corresponding to which strategic scenarios, might it be possible or wise to create?", domains: "AI", children: ["Oracle", "task_agi", "Sovereign", "KANSI"], explore: "1g0"}
+- {id: "AGI_typology", title: "Strategic AGI typology", description: "What broad types of advanced AIs, corresponding to which strategic scenarios, might it be possible or wise to create?", domains: "AI", children: ["Oracle", "task_agi", "Sovereign", "KANSI"], explore: "1g0", translated: true, ru_description: "Какие широкие классы продвинутых ИИ было бы возможно или благоразумно создавать в каких стратегических сценариях?"}
 
 - {id: "Sovereign", title: "Autonomous AGI", description: "The hardest possible class of Friendly AI to build, with the least moral hazard; an AI intended to neither require nor accept further direction.", domains: "AI"}
 
