@@ -14,7 +14,7 @@ excerpt: "Здесь выкладываются переводы статей с
 
 {% assign a = site.data.p | where: "domains", "AI" %}
 {% assign b = a | where: "translated", true %}
-<div class="post" style="margin:16px 16px 0 0"><a href="/explore/ai_alignment">Согласование ИИ</a> (переведено {{ b.size }} из {{ a.size }}, данные дополняются)</div>
+<div class="post" style="margin:16px 16px 0 0"><a href="/explore/ai_alignment">Согласование ИИ</a> (переведено {{ b.size }} из {{ a.size }})</div>
 
 {% assign a = site.data.p | where: "domains", "math" %}
 {% assign b = a | where: "translated", true %}
