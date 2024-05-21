@@ -5,6 +5,8 @@ permalink: /explore/other
 title: Прочее
 excerpt: ""
 ---
+{% include domains.html domain = "other" %}
+
 **Переведено:**
 <ul>
 {% for a in site.data.p %}

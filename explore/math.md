@@ -4,6 +4,8 @@ permalink: /explore/math
 title: Математика
 excerpt: ""
 ---
+{% include domains.html domain = "math" %}
+
 **Переведено:**
 <ul>
 {% for a in site.data.p %}
