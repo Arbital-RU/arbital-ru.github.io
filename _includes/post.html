@@ -3,5 +3,5 @@
 {% assign f = false %}{% for p in site.posts %}
 {% if p.id == tid %}{% assign f = true %}<a href="{{ tid | append: "/" }}">{{ p.title }}</a>{% unless include.short %}<br><div style="line-height: 100%"><small><small>{{ t.ru_description }}</small></small></div>{% endunless %}{% break %}
 {% endif %}{% endfor %}{% unless f %}[<b>Ошибка, пост не найден. Возможно, не проставлена дата.</b>]{% endunless %}
-{% else %}<a href="{{ 'https://arbital.com' | append: tid | append: "/" }}">{{ t.title }}</a>{% unless include.short %}<br><div style="line-height: 100%"><small><small>{{ t.description }}</small></small></div>{% endunless %}{% endif %}
+{% else %}<a href="{{ 'https://arbital.com/p/' | append: t.id | append: "/" }}">{{ t.title }}</a>{% unless include.short %}<br><div style="line-height: 100%"><small><small>{{ t.description }}</small></small></div>{% endunless %}{% endif %}
 {% break %}{% endif %}{% endfor %}
