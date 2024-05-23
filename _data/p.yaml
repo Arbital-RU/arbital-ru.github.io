@@ -95,7 +95,7 @@
 
 - {id: "value_alignment_glossary", title: "Glossary (Value Alignment Theory)", description: "Words that have a special meaning in the context of creating nice AIs.", domains: "AI", children: ["cognitive_domain", "ai_concept", "FAI"], explore: "9m"}
 
-- {id: "cognitive_domain", title: "Cognitive domain", description: "An allegedly compact unit of knowledge, such that ideas inside the unit interact mainly with each other and less with ideas in other domains.", domains: "AI", children: "domain_distance", explore: "7vf"}
+- {id: "cognitive_domain", title: "Cognitive domain", description: "An allegedly compact unit of knowledge, such that ideas inside the unit interact mainly with each other and less with ideas in other domains.", domains: "AI", children: "domain_distance", explore: "7vf", translated: true, ru_description: "Предположительно компактная группа знаний — такая, что идеи внутри нее взаимодействуют главным образом друг с другом и в меньшей степени с идеями из других областей."}
 
 - {id: "domain_distance", title: "Distances between cognitive domains", description: "Often in AI alignment we want to ask, \"How close is 'being able to do X' to 'being able to do Y'?\"", domains: "AI"}
 
@@ -147,13 +147,13 @@
 
 - {id: "AGI_typology", title: "Strategic AGI typology", description: "What broad types of advanced AIs, corresponding to which strategic scenarios, might it be possible or wise to create?", domains: "AI", children: ["Oracle", "task_agi", "Sovereign", "KANSI"], explore: "1g0", translated: true, ru_description: "Какие широкие классы продвинутых ИИ было бы возможно или благоразумно создавать в каких стратегических сценариях?"}
 
-- {id: "Sovereign", title: "Autonomous AGI", description: "The hardest possible class of Friendly AI to build, with the least moral hazard; an AI intended to neither require nor accept further direction.", domains: "AI"}
+- {id: "Sovereign", title: "Autonomous AGI", description: "The hardest possible class of Friendly AI to build, with the least moral hazard; an AI intended to neither require nor accept further direction.", domains: "AI", translated: true, ru_description: "Сложнейший из возможных для создания класс Дружественного ИИ, с наименьшей моральной угрозой; ИИ, задуманный так, чтобы не требовать и не принимать дальнейших указаний."}
 
 - {id: "KANSI", title: "Known-algorithm non-self-improving agent", description: "Possible advanced AIs that aren't self-modifying, aren't self-improving, and where we know and understand all the component algorithms.", domains: "AI"}
 
 - {id: "Oracle", title: "Oracle", description: "System designed to safely answer questions.", domains: "AI", children: ["ZF_provability_oracle"], explore: "6x", translated: true, ru_description: "Система, спроектированная чтобы безопасно отвечать на вопросы."}
 
-- {id: "task_agi", title: "Task-directed AGI", description: "An advanced AI that's meant to pursue a series of limited-scope goals given it by the user. In Bostrom's terminology, a Genie.", domains: "AI", children: ["AI_boxing", "low_impact", "Oracle", "safe_plan_identification", "task_identification", "behaviorist", "conservative_concept", "epistemic_exclusion", "faithful_simulation", "limited_agi", "soft_optimizer", "taskagi_open_problems", "user_querying", "task_goal"], explore: "6w"}
+- {id: "task_agi", title: "Task-directed AGI", description: "An advanced AI that's meant to pursue a series of limited-scope goals given it by the user. In Bostrom's terminology, a Genie.", domains: "AI", children: ["AI_boxing", "low_impact", "Oracle", "safe_plan_identification", "task_identification", "behaviorist", "conservative_concept", "epistemic_exclusion", "faithful_simulation", "limited_agi", "soft_optimizer", "taskagi_open_problems", "user_querying", "task_goal"], explore: "6w", translated: true, ru_description: "Продвинутый ИИ, предназначенный для достижения ряда ограниченных целей, данных пользователем. «Джинн» в терминологии Бострома."}
 
 - {id: "AI_boxing", title: "Boxed AI", description: "Idea: what if we limit how AI can interact with the world. That'll make it safe, right??", domains: "AI", children: ["ZF_provability_oracle"], explore: "6z"}
 
@@ -417,7 +417,7 @@
 
 ### Раздел не указан:
 
-### Посты Юдковского
+### Посты Элиезера Юдковского
 
 - {id: "terminal_vs_instrumental", title: "Terminal versus instrumental goals / values / preferences", description: "", translated: true, ru_description: ""}
 
@@ -426,4 +426,8 @@
 - {id: "omega_troll", title: "Omega (alien philosopher-troll)", description: "", translated: true, domains: ""}
 
 - {id: "psychologizing", title: "Psychologizing ", description: ""}
+
+### Посты Пола Кристиано
+
+- {id: "ambitious_vs_narrow_value_learning", title: " Ambitious vs. narrow value learning", description: ""}
 ---
