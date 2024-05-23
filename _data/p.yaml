@@ -419,15 +419,15 @@
 
 ### Посты Элиезера Юдковского
 
-- {id: "terminal_vs_instrumental", title: "Terminal versus instrumental goals / values / preferences", description: "", translated: true, ru_description: ""}
+- {id: "terminal_vs_instrumental", title: "Terminal versus instrumental goals / values / preferences", description: "", domains: "", translated: true, ru_description: ""}
 
-- {id: "perfect_rolling_sphere", title: "Perfect rolling sphere", description: ""}
+- {id: "perfect_rolling_sphere", title: "Perfect rolling sphere", description: "", domains: ""}
 
 - {id: "omega_troll", title: "Omega (alien philosopher-troll)", description: "", translated: true, domains: ""}
 
-- {id: "psychologizing", title: "Psychologizing ", description: ""}
+- {id: "psychologizing", title: "Psychologizing ", description: "", domains: ""}
 
 ### Посты Пола Кристиано
 
-- {id: "ambitious_vs_narrow_value_learning", title: " Ambitious vs. narrow value learning", description: ""}
+- {id: "ambitious_vs_narrow_value_learning", title: " Ambitious vs. narrow value learning", description: "", domains: ""}
 ---
