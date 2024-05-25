@@ -11,10 +11,33 @@ layout: default
 
 {{ content }}
 
-<hr class="hrdark" style="margin-bottom: 8px">
+</div>
 
 {% assign id = page.id | remove_first: "/p/" %}
 {% for p in site.data.p %}{% if p.id == id %}{% assign q = p %}{% break %}{% endif %}{% endfor %}
+
+<!-- Здесь ссылки на parent- и child-посты -->
+<hr class="hrdark" style="margin-bottom: 8px">
+<span>
+  <b>Категории:</b> 
+  {% assign f = false %}
+  {% for a in site.data.p %}{% for b in a.children %}{% if b == id %}
+  {% include post.html id=a.id short=true %} &#8195 {% assign f = true %}{% break %}{% endif %}{% endfor %}{% endfor %}
+  {% unless f %}
+  {% if q.domains contains "AI" %}<a href="{{ '/explore/ai_alignment' | relative_url }}">Согласование ИИ</a> &#8195{% endif %}
+  {% if q.domains contains "math" %}<a href="{{ '/explore/math' | relative_url }}">Математика</a> &#8195{% endif %}
+  {% if q.domains == "" %}<a href="{{ '/explore/other' | relative_url }}">Прочее</a>{% endif %}
+  {% endunless %}
+</span>
+
+{% if q.children %}
+<ul class="tree" style="margin-left: calc(-5rem + 12px); margin-top: 12px"><li><details><summary>
+  <b>Связанное:</b></summary>
+  {% include list.html list = q.children %}
+</details></li></ul>
+{% endif %}
+
+<hr class="hrdark" style="margin-bottom: 8px">
 
 <small><table style="border: none; margin: 8px 0 8px 0; background-color: white"><tr style="margin: 0; padding: 0">
   <td style="border: none; background-color: white; margin: 0; padding: 0">
@@ -25,28 +48,6 @@ layout: default
     Перевод: {% if page.translated_by %}{{ page.translated_by | split: ", " }}{% else %}Аноним{% endif %}
   </td>
 </tr></table></small>
-
-</div>
-
-<!-- Здесь ссылки на parent- и child-посты -->
-<hr class="hrdark" style="margin-bottom: 8px">
-<span>
-Категории: 
-{% assign f = false %}
-{% for a in site.data.p %}{% for b in a.children %}{% if b == id %}
-{% include post.html id=a.id short=true %} &#8195 {% assign f = true %}{% break %}{% endif %}{% endfor %}{% endfor %}
-{% unless f %}
-{% if q.domains contains "AI" %}<a href="{{ '/explore/ai_alignment' | relative_url }}">Согласование ИИ</a> &#8195{% endif %}
-{% if q.domains contains "math" %}<a href="{{ '/explore/math' | relative_url }}">Математика</a> &#8195{% endif %}
-{% if q.domains == "" %}<a href="{{ '/explore/other' | relative_url }}">Прочее</a>{% endif %}
-{% endunless %}</span>
-
-{% if q.children %}
-<ul class="tree" style="margin-left: calc(-5rem + 12px); margin-top: 12px"><li><details><summary>
-  Связанное:</summary>
-  {% include list.html list = q.children %}
-</details></li></ul>
-{% endif %}
 
 </div>
 
