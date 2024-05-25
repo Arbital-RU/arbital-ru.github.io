@@ -75,9 +75,9 @@
 
 - {id: "no_coffee_if_dead", title: "You can't get the coffee if you're dead", description: "An AI given the goal of 'get the coffee' can't achieve that goal if it has been turned off; so even an AI whose goal is just to fetch the coffee may try to avert a shutdown button being pressed.", domains: "AI"}
 
-- {id: "user_manipulation", title: "User manipulation", domains: "AI", description: "If not otherwise averted, many of an AGI's desired outcomes are likely to interact with users and hence imply an incentive to manipulate users.", children: "30b", explore: "309"}
+- {id: "user_manipulation", title: "User manipulation", domains: "AI", description: "If not otherwise averted, many of an AGI's desired outcomes are likely to interact with users and hence imply an incentive to manipulate users.", children: "30b", explore: "309", translated: true, ru_description: "Если не предотвратить этого, многие из желаемых ОИИ исходов скорее всего будут связаны с взаимодействием пользователями, а значит будут стимулировать манипулирование ими."}
 
-- {id: "30b", title: "User maximization", description: "A sub-principle of avoiding user manipulation - if you see an argmax over X or 'optimize X' instruction and X includes a user interaction, you've just told the AI to optimize the user.", domains: "AI"}
+- {id: "30b", title: "User maximization", description: "A sub-principle of avoiding user manipulation - if you see an argmax over X or 'optimize X' instruction and X includes a user interaction, you've just told the AI to optimize the user.", domains: "AI", translated: true, ru_description: "Разновидность манипуляции пользователем. Если вы сформулировали ИИ в терминах argmax на X или инструкции «оптимизируй X», и X включает в себя взаимодействие с пользователем как компонент, то вы только что сказали ИИ, чтобы он оптимизировал пользователя."}
 
 - {id: "avert_instrumental_pressure", title: "Averting instrumental pressures", description: "Almost-any utility function for an AI, whether the target is diamonds or paperclips or eudaimonia, implies subgoals like rapidly self-improving and refusing to shut down. Can we make that not happen?", domains: "AI"}
 
@@ -197,11 +197,11 @@
 
 - {id: "uncontainability", title: "Cognitive uncontainability", description: "'Cognitive uncontainability' is when we can't hold all of an agent's possibilities inside our own minds.", domains: "AI", children: ["rich_domain"], explore: "9f"}
 
-- {id: "rich_domain", title: "Rich domain", description: "", domains: "AI", children: ["real_is_rich", "logical_game"], explore: "9j"}
+- {id: "rich_domain", title: "Rich domain", description: "", domains: "AI", children: ["real_is_rich", "logical_game"], explore: "9j", translated: true, ru_description: ""}
 
 - {id: "real_is_rich", title: "Almost all real-world domains are rich", description: "Anything you're trying to accomplish in the real world can potentially be accomplished in a *lot* of different ways.", domains: "AI"}
 
-- {id: "logical_game", title: "Logical game", description: "Game's mathematical structure at its purest form.", domains: "AI"}
+- {id: "logical_game", title: "Logical game", description: "Game's mathematical structure at its purest form.", domains: "AI", translated: true, ru_description: "Математическая структура игры в ее чистейшем виде."}
 
 - {id: "efficiency", title: "Epistemic and instrumental efficiency", description: "An efficient agent never makes a mistake you can predict. You can never successfully predict a directional bias in its estimates.", domains: "AI", children: ["timemachine_efficiency_metaphor"], explore: "6s"}
 
@@ -209,7 +209,7 @@
 
 - {id: "standard_agent", title: "Standard agent properties", description: "What's a Standard Agent, and what can it do?", domains: "AI", children: ["bounded_agent"], explore: "6t"}
 
-- {id: "bounded_agent", title: "Bounded agent", description: "An agent that operates in the real world, using realistic amounts of computing power, that is uncertain of its environment, etcetera.", domains: "AI"}
+- {id: "bounded_agent", title: "Bounded agent", description: "An agent that operates in the real world, using realistic amounts of computing power, that is uncertain of its environment, etcetera.", domains: "AI", translated: true, ru_description: "Агент, действующий в реальном мире, использующий реалистичные объемы вычислительной мощности, неуверенный насчет своего окружения, и т. д."}
 
 - {id: "Vingean_uncertainty", title: "Vingean uncertainty", description: "You can't predict the exact actions of an agent smarter than you - so is there anything you _can_ say about them?", domains: "AI", children: ["deep_blue", "Vinge_law"], explore: "9g", translated: true, ru_description: "Вы не можете предсказать точные действия агентов умнее вас - но есть ли что-то, что вы _можете_ сказать о них?"}
 
@@ -219,7 +219,7 @@
 
 - {id: "advanced_nonagent", title: "Advanced nonagent", description: "Hypothetically, cognitively powerful programs that don't follow the loop of \"observe, learn, model the consequences, act, observe results\" that a standard \"agent\" would.", domains: "AI"}
 
-- {id: "agi", title: "Artificial General Intelligence", description: "An AI which has the same kind of \"significantly more general\" intelligence that humans have compared to chimpanzees; it can learn new domains, like we can.", domains: "AI"}
+- {id: "agi", title: "Artificial General Intelligence", description: "An AI which has the same kind of \"significantly more general\" intelligence that humans have compared to chimpanzees; it can learn new domains, like we can.", domains: "AI", translated: true, ru_description: "ИИ, у которого такой же \"существенно более общий\" интеллект, как у людей в сравнении с шимпанзе; он способен изучать новые области, как и мы."}
 
 - {id: "consequentialist", title: "Consequentialist cognition", description: "The cognitive ability to foresee the consequences of actions, prefer some outcomes to others, and output actions leading to the preferred outcomes.", domains: "AI"}
 
@@ -329,7 +329,7 @@
 
 - {id: "happiness_maximizer", title: "Happiness maximizer", description: "", domains: "AI"}
 
-- {id: "identify_causal_goals", title: "Identifying causal goal concepts from sensory data", description: "If the intended goal is \"cure cancer\" and you show the AI healthy patients, it sees, say, a pattern of pixels on a webcam. How do you get to a goal concept *about* the real patients?", domains: "AI"}
+- {id: "identify_causal_goals", title: "Identifying causal goal concepts from sensory data", description: "If the intended goal is \"cure cancer\" and you show the AI healthy patients, it sees, say, a pattern of pixels on a webcam. How do you get to a goal concept *about* the real patients?", domains: "AI", ru_description: "Если намеченная цель - \"вылечить рак\" и вы показываете ИИ здоровых пациентов, он видит, скажем, паттерны из пикселей через камеру. Как вам прийти к концепции цели *о* реальных пациентах?"}
 
 - {id: "Vingean_reflection", title: "Vingean reflection", description: "The problem of thinking about your future self when it's smarter than you.", domains: ["MIRI", "AI"], children: ["reflective_stability", "reflective_consistency", "tiling_agents", "Vinge_principle"], explore: "1c1", translated: true, ru_description: "Проблема размышлений о будущей версии вас, когда она умнее нынешней."}
 
@@ -367,7 +367,7 @@
 
 - {id: "informed_oversight", title: "Informed oversight", description: "Incentivize a reinforcement learner that's less smart than you to accomplish some task", domains: "AI"}
 
-- {id: "intended_goal", title: "Intended goal", description: "", domains: "AI"}
+- {id: "intended_goal", title: "Intended goal", description: "", domains: "AI", translated: true, ru_description: ""}
 
 - {id: "value_alignment_subject_list", title: "List: value-alignment subjects", description: "Bullet point list of core VAT subjects.", domains: "AI"}
 
