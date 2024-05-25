@@ -191,7 +191,7 @@
 
 - {id: "task_goal", title: "Task (AI goal)", description: "When building the first AGIs, it may be wiser to assign them only goals that are bounded in space and time, and can be satisfied by bounded efforts.", domains: "AI"}
 
-- {id: "advanced_agent_theory", title: "Theory of (advanced) agents", description: "One of the research subproblems of building powerful nice AIs, is the theory of (sufficiently advanced) minds in general.", domains: "AI", children: ["advanced_agent", "instrumental_convergence", "orthogonality"], explore: "7vg"}
+- {id: "advanced_agent_theory", title: "Theory of (advanced) agents", description: "One of the research subproblems of building powerful nice AIs, is the theory of (sufficiently advanced) minds in general.", domains: "AI", children: ["advanced_agent", "instrumental_convergence", "orthogonality"], explore: "7vg", translated: true, ru_description: "Одна из исследовательноских подзадач для создания мощных и хороших ИИ - это теория (достаточно продвинутых) разумов в целом."}
 
 - {id: "advanced_agent", title: "Advanced agent properties", description: "How smart does a machine intelligence need to be, for its niceness to become an issue? \"Advanced\" is a broad term to cover cognitive abilities such that we'd need to start considering AI alignment.", domains: "AI", children: ["uncontainability", "efficiency", "standard_agent", "Vingean_uncertainty", "advanced_nonagent", "agi", "consequentialist", "big_picture_awareness", "corps_vs_si", "general_intelligence", "relative_ability", "intelligence_explosion", "real_world", "sufficiently_advanced_ai", "superintelligent"], explore: "2c"}
 
