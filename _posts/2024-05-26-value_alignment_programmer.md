@@ -2,7 +2,7 @@
 layout: post
 title: Программист
 translated_by: '<a href="https://kkirdan.github.io">К. Кирдан</a>'
-translation_details: ["added links"]
+translation_details: "добавлены ссылки"
 excerpt: "«Программисты» тех или иных продвинутых агентов — это люди, которые их создают."
 ---
 «Программисты» тех или иных [продвинутых агентов][advanced_agent] — это люди, которые их создают.
