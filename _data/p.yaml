@@ -17,7 +17,7 @@
 
 - {id: "show_broken", title: "Show me what you've broken", description: "To demonstrate competence at computer security, or AI alignment, think in terms of breaking proposals and finding technically demonstrable flaws in them.", domains: "AI"}
 
-- {id: "complacency_valley", title: "Valley of Dangerous Complacency", description: "When the AGI works often enough that you let down your guard, but it still has bugs. Imagine a robotic car that almost always steers perfectly, but sometimes heads off a cliff.", domains: "AI"}
+- {id: "complacency_valley", title: "Valley of Dangerous Complacency", description: "When the AGI works often enough that you let down your guard, but it still has bugs. Imagine a robotic car that almost always steers perfectly, but sometimes heads off a cliff.", domains: "AI", translated: true, ru_description: "Когда ОИИ работает достаточно часто, чтобы усыпить вашу бдительность, но в нем все еще есть ошибки. Представьте себе роботизированный автомобиль, который почти всегда ездит идеально, но иногда падает с обрыва."}
 
 - {id: "unbounded_analysis", title: "Methodology of unbounded analysis", description: "What we do and don't understand how to do, using unlimited computing power, is a critical distinction and important frontier.", domains: "AI", children: ["AIXI", "cartesian_agent", "solomonoff_induction", "hypercomputer", "mechanical_turk", "nofreelunch_irrelevant", "large_computer"], explore: "107"}
 
@@ -347,7 +347,7 @@
 
 - {id: "reflective_consistency", title: "Reflective consistency", description: "A decision system is reflectively consistent if it can approve of itself, or approve the construction of similar decision systems (as well as perhaps approving other decision systems too).", domains: "AI"}
 
-- {id: "tiling_agents", title: "Tiling agents theory", description: "The theory of self-modifying agents that build successors that are very similar to themselves, like repeating tiles on a tesselated plane.", domains: "AI"}
+- {id: "tiling_agents", title: "Tiling agents theory", description: "The theory of self-modifying agents that build successors that are very similar to themselves, like repeating tiles on a tesselated plane.", domains: "AI", translated: true, ru_description: "Теория самомодифицирующихся агентов, которые очень похожи на них, подобно повторяющимся тайлам (плиткам) в замощении плоскости."}
 
 - {id: "Vinge_principle", title: "Vinge's Principle", description: "An agent building another agent must usually approve its design without knowing the agent's exact policy choices.", domains: "AI", translated: true, ru_description: "Агент, создающий другого агента, обычно должен одобрить его конструкцию, не зная его точных будущих действий."}
 
@@ -377,7 +377,7 @@
 
 - {id: "object_level_goal", title: "Object-level vs. indirect goals", description: "Difference between \"give Alice the apple\" and \"give Alice what she wants\".", domains: "AI"}
 
-- {id: "value_alignment_programmer", title: "Programmer", description: "Who is building these advanced agents?", domains: "AI"}
+- {id: "value_alignment_programmer", title: "Programmer", description: "Who is building these advanced agents?", domains: "AI", translated: true, ru_description: "Кто строит этих продвинутых агентов?"}
 
 - {id: "relevant_limited_AI", title: "Relevant limited AI", description: "Can we have a limited AI, that's nonetheless relevant?", domains: "AI"}
 
