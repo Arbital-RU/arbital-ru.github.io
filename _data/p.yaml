@@ -101,7 +101,7 @@
 
 - {id: "ai_concept", title: "'Concept'", description: "In the context of Artificial Intelligence, a 'concept' is a category, something that identifies thingies as being inside or outside the concept.", domains: "AI"}
 
-- {id: "FAI", title: "Friendly AI", description: "Old terminology for an AI whose preferences have been successfully aligned with idealized human values.", domains: "AI"}
+- {id: "FAI", title: "Friendly AI", description: "Old terminology for an AI whose preferences have been successfully aligned with idealized human values.", domains: "AI", translated: true, ru_description: "Старая терминология для обозначения ИИ, предпочтения которого были успешно согласованы с идеализированными человеческими ценностями."}
 
 - {id: "5b", title: "Linguistic conventions in value alignment", description: "How and why to use precise language and words with special meaning when talking about value alignment.", domains: "AI", children: "value_alignment_utility", explore: "5b"}
 
@@ -213,7 +213,7 @@
 
 - {id: "Vingean_uncertainty", title: "Vingean uncertainty", description: "You can't predict the exact actions of an agent smarter than you - so is there anything you _can_ say about them?", domains: "AI", children: ["deep_blue", "Vinge_law"], explore: "9g", translated: true, ru_description: "Вы не можете предсказать точные действия агентов умнее вас - но есть ли что-то, что вы _можете_ сказать о них?"}
 
-- {id: "deep_blue", title: "Deep Blue", description: "The chess-playing program, built by IBM, that first won the world chess championship from Garry Kasparov in 1996.", domains: "AI"}
+- {id: "deep_blue", title: "Deep Blue", description: "The chess-playing program, built by IBM, that first won the world chess championship from Garry Kasparov in 1996.", domains: "AI", translated: true, ru_description: "Шахматная программа, созданная IBM, и впервые забравшая мировое чемпионство по шахматам у Гарри Каспарова в 1996."}
 
 - {id: "Vinge_law", title: "Vinge's Law", description: "You can't predict exactly what someone smarter than you would do, because if you could, you'd be that smart yourself.", domains: "AI", translated: true, ru_description: "Вы не можете точно предсказать действия того, кто умнее вас, потому что если бы вы могли, вы и сами были бы столь же умны."}
 
@@ -299,7 +299,7 @@
 
 - {id: "pivotal", title: "Pivotal act", description: "Which types of AIs, if they work, can do things that drastically change the nature of the further game?", domains: "AI"}
 
-- {id: "value_alignment_problem", title: "Value alignment problem", description: "You want to build an advanced AI with the right values... but how?", domains: "AI", children: ["preference_framework", "total_alignment"], explore: "5s"}
+- {id: "value_alignment_problem", title: "Value alignment problem", description: "You want to build an advanced AI with the right values... but how?", domains: "AI", children: ["preference_framework", "total_alignment"], explore: "5s", translated: true, ru_description: "Вы хотите построить продвинутый ИИ с правильными ценностями... Но как?"}
 
 - {id: "preference_framework", title: "Preference framework", description: "What's the thing an agent uses to compare its preferences?", domains: "AI", children: ["moral_uncertainty", "attainable_optimum", "meta_utility"], explore: "5f"}
 
