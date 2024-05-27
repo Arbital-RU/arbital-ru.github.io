@@ -39,7 +39,7 @@
 
 - {id: "nofreelunch_irrelevant", title: "No-Free-Lunch theorems are often irrelevant", description: "There's often a theorem proving that some problem has no optimal answer across every possible world. But this may not matter, since the real world is a special case. (E.g., a low-entropy universe.)", domains: "AI"}
 
-- {id: "large_computer", title: "Unphysically large finite computer", description: "The imaginary box required to run programs that require impossibly large, but finite, amounts of computing power.", domains: "AI"}
+- {id: "large_computer", title: "Unphysically large finite computer", description: "The imaginary box required to run programs that require impossibly large, but finite, amounts of computing power.", domains: "AI", translated: true, ru_description: "Воображаемый ящик, который нужен для запуска программ, требующих невозможно большую, но конечную, вычислительную мощность."}
 
 - {id: "actual_effectiveness", title: "Actual effectiveness", description: "If you want the AI's so-called 'utility function' to actually be steering the AI, you need to think about how it meshes up with beliefs, or what gets output to actions.", domains: "AI"}
 
