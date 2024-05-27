@@ -33,7 +33,7 @@
 
 - {id: "1hh", title: "Solomonoff induction: Intro Dialogue (Math 2)", description: "An introduction to Solomonoff induction for the unfamiliar reader who isn't bad at math", domains: "AI"}
 
-- {id: "hypercomputer", title: "Hypercomputer", description: "Some formalisms demand computers larger than the limit of all finite computers", domains: "AI"}
+- {id: "hypercomputer", title: "Hypercomputer", description: "Some formalisms demand computers larger than the limit of all finite computers", domains: "AI", translated: true, ru_description: "Некоторые формализмы требуют компьютеров, которые больше, чем предел всех конечных компьютеров."}
 
 - {id: "mechanical_turk", title: "Mechanical Turk (example)", description: "The 19th-century chess-playing automaton known as the Mechanical Turk actually had a human operator inside. People at the time had interesting thoughts about the possibility of mechanical chess.", domains: "AI"}
 
