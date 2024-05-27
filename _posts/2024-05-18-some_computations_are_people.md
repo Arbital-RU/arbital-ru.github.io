@@ -40,10 +40,10 @@ excerpt: "Это утверждение верно, если по крайней
 - [Olivia Schaefer](https://arbital.com/p/15d/): 99% (2016.02.02)
 - [Nate Soares](https://arbital.com/p/32/): 99% (2016.01.16)
 - [Brandon Reinhart](https://arbital.com/p/190/): 99% (2015.12.18)
-- [Eliezer Yudkowsky](https://arbital.com/p/EliezerYudkowsky/): 99% (2015.11.30)
+- [Eliezer Yudkowsky][EliezerYudkowsky]: 99% (2015.11.30)
 
 ---
 
-[^1]: Скорее всего имеется в виду раздел «[Согласование ИИ][explore/ai_alignment]» на [оригинальном сайте](https://arbital.com/explore/ai_alignment) Арбитал, т. к. здесь были представлены лишь результаты голосования с сайта — прим. пер.
+[^1]: Скорее всего имеется в виду раздел «[Согласование ИИ][explore/ai_alignment]» на [оригинальном сайте](https://arbital.com/explore/ai_alignment) Arbital, т. к. здесь были представлены лишь результаты голосования с самого сайта — прим. пер.
 
 {% include routes.html %}
