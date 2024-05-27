@@ -23,7 +23,7 @@
 
 - {id: "AIXI", title: "AIXI", description: "How to build an (evil) superintelligent AI using unlimited computing power and one page of Python code.", domains: "AI", children: "aixitl", explore: "11v", translated: true, ru_description: "Как создать (злой) сверхразумный ИИ с помощью неограниченной вычислительной мощности и одной страницы кода на Python."}
 
-- {id: "aixitl", title: "AIXI-tl", description: "A time-bounded version of the ideal agent AIXI that uses an impossibly large finite computer instead of a hypercomputer.", domains: "AI"}
+- {id: "aixitl", title: "AIXI-tl", description: "A time-bounded version of the ideal agent AIXI that uses an impossibly large finite computer instead of a hypercomputer.", domains: "AI", translated: true, ru-description: "Ограниченная по времени версия идеального AIXI-агента, которая использует невозможно большой конечный компьютер вместо гиперкомпьютера."}
 
 - {id: "cartesian_agent", title: "Cartesian agent", description: "Agents separated from their environments by impermeable barriers through which only sensory information can enter and motor output can exit.", domains: "AI", children: "cartesian_boundary", explore: "1n1", translated: true, ru_description: "Агенты, отделенные от окружающей их среды непроницаемыми барьерами, через которые могут лишь входить сенсорная информация и выходить двигательные сигналы."}
 
