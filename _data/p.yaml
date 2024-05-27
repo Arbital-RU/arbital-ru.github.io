@@ -155,7 +155,7 @@
 
 - {id: "task_agi", title: "Task-directed AGI", description: "An advanced AI that's meant to pursue a series of limited-scope goals given it by the user. In Bostrom's terminology, a Genie.", domains: "AI", children: ["AI_boxing", "low_impact", "Oracle", "safe_plan_identification", "task_identification", "behaviorist", "conservative_concept", "epistemic_exclusion", "faithful_simulation", "limited_agi", "soft_optimizer", "taskagi_open_problems", "user_querying", "task_goal"], explore: "6w", translated: true, ru_description: "Продвинутый ИИ, предназначенный для достижения ряда ограниченных целей, данных пользователем. «Джинн» в терминологии Бострома."}
 
-- {id: "AI_boxing", title: "Boxed AI", description: "Idea: what if we limit how AI can interact with the world. That'll make it safe, right??", domains: "AI", children: ["ZF_provability_oracle"], explore: "6z"}
+- {id: "AI_boxing", title: "Boxed AI", description: "Idea: what if we limit how AI can interact with the world. That'll make it safe, right??", domains: "AI", children: ["ZF_provability_oracle"], explore: "6z", translated: true, ru_description: "Идея: что, если мы ограничим возможности ИИ взаимодействовать с миром? Это сделает его безопасным, так?"}
 
 - {id: "low_impact", title: "Low impact", description: "The open problem of having an AI carry out tasks in ways that cause minimum side effects and change as little of the rest of the universe as possible.", domains: "AI", children: ["abortable", "shutdown_utility_function"], explore: "2pf"}
 
