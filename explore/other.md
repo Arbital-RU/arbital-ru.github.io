@@ -19,7 +19,7 @@ excerpt: ""
 **Не переведено:**
 <ul>
 {% for a in site.data.p %}
-{% unless a.domains contains "ai_alignment" or a.domains contains "math" %}{% unless a.translated %}
+{% unless a.domains contains "ai_alignment" or a.domains contains "math" %}{% unless a.translated or a.deleted %}
   <li>{% include post.html id = a.id %}</li>
 {% endunless %}{% endunless %}
 {% endfor %}
