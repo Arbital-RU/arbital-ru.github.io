@@ -980,15 +980,109 @@
 - {id: "lambda_calculus", title: "Lambda calculus", description: "A minimal, inefficient, and hard-to-read, but still interesting and useful, programming language.", domains: ["math"]}
 - {id: "square_root", title: "Square root", description: "What is the opposite of multiplying a number by itself?", domains: ["math"]}
 
-### Раздел Decision Theory:
+### Другие разделы:
+
+- {id: "ea_intro", title: "Introduction to Effective Altruism", author: "Aaron Gertler", date: "2016-03-19"}
+
+- {id: "ideological_turing_test", title: "Ideological Turing test", description: "Can you explain the opposing position well enough that people can’t tell whether you or a real advocate of that position created the explanation?", domains: ["arbital_labs"]}
+
+- {id: "epistemology", title: "Epistemology", description: "What is truth?", domains: ["arbital_labs"]}
+
+- {id: "central_example", title: "Central examples", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-14"}
+
+- {id: "108", title: "The empiricist-theorist false dichotomy", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-15"}
+
+- {id: "intension_extension", title: "Intension vs. extension", description: "“Red is a light with a wavelength of 700 nm” vs. “Look at this red apple, red car, and red cup.”", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-16"}
+
+- {id: "guarded_definition", title: "Guarded definition", domains: ["arbital_labs"]}
+
+- {id: "strained_argument", title: "Strained argument", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-19"}
+
+- {id: "perfect_rolling_sphere", title: "Perfect rolling sphere", description: "If you don’t understand something, start by assuming it’s a perfect rolling sphere.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-08-12"}
+
+- {id: "factual_question", title: "Strictly factual question", description: "A “question of strict fact” is one which is true or false about the material universe (and maybe some math) without introducing any issues of values, perspectives, etcetera.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-05-26"}
+
+- {id: "fallacy", title: "Fallacies", description: "To call something a fallacy is to assert that you think people shouldn’t think like that.", domains: ["arbital_labs"]}
+
+- {id: "psychologizing", title: "Psychologizing", description: "It’s sometimes important to consider how other people might be led into error. But psychoanalyzing them is also dangerous! Arbital discussion norms say to explicitly note this as “psychologizing”.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-06-09"}
+
+- {id: "conceivability", title: "Conceivability", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-02"}
+
+- {id: "prove_too_much", title: "Proving too much", description: "If your argument could just as naturally be used to prove that Bigfoot exists and that Peano arithmetic is inconsistent, maybe it’s an untrustworthy kind of argument.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-05-26"}
+
+- {id: "bulverism", title: "Bulverism", description: "Bulverism is when you explain what goes so horribly wrong in people’s minds when they believe X, before you’ve actually explained why X is wrong. Forbidden on Arbital.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-06-09"}
+
+- {id: "emphemeral_premises", title: "Emphemeral premises", description: "When somebody says X, don’t just say, “Oh, not-X because Y” and then forget about Y a day later. Y is now an important load-bearing assumption in your worldview. Write Y down somewhere.", domains: ["arbital_labs"]}
+
+- {id: "multiple_stage_fallacy", title: "Multiple stage fallacy", description: "You can make an arbitrary proposition sound very improbable by observing how it seemingly requires X, Y, and Z. This didn’t work for Nate Silver forecasting the Trump nomination.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-06-20"}
+
+- {id: "mind_projection", title: "Mind projection fallacy", description: "Uncertainty is in the mind, not in the environment; a blank map does not correspond to a blank territory. In general, the territory may have a different ontology from the map.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-06-30"}
+
+- {id: "invisible_background", title: "Invisible background fallacies", description: "Universal laws also apply to objects and ideas that may fade into the invisible background. Reasoning as if these laws didn’t apply to less obtrusive concepts is a type of fallacy.", domains: ["arbital_labs"]}
+
+- {id: "gotcha_button", title: "Gotcha button", description: "A conversational point which, when pressed, causes the other person to shout “Gotcha!” and leap on what they think is a weakness allowing them to dismiss the conversation.", domains: ["arbital_labs"]}
+
+## - {id: "harmless_supernova", title: "Harmless supernova fallacy", description: "False dichotomies and continuum fallacies which can be used to argue that anything, including a supernova, must be harmless.", domains: ["arbital_labs"], translated: true}
+
+- {id: "explicit_bayes_counters_worry", title: "Explicit Bayes as a counter for 'worrying'", description: "Explicitly walking through Bayes’s Rule can summarize your knowledge and thereby stop you from bouncing around pieces of it."}
+
+- {id: "expected_utility_formalism", title: "Expected utility formalism", description: "Expected utility is the central idea in the quantitative implementation of consequentialism", domains: ["decision_theory"]}
+
+- {id: "intro_utility_coherence", title: "Coherent decisions imply consistent utilities", description: "Why do we all use the 'expected utility' formalism? Because any behavior that can't be viewed from that perspective, must be qualitatively self-defeating (in various mathy ways).", domains: ["decision_theory"]}
+
+- {id: "coherence_theorems", title: "Coherence theorems", description: "A 'coherence theorem' shows that something bad happens to an agent if its decisions can't be viewed as 'coherent' in some sense. E.g., an inconsistent preference ordering leads to going in circles.", domains: ["decision_theory"]}
+
+- {id: "expected_utility", title: "Expected utility", description: "Scoring actions based on the average score of their probable consequences.", domains: ["decision_theory"]}
+
+- {id: "expected_utility_agent", title: "Expected utility agent", description: "If you're not some kind of expected utility agent, you're going in circles.", domains: ["decision_theory"]}
 
 - {id: "utility_function", title: "Utility function", description: "The only coherent way of wanting things is to assign consistent relative scores to outcomes.", domains: ["decision_theory"]}
 
-### Другие разделы:
+- {id: "logical_dt", title: "Logical decision theories", description: "Root page for topics on logical decision theory, with multiple intros for different audiences.", domains: ["decision_theory"]}
 
-### - {id: "harmless_supernova", title: "Harmless supernova fallacy", domains: ["arbital_labs"], translated: true}
+- {id: "5kv", title: "An Introduction to Logical Decision Theory for Everyone Else", description: "So like what the heck is 'logical decision theory' in terms a normal person can understand?", domains: ["decision_theory"]}
 
-- {id: "ideological_turing_test", title: "Ideological Turing test", domains: ["arbital_labs"]}
+- {id: "ldt_intro_phil", title: "Introduction to Logical Decision Theory for Analytic Philosophers", description: "Why \"choose as if controlling the logical output of your decision algorithm\" is the most appealing candidate for the principle of rational choice.", domains: ["decision_theory"]}
+
+- {id: "ldt_intro_compsci", title: "Introduction to Logical Decision Theory for Computer Scientists", description: "'Logical decision theory' from a math/programming standpoint, including how two agents with mutual knowledge of each other's code can cooperate on the Prisoner's Dilemma.", domains: ["decision_theory"]}
+
+- {id: "ldt_intro_econ", title: "Introduction to Logical Decision Theory for Economists", description: "An introduction to 'logical decision theory' and its implications for the Ultimatum Game, voting in elections, bargaining problems, and more.", domains: ["decision_theory"]}
+
+- {id: "newcomblike", title: "Newcomblike decision problems", description: "Decision problems in which your choice correlates with something other than its physical consequences (say, because somebody has predicted you very well) can do weird things to some decision theories.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
+
+- {id: "prisoners_dilemma", title: "Prisoner's Dilemma", description: "You and an accomplice have been arrested. Both of you must decide, in isolation, whether to testify against the other prisoner--which subtracts one year from your sentence, and adds two to theirs.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
+
+- {id: "true_prisoners_dilemma", title: "True Prisoner's Dilemma", description: "A scenario that would reproduce the ideal payoff matrix of the Prisoner's Dilemma about human beings who care about their public reputation and each other.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
+
+- {id: "rationality_of_voting", title: "'Rationality' of voting in elections", description: "\"A single vote is very unlikely to swing the election, so your vote is unlikely to have an effect\" versus \"Many people similar to you are making a similar decision about whether to vote.\"", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-04"}
+
+- {id: "pd_tournament_99ldt_1cdt", title: "99LDT x 1CDT oneshot PD tournament as arguable counterexample to LDT doing better than CDT", description: "Arguendo, if 99 LDT agents and 1 CDT agent are facing off in a one-shot Prisoner's Dilemma tournament, the CDT agent does better on a problem that CDT considers 'fair'.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-07-21"}
+
+- {id: "absentminded_driver", title: "Absent-Minded Driver dilemma", description: "A road contains two identical intersections. An absent-minded driver wants to turn right at the second intersection. \"With what probability should the driver turn right?\" argue decision theorists.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-02"}
+
+- {id: "death_in_damascus", title: "Death in Damascus", description: "Death tells you that It is coming for you tomorrow. You can stay in Damascus or flee to Aleppo. Whichever decision you actually make is the wrong one. This gives some decision theories trouble.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-02"}
+
+- {id: "newcombs_problem", title: "Newcomb's Problem", description: "There are two boxes in front of you, Box A and Box B. You can take both boxes, or only Box B. Box A contains $1000. Box B contains $1,000,000 if and only if Omega predicted you'd take only Box B.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
+
+- {id: "parfits_hitchhiker", title: "Parfit's Hitchhiker", description: "You are dying in the desert. A truck-driver who is very good at reading faces finds you, and offers to drive you into the city if you promise to pay $1,000 on arrival. You are a selfish rationalist.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-05"}
+
+- {id: "toxoplasmosis_dilemma", title: "Toxoplasmosis dilemma", description: "A parasitic infection, carried by cats, may make humans enjoy petting cats more. A kitten, now in front of you, isn't infected. But if you *want* to pet it, you may already be infected. Do you?", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-04"}
+
+- {id: "transparent_newcombs_problem", title: "Transparent Newcomb's Problem", description: "Omega has left behind a transparent Box A containing $1000, and a transparent Box B containing $1,000,000 or nothing. Box B is full iff Omega thinks you one-box on seeing a full Box B.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-05"}
+
+- {id: "ultimatum_game", title: "Ultimatum Game", description: "A Proposer decides how to split $10 between themselves and the Responder. The Responder can take what is offered, or refuse, in which case both parties get nothing.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-10"}
+
+- {id: "fair_problem_class", title: "Fair problem class", description: "A problem is 'fair' (according to logical decision theory) when only the results matter and not how we get there.", domains: ["decision_theory"]}
+
+- {id: "ldt_guide", title: "Guide to Logical Decision Theory", description: "The entry point for learning about logical decision theory.", domains: ["decision_theory"]}
+
+- {id: "omega_troll", title: "Omega (alien philosopher-troll)", description: "The entity that sets up all those trolley problems. An alien philosopher/troll imbued with unlimited powers, excellent predictive ability, and very odd motives.", domains: ["decision_theory"], translated: true, ru_description: "Сущность, которая устраивает все эти дилеммы вагонеток. Инопланетный философ/тролль, владеющий неограниченными силами, превосходной предсказательной способностью, и имеющий очень странные мотивы."}
+
+- {id: "updateless_dt", title: "Updateless decision theories", description: "Decision theories that maximize their policies (mappings from sense inputs to actions), rather than using their sense inputs to update their beliefs and then selecting actions.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-05"}
+
+- {id: "evidential_dt", title: "Evidential decision theories", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
+
+- {id: "causal_dt", title: "Causal decision theories ", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-07-30"}
 
 ### Раздел не указан:
 
@@ -996,13 +1090,11 @@
 
 - {id: "terminal_vs_instrumental", title: "Terminal versus instrumental goals / values / preferences", translated: true}
 
-- {id: "perfect_rolling_sphere", title: "Perfect rolling sphere"}
+- {id: "aiml_econ_faq", title: "A quick econ FAQ for AI/ML folks concerned about technological unemployment", description: "Yudkowsky's attempted description of standard economic concepts that he thinks are vital for talking about technological unemployment and related issues."}
 
-- {id: "omega_troll", title: "Omega (alien philosopher-troll)", translated: true}
-
-- {id: "psychologizing", title: "Psychologizing "}
+- {id: "eliezer_fixes", title: "List of Eliezer's current most desired fixes and features", description: "A place for Eliezer to note down his current list of personally-wanted features for editing and writing.", deleted: true}
 
 ### Посты Пола Кристиано
 
-- {id: "ambitious_vs_narrow_value_learning", title: " Ambitious vs. narrow value learning"}
+- {id: "ambitious_vs_narrow_value_learning", title: "Ambitious vs. narrow value learning"}
 ---
