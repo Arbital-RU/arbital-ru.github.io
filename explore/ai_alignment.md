@@ -34,6 +34,6 @@ excerpt: ""
   </td>
 </tr></table>
 
-<ul>{% for a in site.data.p %}{% if a.domains contains "AI" and a.translated %}
+<ul>{% for a in site.data.p %}{% if a.domains contains "ai_alignment" and a.translated %}
   <li>{% include post.html id = a.id %}</li>{% endif %}
 {% endfor %}</ul>

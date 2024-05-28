@@ -10,18 +10,18 @@ excerpt: ""
 **Переведено:**
 <ul>
 {% for a in site.data.p %}
-{% unless a.domains contains "AI" %}{% unless a.domains contains "math" %}{% if a.translated %}
+{% unless a.domains contains "ai_alignment" or a.domains contains "math" %}{% if a.translated %}
   <li>{% include post.html id = a.id %}</li>
-{% endif %}{% endunless %}{% endunless %}
+{% endif %}{% endunless %}
 {% endfor %}
 </ul>
 
 **Не переведено:**
 <ul>
 {% for a in site.data.p %}
-{% unless a.domains contains "AI" %}{% unless a.domains contains "math" %}{% unless a.translated %}
+{% unless a.domains contains "ai_alignment" or a.domains contains "math" %}{% unless a.translated %}
   <li>{% include post.html id = a.id %}</li>
-{% endunless %}{% endunless %}{% endunless %}
+{% endunless %}{% endunless %}
 {% endfor %}
 </ul>
 

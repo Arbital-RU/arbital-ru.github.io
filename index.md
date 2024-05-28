@@ -12,17 +12,7 @@ excerpt: "Здесь выкладываются переводы статей с
 
 <h3><b>Разделы:</b></h3>
 
-{% assign a = site.data.p | where: "domains", "AI" %}
-{% assign b = a | where: "translated", true %}
-<div class="post" style="margin:16px 16px 0 0"><a href="/explore/ai_alignment">Согласование ИИ</a> (переведено {{ b.size }} из {{ a.size }})</div>
-
-{% assign a = site.data.p | where: "domains", "math" %}
-{% assign b = a | where: "translated", true %}
-<div class="post" style="margin:16px 16px 0 0"><a href="/explore/math">Математика</a> (переведено {{ b.size }} из ?, данных не хватает)<div>
-
-{% assign a = site.data.p | where: "domains", "" %}
-{% assign b = a | where: "translated", true %}
-<div class="post" style="margin:16px 16px 0 0"><a href="/explore/other">Прочее</a> (переведено {{ b.size }} из ?, данных не хватает)<div>
+{% include domains.html info = true %}
 
 <hr style="margin: 12px 0 0 0">
 
@@ -39,8 +29,7 @@ excerpt: "Здесь выкладываются переводы статей с
 
 <small>
 Все материалы распространяются по лицензии <a href="https://creativecommons.org/licenses/by/3.0/deed.ru">CC BY 3.0</a>, если не отмечено иное. Предложить свои переводы или правки можно <a href="https://github.com/Arbital-RU/arbital-ru.github.io">через GitHub</a>, либо связавшись с администраторами:
-
-<ul style="margin-top: 12px">
-  <li>К. Кирдан — <a href="https://vk.com/latif_rosh">ВКонтакте</a>, <a href="https://t.me/KKirdan">Telegram</a>, эл. почта <a href="mailto:latif.rosh@gmail.com">latif.rosh@gmail.com</a></li>
-</ul>
 </small>
+<ul style="margin-top: 12px">
+  <li><small>К. Кирдан — <a href="https://vk.com/latif_rosh">ВКонтакте</a>, <a href="https://t.me/KKirdan">Telegram</a>, эл. почта <a href="mailto:latif.rosh@gmail.com">latif.rosh@gmail.com</a></small></li>
+</ul>
