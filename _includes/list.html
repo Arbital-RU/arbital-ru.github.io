@@ -1,5 +1,5 @@
 <ul class="tree">
-{% for a in include.list %}{% for b in site.data.p %}{% if b.id == a %}
+{% for a in include.list %}{% for b in site.data.p %}{% if b.id == a %}{% unless b.deleted %}
   <li>
     {% if b.explore %}<details open><summary>{% include post.html id = b.id %}</summary>
       {% include list.html list = b.children %}
@@ -7,5 +7,5 @@
     {% include post.html id = b.id %}
     {% endif %}
   </li>
-{% break %}{% endif %}{% endfor %}{% endfor %}
+{% endunless %}{% break %}{% endif %}{% endfor %}{% endfor %}
 </ul>

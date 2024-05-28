@@ -18,10 +18,19 @@ excerpt: ""
 **Не переведено:**
 <ul>
 {% for a in site.data.p %}
-{% if a.domains contains "math" %}{% unless a.translated %}
+{% if a.domains contains "math" %}{% unless a.translated or a.deleted %}
   <li>{% include post.html id = a.id %}</li>
 {% endunless %}{% endif %}
 {% endfor %}
 </ul>
 
-...данные дополняются...
+<!--
+**Не будет переводиться:**
+<ul>
+{% for a in site.data.p %}
+{% if a.domains contains "math" and a.deleted %}
+  <li>{% include post.html id = a.id %}</li>
+{% endif %}
+{% endfor %}
+</ul>
+-->
