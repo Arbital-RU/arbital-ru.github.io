@@ -31,7 +31,7 @@
 
 - {id: "solomonoff_induction", title: "Solomonoff induction", description: "A simple way to superintelligently predict sequences of data, given unlimited computing power.", domains: ["math","ai_alignment"], children: "1hh", explore: "11w", translated: true, ru_description: "Как просто и сверхразумно предсказывать последовательности данных, имея неограниченную вычислительную мощность."}
 
-- {id: "1hh", title: "Solomonoff induction: Intro Dialogue (Math 2)", description: "An introduction to Solomonoff induction for the unfamiliar reader who isn't bad at math", domains: ["ai_alignment"]}
+- {id: "1hh", title: "Solomonoff induction: Intro Dialogue (Math 2)", description: "An introduction to Solomonoff induction for the unfamiliar reader who isn't bad at math", domains: ["math","ai_alignment"]}
 
 - {id: "hypercomputer", title: "Hypercomputer", description: "Some formalisms demand computers larger than the limit of all finite computers", domains: ["ai_alignment"], translated: true, ru_description: "Некоторые формализмы требуют компьютеров, которые больше, чем предел всех конечных компьютеров."}
 
@@ -401,15 +401,584 @@
 
 - {id: "rocket_alignment_metaphor", title: "The rocket alignment problem", description: "If people talked about the problem of space travel the way they talked about AI...", domains: ["ai_alignment"]}
 
-- {id: "3ck", title: "VAT playpen", description: "Playpen page for VAT domain.", domains: ["ai_alignment"]}
-
 - {id: "EliezerYudkowsky", title: "Eliezer Yudkowsky", description: "", domains: ["ai_alignment"]}
+
+- {id: "3ck", title: "VAT playpen", description: "Playpen page for VAT domain.", domains: ["ai_alignment"], deleted: true}
 
 ### Раздел Mathematics:
 
+- {id: "probability_theory", title: "Probability theory", description: "The logic of science; coherence relations on quantitative degrees of belief.", domains: ["math"]}
+- {id: "calibrated_probabilities", title: "Well-calibrated probabilities", description: "Even if you’re fairly ignorant, you can still strive to ensure that when you say “70% probability”, it’s true 70% of the time.", domains: ["math"]}
+- {id: "bayes_reasoning", title: "Bayesian reasoning", description: "A probability-theory-based view of the world; a coherent way of changing probabilistic beliefs based on evidence.", domains: ["math"]}
+- {id: "bayes_update", title: "Bayesian update", description: "Bayesian updating: the ideal way to change probabilistic beliefs based on evidence.", domains: ["math"]}
+- {id: "bayes_extraordinary_claims", title: "Extraordinary claims require extraordinary evidence", description: "The people who adamantly claim they were abducted by aliens do provide some evidence for aliens. They just don’t provide quantitatively enough evidence.", domains: ["math"]}
+- {id: "extraordinary_claims", title: "Extraordinary claims", description: "What makes something an ‘extraordinary claim’ that requires extraordinary evidence?", domains: ["math"]}
+- {id: "bayes_science_virtues", title: "Bayesian view of scientific virtues", description: "Why is it that science relies on bold, precise, and falsifiable predictions? Because of Bayes’ rule, of course.", domains: ["math"]}
+- {id: "bayes_strength_of_evidence", title: "Strength of Bayesian evidence", description: "From a Bayesian standpoint, the strength of evidence can be identified with its likelihood ratio.", domains: ["math"]}
+- {id: "bayes_update_details", title: "Path: Insights from Bayesian updating", description: "A learning-path placeholder page for insights derived from the Bayesian rule for updating beliefs.", domains: ["math"]}
+- {id: "bayes_ordinary_claims", title: "Ordinary claims require ordinary evidence", description: "Extraordinary claims require extraordinary evidence, but ordinary claims _don’t_.", domains: ["math"]}
+- {id: "bayes_rule", title: "Bayes' rule", description: "Bayes’ rule is the core theorem of probability theory saying how to revise our beliefs when we make a new observation.", domains: ["math"]}
+- {id: "bayes_rule_examples", title: "Bayes' rule examples", description: "Interesting problems solvable by Bayes’ rule", domains: ["math"]}
+- {id: "bayes_examples_realistic_math1", title: "Realistic (Math 1)", description: "Real-life examples of Bayesian reasoning", domains: ["math"]}
+- {id: "22w", title: "Introductory Bayesian problems", description: "Bayesian problems to try to solve yourself, before beginning to learn about Bayes’ rule.", domains: ["math"]}
+- {id: "diseasitis", title: "Diseasitis", description: "20% of patients have Diseasitis. 90% of sick patients and 30% of healthy patients turn a tongue depressor black. You turn a tongue depressor black. What’s the chance you have Diseasitis?", domains: ["math"]}
+- {id: "blue_oysters", title: "Blue oysters", description: "A probability problem about blue oysters.", domains: ["math"]}
+- {id: "sparking_widgets", title: "Sparking widgets", domains: ["math"]}
+- {id: "sockdresser_search", title: "Sock-dresser search", description: "There’s a 4⁄5 chance your socks are in one of your dresser’s 8 drawers. You check 6 drawers at random. What’s the probability they’ll be in the next drawer you check?", domains: ["math"]}
+- {id: "bayes_waterfall_diagram", title: "Waterfall diagram", description: "Visualizing Bayes’ rule as the mixing of probability streams.", domains: ["math"]}
+- {id: "bayes_waterfall_diseasitis", title: "Waterfall diagrams and relative odds", description: "A way to visualize Bayes’ rule that yields an easier way to solve some problems", domains: ["math"]}
+- {id: "bayes_rule_odds", title: "Bayes' rule: Odds form", description: "The simplest and most easily understandable form of Bayes’ rule uses relative odds.", domains: ["math"]}
+- {id: "bayes_rule_odds_intro", title: "Introduction to Bayes' rule: Odds form", description: "Bayes’ rule is simple, if you think in terms of relative odds.", domains: ["math"]}
+- {id: "bayes_rule_proof", title: "Proof of Bayes' rule", description: "Proofs of Bayes’ rule, with graphics", domains: ["math"]}
+- {id: "bayes_rule_probability_proof", title: "Proof of Bayes' rule: Probability form", domains: ["math"]}
+- {id: "bayes_rule_elimination", title: "Belief revision as probability elimination", description: "Update your beliefs by throwing away large chunks of probability mass.", domains: ["math"]}
+- {id: "bayes_probability_notation", title: "Probability notation for Bayes' rule", description: "The probability notation used in Bayesian reasoning", domains: ["math"]}
+- {id: "bayes_probability_notation_math1", title: "Probability notation for Bayes' rule: Intro (Math 1)", description: "How to read, and identify, the probabilities in Bayesian problems.", domains: ["math"]}
+- {id: "bayes_rule_multiple", title: "Bayes' rule: Vector form", description: "For when you want to apply Bayes’ rule to lots of evidence and lots of variables, all in one go. (This is more or less how spam filters work.)", domains: ["math"]}
+- {id: "bayes_log_odds", title: "Bayes' rule: Log-odds form", description: "A simple transformation of Bayes’ rule reveals tools for measuring degree of belief, and strength of evidence.", domains: ["math"]}
+- {id: "bayes_rule_functional", title: "Bayes' rule: Functional form", description: "Bayes’ rule for to continuous variables.", domains: ["math"]}
+- {id: "bayes_rule_proportional", title: "Bayes' rule: Proportional form", description: "The fastest way to say something both convincing and true about belief-updating.", domains: ["math"]}
+- {id: "bayes_rule_guide", title: "Bayes' rule: Guide", description: "The Arbital guide to Bayes’ rule", domains: ["math"]}
+- {id: "61b", title: "Comprehensive guide to Bayes' Rule", description: "This is an arc that includes all Bayes content.", domains: ["math"]}
+- {id: "62c", title: "Introduction to Bayes' Rule odds form", description: "This is an arc that includes just enough content to teach about Bayes’s Rule odds form.", domains: ["math"]}
+- {id: "62d", title: "Bayes' Rule and its different forms", description: "This is an arc that includes different ways to look at Bayes’ Rule.", domains: ["math"]}
+- {id: "62f", title: "Bayes' Rule and its implications", description: "This is an arc that includes implications of the Bayes’s Rule.", domains: ["math"]}
+- {id: "692", title: "Wants to get straight to Bayes", domains: ["math"]}
+- {id: "bayes_rule_details", title: "Path: Multiple angles on Bayes's Rule", description: "A learning-path placeholder page for learning multiple angles on Bayes’s Rule.", domains: ["math"]}
+- {id: "flee_from_surprise", title: "Shift towards the hypothesis of least surprise", description: "When you see new evidence, ask: which hypothesis is _least surprised?_", domains: ["math"]}
+- {id: "bayes_rule_definition", title: "Bayes' rule: Definition", domains: ["math"]}
+- {id: "bayes_rule_probability", title: "Bayes' rule: Probability form", description: "The original formulation of Bayes’ rule.", domains: ["math"]}
+- {id: "bayes_odds_to_probability", title: "Odds form to probability form", domains: ["math"]}
+- {id: "bayes_rule_probability_proof", title: "Proof of Bayes' rule: Probability form", domains: ["math"]}
+- {id: "bayes_frequency_diagram", title: "Frequency diagram", description: "Visualizing Bayes’ rule by manipulating frequencies in large populations", domains: ["math"]}
+- {id: "bayes_frequency_diagram_diseasitis", title: "Frequency diagrams: A first look at Bayes", description: "The most straightforward visualization of Bayes’ rule.", domains: ["math"]}
+- {id: "5f3", title: "Bayes' rule: Beginner's guide", description: "Beginner’s guide to learning about Bayes’ rule.", domains: ["math"]}
+- {id: "bayes_rule_fast_intro", title: "High-speed intro to Bayes's rule", description: "A high-speed introduction to Bayes’s Rule on one page, for the impatient and mathematically adept.", domains: ["math"]}
+- {id: "prior_probability", title: "Prior probability", description: "What we believed before seeing the evidence.", domains: ["math"]}
+- {id: "bayes_want_foundations", title: "Interest in mathematical foundations in Bayesianism", description: "“Want” this requisite if you prefer to see extra information about the mathematical foundations in Bayesianism.", domains: ["math"]}
+- {id: "posterior_probability", title: "Posterior probability", description: "What we believe, after seeing the evidence and doing a Bayesian update.", domains: ["math"]}
+- {id: "bayes_for_humans", title: "Humans doing Bayes", description: "The human use of Bayesian reasoning in everyday life", domains: ["math"]}
+- {id: "explicit_bayes_counters_worry", title: "Explicit Bayes as a counter for 'worrying'", description: "Explicitly walking through Bayes’s Rule can summarize your knowledge and thereby stop you from bouncing around pieces of it.", domains: ["math"]}
+- {id: "ignorance_prior", title: "Ignorance prior", description: "Key equations for quantitative Bayesian problems, describing exactly the right shape for what we believed before observation.", domains: ["math"]}
+- {id: "inductive_prior", title: "Inductive prior", description: "Some states of pre-observation belief can learn quickly; others never learn anything. An “inductive prior” is of the former type.", domains: ["math"]}
+- {id: "laplace_rule_of_succession", title: "Laplace's Rule of Succession", description: "Suppose you flip a coin with an unknown bias 30 times, and see 4 heads and 26 tails. The Rule of Succession says the next flip has a 5⁄32 chance of showing heads.", domains: ["math"]}
+- {id: "universal_prior", title: "Universal prior", description: "A “universal prior” is a probability distribution containing _all_ the hypotheses, for some reasonable meaning of “all”. E.g., “every possible computer program that computes probabilities”.", domains: ["math"]}
+- {id: "strictly_confused", title: "Strictly confused", description: "A hypothesis is strictly confused by the raw data, if the hypothesis did much worse in predicting it than the hypothesis itself expected.", domains: ["math"]}
+- {id: "bayes_guide_end", title: "Finishing your Bayesian path on Arbital", description: "The page that comes at the end of reading the Arbital Guide to Bayes’ rule", domains: ["math"]}
+- {id: "bayesian_prior", title: "Prior", description: "A state of prior knowledge, before seeing information on a new problem. Potentially complicated.", domains: ["math"]}
+- {id: "cromwells_rule", title: "Empirical probabilities are not exactly 0 or 1", description: "“Cromwell’s Rule” says that probabilities of exactly 0 or 1 should never be applied to empirical propositions—there’s always some probability, however tiny, of being mistaken.", domains: ["math"]}
+- {id: "subjective_probability", title: "Subjective probability", description: "Probability is in the mind, not in the environment. If you don’t know whether a coin came up heads or tails, that’s a fact about you, not a fact about the coin.", domains: ["math"]}
+- {id: "probability_distribution_motivated_definition", title: "Probability distribution: Motivated definition", description: "People keep writing things like P(sick)=0.3. What does this mean, on a technical level?", domains: ["math"]}
+- {id: "bayesian_likelihood", title: "Likelihood", domains: ["math"]}
+- {id: "relative_likelihood", title: "Relative likelihood", description: "How relatively likely an observation is, given two or more hypotheses, determines the strength and direction of evidence.", domains: ["math"]}
+- {id: "likelihood_notation", title: "Likelihood notation", domains: ["math"]}
+- {id: "likelihood_function", title: "Likelihood function", domains: ["math"]}
+- {id: "likelihood_ratio", title: "Likelihood ratio", domains: ["math"]}
+- {id: "odds", title: "Odds", description: "Odds express a relative probability.", domains: ["math"]}
+- {id: "odds_intro", title: "Odds: Introduction", description: "What’s the difference between probabilities and odds? Why is a 20% probability of success equivalent to 1 : 4 odds favoring success?", domains: ["math"]}
+- {id: "odds_refresher", title: "Odds: Refresher", description: "A quick review of the notations and mathematical behaviors for odds (e.g. odds of 1 : 2 for drawing a red ball vs. green ball from a barrel).", domains: ["math"]}
+- {id: "odds_technical", title: "Odds: Technical explanation", description: "Formal definitions, alternate representations, and uses of odds and odds ratios (like a 1 : 2 chance of drawing a red ball vs. green ball from a barrel).", domains: ["math"]}
+- {id: "exclusive_exhaustive", title: "Mutually exclusive and exhaustive", description: "The condition needed for probabilities to sum to 1", domains: ["math"]}
+- {id: "probability", title: "Probability", description: "The degree to which someone believes something, measured on a scale from 0 to 1, allowing us to do math to it.", domains: ["math"]}
+- {id: "joint_probability", title: "Joint probability", description: "The notation for writing the chance that both X and Y are true.", domains: ["math"]}
+- {id: "conditional_probability", title: "Conditional probability", description: "The notation for writing “The probability that someone has green eyes, if we know that they have red hair.”", domains: ["math"]}
+- {id: "conditional_probability_refresher", title: "Conditional probability: Refresher", description: "Is P(yellow | banana) the probability that a banana is yellow, or the probability that a yellow thing is a banana?", domains: ["math"]}
+- {id: "probability_interpretations", title: "Interpretations of \"probability\"", description: "What does it _mean_ to say that a fair coin has a 50% probability of coming up heads?", domains: ["math"]}
+- {id: "subjective_probability", title: "Subjective probability", description: "Probability is in the mind, not in the environment. If you don’t know whether a coin came up heads or tails, that’s a fact about you, not a fact about the coin.", domains: ["math"]}
+- {id: "probability_distribution_motivated_definition", title: "Probability distribution: Motivated definition", description: "People keep writing things like P(sick)=0.3. What does this mean, on a technical level?", domains: ["math"]}
+- {id: "probability_interpretations_correspondence", title: "Correspondence visualizations for different interpretations of \"probability\"", domains: ["math"]}
+- {id: "probability_interpretations_examples", title: "Probability interpretations: Examples", domains: ["math"]}
+- {id: "likelihoods_not_pvalues", title: "Report likelihoods, not p-values", domains: ["math"]}
+- {id: "likelihood_vs_pvalue", title: "Likelihood functions, p-values, and the replication crisis", description: "What’s the whole Bayesian-vs.-frequentist debate about?", domains: ["math"]}
+- {id: "likelihood_not_pvalue_faq", title: "Report likelihoods not p-values: FAQ", domains: ["math"]}
+- {id: "normalize_probabilities", title: "Normalization (probability)", description: "That thingy we do to make sure our probabilities sum to 1, when they should sum to 1.", domains: ["math"]}
+- {id: "sample_space_probability", title: "Sample space", description: "The set of possible things that could happen in a part of the world that you are uncertain about.", domains: ["math"]}
+- {id: "sample_spaces_are_too_large", title: "Sample spaces are too large", description: "Sample spaces are often large, so it is hard to do probabilistic computations using a raw distribution over the sample space.", domains: ["math"]}
+- {id: "uncountable_sample_spaces_are_too_large", title: "Uncountable sample spaces are way too large", description: "We can’t define probability distributions over uncountable sample spaces by just assigning numbers to each point in the sample space.", domains: ["math"]}
+- {id: "probability_distribution_countable", title: "Probability distribution (countable sample space)", description: "A function assigning a probability to each point in the sample space.", domains: ["math"]}
+- {id: "496", title: "Square visualization of probabilities on two events", domains: ["math"]}
+- {id: "4fh", title: "Square visualization of probabilities on two events: (example) Diseasitis", description: "But it _seems_ like the patient with the black tongue depressor has diseasitis…", domains: ["math"]}
+- {id: "two_independent_events", title: "Two independent events", description: "What do pair of dice, pair of coins, and pair of people on opposite sides of the planet all have in common?", domains: ["math"]}
+- {id: "4cl", title: "Two independent events: Square visualization", domains: ["math"]}
+- {id: "probability_distribution_motivated_definition", title: "Probability distribution: Motivated definition", description: "People keep writing things like P(sick)=0.3. What does this mean, on a technical level?", domains: ["math"]}
+- {id: "reads_algebra", title: "Ability to read algebra", description: "Do you have sufficient mathematical ability that you can read a sentence that uses some algebra or invokes a mathematical idea, without slowing down too much?", domains: ["math"]}
+- {id: "arithmetical_hierarchy", title: "Arithmetical hierarchy", description: "The arithmetical hierarchy is a way of classifying logical statements by the number of clauses saying “for every object” and “there exists an object”.", domains: ["math"]}
+- {id: "1mj", title: "Arithmetical hierarchy: If you don't read logic", domains: ["math"]}
+- {id: "reads_logic", title: "Ability to read logic", description: "Can you read sentences symbolically stating “For all x: exists y: phi(x, y) or not theta(y)” without slowing down too much?", domains: ["math"]}
+- {id: "math0", title: "Math 0", description: "Are you not actively bad at math, nor traumatized about math?", domains: ["math"]}
+- {id: "math1", title: "Math 1", description: "Is math sometimes fun for you, and are you not anxious if you see a math puzzle you don’t know how to solve?", domains: ["math"]}
+- {id: "math2", title: "Math 2", description: "Do you work with math on a fairly routine basis? Do you have little trouble grasping abstract structures and ideas?", domains: ["math"]}
+- {id: "56p", title: "Math 2 example statements", description: "If you can read these formulas, you’re in Math 2!", domains: ["math"]}
+- {id: "math3", title: "Math 3", description: "Can you read the sort of things that professional mathematicians read, aka LaTeX formulas with a minimum of explanation?", domains: ["math"]}
+- {id: "math_3_examples", title: "Math 3 example statements", description: "If you can read these formulas, you’re in Math 3!", domains: ["math"]}
+- {id: "reads_calculus", title: "Ability to read calculus", description: "Can you take integral signs and differentiations in stride?", domains: ["math"]}
+- {id: "uncountable", title: "Uncountability", description: "Some infinities are bigger than others. Uncountable infinities are larger than countable infinities.", domains: ["math"]}
+- {id: "2w1", title: "Uncountability: Intro (Math 1)", description: "Not all infinities are created equal. The infinity of real numbers is infinitely larger than the infinity of counting numbers.", domains: ["math"]}
+- {id: "uncountability_intuitive", title: "Uncountability: Intuitive Intro", description: "Are all sizes of infinity the same? What does “the same” even mean here?", domains: ["math"]}
+- {id: "uncountability_math_3", title: "Uncountability (Math 3)", description: "Formal definition of uncountability, and foundational considerations.", domains: ["math"]}
+- {id: "real_numbers_uncountable", title: "Real numbers are uncountable", description: "The real numbers are uncountable.", domains: ["math"]}
+- {id: "godel_codes", title: "Gödel encoding and self-reference", description: "The formalism that mathematicians use to talk about arithmetic turns out to be able to talk about itself.", domains: ["math"]}
+- {id: "quine", title: "Quine", description: "A computer program that prints (or does other computations to) its own source code, using indirect self-reference.", domains: ["math"]}
+- {id: "playpen_mathematics", title: "Math playpen", description: "Playpen page for Math domain", domains: ["math"]}
+- {id: "order_theory", title: "Order theory", description: "The study of binary relations that are reflexive, transitive, and antisymmetic.", domains: ["math"]}
+- {id: "poset", title: "Partially ordered set", description: "A set endowed with a relation that is reflexive, transitive, and antisymmetric.", domains: ["math"]}
+- {id: "poset_examples", title: "Poset: Examples", domains: ["math"]}
+- {id: "poset_exercises", title: "Poset: Exercises", domains: ["math"]}
+- {id: "poset_greatest_lower_bound", title: "Greatest lower bound in a poset", description: "The greatest lower bound is an abstraction of the idea of the greatest common divisor to a general poset.", domains: ["math"]}
+- {id: "math_join", title: "Join and meet", domains: ["math"]}
+- {id: "join_examples", title: "Join and meet: Examples", domains: ["math"]}
+- {id: "poset_join_exercises", title: "Join and meet: Exercises", domains: ["math"]}
+- {id: "order_lattice", title: "Lattice (Order Theory)", description: "A poset that is closed under binary joins and meets.", domains: ["math"]}
+- {id: "poset_lattice_examples", title: "Lattice: Examples", domains: ["math"]}
+- {id: "poset_lattice_exercise", title: "Lattice: Exercises", domains: ["math"]}
+- {id: "totally_ordered_set", title: "Totally ordered set", description: "A set where all the elements can be compared as greater than or less than.", domains: ["math"]}
+- {id: "well_ordered_set", title: "Well-ordered set", description: "An ordered set with an order that always has a “next element”.", domains: ["math"]}
+- {id: "poset_monotone_function", title: "Monotone function", description: "An order-preserving map between posets.", domains: ["math"]}
+- {id: "order_monotone_examples", title: "Monotone function: examples", domains: ["math"]}
+- {id: "order_monotone_exercises", title: "Monotone function: exercises", domains: ["math"]}
+- {id: "math_order_complete_lattice", title: "Complete lattice", description: "A poset that is closed under arbitrary joins and meets.", domains: ["math"]}
+- {id: "group_theory", title: "Group theory", description: "What kinds of symmetry can an object have?", domains: ["math"]}
+- {id: "group_mathematics", title: "Group", description: "The algebraic structure that captures symmetry, relationships between transformations, and part of what multiplication and addition have in common.", domains: ["math"]}
+- {id: "group_order", title: "Order of a group", domains: ["math"]}
+- {id: "abelian_group", title: "Abelian group", description: "A group where the operation commutes. Named after Niels Henrik Abel.", domains: ["math"]}
+- {id: "group_examples", title: "Group: Examples", description: "Why would anyone have invented groups, anyway? What were the historically motivating examples, and what examples are important today?", domains: ["math"]}
+- {id: "group_exercises", title: "Group: Exercises", description: "Test your understanding of the definition of a group with these exercises.", domains: ["math"]}
+- {id: "group_homomorphism", title: "Group homomorphism", description: "A group homomorphism is a “function between groups” that “respects the group structure”.", domains: ["math"]}
+- {id: "kernel_of_group_homomorphism", title: "Kernel of group homomorphism", domains: ["math"]}
+- {id: "image_of_identity_under_group_homomorphism", title: "Image of the identity under a group homomorphism is the identity", description: "All group homomorphisms preserve the identity.", domains: ["math"]}
+- {id: "group_homomorphism_image_of_inverse", title: "Under a group homomorphism, the image of the inverse is the inverse of the image", description: "The operations of “taking inverses” and “applying a group homomorphism” commute: it does not matter in which order we do them.", domains: ["math"]}
+- {id: "image_of_group_under_homomorphism_is_subgroup", title: "The image of a group under a homomorphism is a subgroup of the codomain", description: "Group homomorphisms take groups to groups, but it is additionally guaranteed that the elements they hit form a group.", domains: ["math"]}
+- {id: "composition_of_group_homomorphisms_is_homomorphism", title: "The composition of two group homomorphisms is a homomorphism", description: "The collection of group homomorphisms is closed under composition.", domains: ["math"]}
+- {id: "cyclic_group", title: "Cyclic group", description: "Cyclic groups form one of the most simple classes of groups.", domains: ["math"]}
+- {id: "cyclic_group_intro_math_0", title: "Cyclic Group Intro (Math 0)", description: "A finite cyclic group is a little bit like a clock.", domains: ["math"]}
+- {id: "symmetric_group", title: "Symmetric group", description: "The symmetric groups form the fundamental link between group theory and the notion of symmetry.", domains: ["math"]}
+- {id: "cayley_theorem_symmetric_groups", title: "Cayley's Theorem on symmetric groups", description: "The “fundamental theorem of symmetry”, forging the connection between symmetry and group theory.", domains: ["math"]}
+- {id: "cycle_notation_symmetric_group", title: "Cycle notation in symmetric groups", description: "Cycle notation is a convenient way to represent the elements of a symmetric group.", domains: ["math"]}
+- {id: "disjoint_cycle_notation_is_unique", title: "Disjoint cycle notation is unique", description: "Disjoint cycle notation provides a canonical way to express elements of the symmetric group.", domains: ["math"]}
+- {id: "cycle_type_of_a_permutation", title: "Cycle type of a permutation", description: "The cycle type is an invariant of a permutation in the symmetric group.", domains: ["math"]}
+- {id: "disjoint_cycles_commute_symmetric_group", title: "Disjoint cycles commute in symmetric groups", description: "In cycle notation, if two cycles are disjoint, then they commute.", domains: ["math"]}
+- {id: "conjugacy_class_is_cycle_type_in_symmetric_group", title: "Conjugacy class is cycle type in symmetric group", description: "There is a neat characterisation of the conjugacy classes in the symmetric group on a finite set.", domains: ["math"]}
+- {id: "symmetric_group_five_conjugacy_classes", title: "Conjugacy classes of the symmetric group on five elements", description: "The symmetric group on five elements is a group of just the right size to make a good example of a table of conjugacy classes.", domains: ["math"]}
+- {id: "transposition_in_symmetric_group", title: "Transposition (as an element of a symmetric group)", description: "A transposition is the simplest kind of permutation: it swaps two elements.", domains: ["math"]}
+- {id: "symmetric_group_is_generated_by_transpositions", title: "Every member of a symmetric group on finitely many elements is a product of transpositions", description: "This fact can often simplify arguments about permutations: if we can show that something holds for transpositions, and that it holds for products, then it holds for everything.", domains: ["math"]}
+- {id: "sign_of_permutation_is_well_defined", title: "The sign of a permutation is well-defined", description: "This result is what allows the alternating group to exist.", domains: ["math"]}
+- {id: "sign_homomorphism_symmetric_group", title: "Sign homomorphism (from the symmetric group)", description: "The sign homomorphism is how we extract the alternating group from the symmetric group.", domains: ["math"]}
+- {id: "group_isomorphism", title: "Group isomorphism", description: "“Isomorphism” is the proper notion of “sameness” or “equality” among groups.", domains: ["math"]}
+- {id: "order_of_a_group_element", title: "Order of a group element", domains: ["math"]}
+- {id: "dihedral_group", title: "Dihedral group", description: "The dihedral groups are natural examples of groups, arising from the symmetries of regular polygons.", domains: ["math"]}
+- {id: "dihedral_groups_are_non_abelian", title: "Dihedral groups are non-abelian", description: "The group of symmetries of the triangle and all larger regular polyhedra are not abelian.", domains: ["math"]}
+- {id: "group_conjugate", title: "Group conjugate", description: "Conjugation lets us perform permutations “from the point of view of” another permutation.", domains: ["math"]}
+- {id: "normal_subgroup", title: "Normal subgroup", description: "Normal subgroups are subgroups which are in some sense “the same from all points of view”.", domains: ["math"]}
+- {id: "subgroup_normal_iff_kernel_of_homomorphism", title: "Subgroup is normal if and only if it is the kernel of a homomorphism", description: "The “correct way” to think about normal subgroups is as kernels of homomorphisms.", domains: ["math"]}
+- {id: "quotient_by_subgroup_is_well_defined_iff_normal", title: "Quotient by subgroup is well defined if and only if subgroup is normal", domains: ["math"]}
+- {id: "subgroup_normal_iff_union_of_conjugacy_classes", title: "Subgroup is normal if and only if it is a union of conjugacy classes", description: "A useful way to think about normal subgroups, which meshes with their “closed under conjugation” interpretation.", domains: ["math"]}
+- {id: "alternating_group", title: "Alternating group", description: "The alternating group is the only normal subgroup of the symmetric group (on five or more generators).", domains: ["math"]}
+- {id: "even_signed_permutations_form_a_group", title: "The collection of even-signed permutations is a group", description: "This proves the well-definedness of one particular definition of the alternating group.", domains: ["math"]}
+- {id: "alternating_group_generated_by_three_cycles", title: "Alternating group is generated by its three-cycles", description: "A useful result which lets us prove things about the alternating group more easily.", domains: ["math"]}
+- {id: "alternating_group_is_simple", title: "The alternating groups on more than four letters are simple", description: "The alternating groups are the most accessible examples of simple groups, and this fact also tells us that the symmetric groups are “complicated” in some sense.", domains: ["math"]}
+- {id: "alternating_group_five_is_simple", title: "The alternating group on five elements is simple", description: "The smallest (nontrivial) simple group is the alternating group on five elements.", domains: ["math"]}
+- {id: "simplicity_of_alternating_group_five_simpler_proof", title: "The alternating group on five elements is simple: Simpler proof", description: "A proof which avoids some of the heavy machinery of the main proof.", domains: ["math"]}
+- {id: "alternating_group_five_conjugacy_classes", title: "Conjugacy classes of the alternating group on five elements", description: "A_5 has easily-characterised conjugacy classes, based on a rather surprising theorem about when conjugacy classes in the symmetric group split.", domains: ["math"]}
+- {id: "conjugacy_classes_alternating_five_simpler", title: "Conjugacy classes of the alternating group on five elements: Simpler proof", description: "A listing of the conjugacy classes of the alternating group on five letters, without using heavy theory.", domains: ["math"]}
+- {id: "splitting_conjugacy_classes_in_alternating_group", title: "Splitting conjugacy classes in alternating group", description: "The conjugacy classes in the alternating group are usually the same as those in the symmetric group; there is a surprisingly simple condition for when this does not hold.", domains: ["math"]}
+- {id: "group_coset", title: "Group coset", domains: ["math"]}
+- {id: "left_cosets_partition_parent_group", title: "Left cosets partition the parent group", description: "In a group, every element has a unique coset in which it lies, allowing us to compress some of the information about the group.", domains: ["math"]}
+- {id: "left_cosets_biject", title: "Left cosets are all in bijection", description: "The left cosets of a subgroup in a parent group are all the same size.", domains: ["math"]}
+- {id: "simple_group", title: "Simple group", description: "The simple groups form the “building blocks” of group theory, analogously to the prime numbers in number theory.", domains: ["math"]}
+- {id: "prime_order_group_is_cyclic", title: "Prime order groups are cyclic", description: "This is the first step on the road to classifying the finite groups.", domains: ["math"]}
+- {id: "lagrange_theorem_on_subgroup_size", title: "Lagrange theorem on subgroup size", description: "Lagrange’s Theorem is an important restriction on the sizes of subgroups of a finite group.", domains: ["math"]}
+- {id: "lagrange_theorem_on_subgroup_size_intuitive", title: "Lagrange theorem on subgroup size: Intuitive version", description: "Lagrange’s theorem strongly restricts the size a subgroup of a group can be.", domains: ["math"]}
+- {id: "cauchy_theorem_on_subgroup_existence", title: "Cauchy's theorem on subgroup existence", description: "Cauchy’s theorem is a useful condition for the existence of cyclic subgroups of finite groups.", domains: ["math"]}
+- {id: "cauchy_theorem_on_subgroup_existence_intuitive", title: "Cauchy's theorem on subgroup existence: intuitive version", domains: ["math"]}
+- {id: "group_orbit", title: "Group orbit", domains: ["math"]}
+- {id: "cyclic_group_intro_math_0", title: "Cyclic Group Intro (Math 0)", description: "A finite cyclic group is a little bit like a clock.", domains: ["math"]}
+- {id: "subgroup", title: "Subgroup", description: "A group that lives inside a bigger group.", domains: ["math"]}
+- {id: "group_presentation", title: "Group presentation", description: "Presentations are a fairly compact way of expressing groups.", domains: ["math"]}
+- {id: "every_group_is_quotient_of_free_group", title: "Every group is a quotient of a free group", domains: ["math"]}
+- {id: "free_group", title: "Free group", description: "The free group is “the purest way to make a group containing a given set”.", domains: ["math"]}
+- {id: "free_group_is_torsion_free", title: "Free groups are torsion-free", description: "An easy way to determine that many groups are not free: free groups contain no non-identity elements of finite order.", domains: ["math"]}
+- {id: "free_group_formal_definition", title: "Formal definition of the free group", description: "Van der Waerden’s trick lets us define the free groups in a slick but mostly incomprehensible way.", domains: ["math"]}
+- {id: "free_group_universal_property", title: "Free group universal property", domains: ["math"]}
+- {id: "group_theory_examples", title: "Group theory: Examples", description: "What does thinking in terms of group theory actually look like? And what does it buy you?", domains: ["math"]}
+- {id: "group_action", title: "Group action", description: "“Groups, as men, will be known by their actions.”", domains: ["math"]}
+- {id: "group_action_induces_homomorphism", title: "Group action induces homomorphism to the symmetric group", description: "We can view group actions as “bundles of homomorphisms” which behave in a certain way.", domains: ["math"]}
+- {id: "orbit_stabiliser_theorem", title: "Orbit-stabiliser theorem", description: "The Orbit-Stabiliser theorem tells us a lot about how a group acts on a given element.", domains: ["math"]}
+- {id: "orbit_stabiliser_theorem_external_resources", title: "Orbit-Stabiliser theorem: External Resources", description: "External resources on the Orbit-Stabiliser theorem.", domains: ["math"]}
+- {id: "stabiliser_is_a_subgroup", title: "Stabiliser is a subgroup", description: "Given a group acting on a set, each element of the set induces a subgroup of the group.", domains: ["math"]}
+- {id: "group_orbits_partition", title: "Group orbits partition", description: "When a group acts on a set, the set falls naturally into distinct pieces, where the group action only permutes elements within any given piece, not between them.", domains: ["math"]}
+- {id: "group_stabiliser", title: "Stabiliser (of a group action)", description: "If a group acts on a set, it is useful to consider which elements of the group don’t move a certain element of the set.", domains: ["math"]}
+- {id: "closure_mathematics", title: "Closure", domains: ["math"]}
+- {id: "abstract_algebra", title: "Abstract algebra", description: "The study of groups, fields, vector spaces, arithmetics, algebras, and more.", domains: ["math"]}
+- {id: "algebraic_structure", title: "Algebraic structure", domains: ["math"]}
+- {id: "group_mathematics", title: "Group", description: "The algebraic structure that captures symmetry, relationships between transformations, and part of what multiplication and addition have in common.", domains: ["math"]}
+- {id: "group_order", title: "Order of a group", domains: ["math"]}
+- {id: "abelian_group", title: "Abelian group", description: "A group where the operation commutes. Named after Niels Henrik Abel.", domains: ["math"]}
+- {id: "group_examples", title: "Group: Examples", description: "Why would anyone have invented groups, anyway? What were the historically motivating examples, and what examples are important today?", domains: ["math"]}
+- {id: "group_exercises", title: "Group: Exercises", description: "Test your understanding of the definition of a group with these exercises.", domains: ["math"]}
+- {id: "group_homomorphism", title: "Group homomorphism", description: "A group homomorphism is a “function between groups” that “respects the group structure”.", domains: ["math"]}
+- {id: "kernel_of_group_homomorphism", title: "Kernel of group homomorphism", domains: ["math"]}
+- {id: "image_of_identity_under_group_homomorphism", title: "Image of the identity under a group homomorphism is the identity", description: "All group homomorphisms preserve the identity.", domains: ["math"]}
+- {id: "group_homomorphism_image_of_inverse", title: "Under a group homomorphism, the image of the inverse is the inverse of the image", description: "The operations of “taking inverses” and “applying a group homomorphism” commute: it does not matter in which order we do them.", domains: ["math"]}
+- {id: "image_of_group_under_homomorphism_is_subgroup", title: "The image of a group under a homomorphism is a subgroup of the codomain", description: "Group homomorphisms take groups to groups, but it is additionally guaranteed that the elements they hit form a group.", domains: ["math"]}
+- {id: "composition_of_group_homomorphisms_is_homomorphism", title: "The composition of two group homomorphisms is a homomorphism", description: "The collection of group homomorphisms is closed under composition.", domains: ["math"]}
+- {id: "cyclic_group", title: "Cyclic group", description: "Cyclic groups form one of the most simple classes of groups.", domains: ["math"]}
+- {id: "cyclic_group_intro_math_0", title: "Cyclic Group Intro (Math 0)", description: "A finite cyclic group is a little bit like a clock.", domains: ["math"]}
+- {id: "symmetric_group", title: "Symmetric group", description: "The symmetric groups form the fundamental link between group theory and the notion of symmetry.", domains: ["math"]}
+- {id: "cayley_theorem_symmetric_groups", title: "Cayley's Theorem on symmetric groups", description: "The “fundamental theorem of symmetry”, forging the connection between symmetry and group theory.", domains: ["math"]}
+- {id: "cycle_notation_symmetric_group", title: "Cycle notation in symmetric groups", description: "Cycle notation is a convenient way to represent the elements of a symmetric group.", domains: ["math"]}
+- {id: "disjoint_cycle_notation_is_unique", title: "Disjoint cycle notation is unique", description: "Disjoint cycle notation provides a canonical way to express elements of the symmetric group.", domains: ["math"]}
+- {id: "cycle_type_of_a_permutation", title: "Cycle type of a permutation", description: "The cycle type is an invariant of a permutation in the symmetric group.", domains: ["math"]}
+- {id: "disjoint_cycles_commute_symmetric_group", title: "Disjoint cycles commute in symmetric groups", description: "In cycle notation, if two cycles are disjoint, then they commute.", domains: ["math"]}
+- {id: "conjugacy_class_is_cycle_type_in_symmetric_group", title: "Conjugacy class is cycle type in symmetric group", description: "There is a neat characterisation of the conjugacy classes in the symmetric group on a finite set.", domains: ["math"]}
+- {id: "symmetric_group_five_conjugacy_classes", title: "Conjugacy classes of the symmetric group on five elements", description: "The symmetric group on five elements is a group of just the right size to make a good example of a table of conjugacy classes.", domains: ["math"]}
+- {id: "transposition_in_symmetric_group", title: "Transposition (as an element of a symmetric group)", description: "A transposition is the simplest kind of permutation: it swaps two elements.", domains: ["math"]}
+- {id: "symmetric_group_is_generated_by_transpositions", title: "Every member of a symmetric group on finitely many elements is a product of transpositions", description: "This fact can often simplify arguments about permutations: if we can show that something holds for transpositions, and that it holds for products, then it holds for everything.", domains: ["math"]}
+- {id: "sign_of_permutation_is_well_defined", title: "The sign of a permutation is well-defined", description: "This result is what allows the alternating group to exist.", domains: ["math"]}
+- {id: "sign_homomorphism_symmetric_group", title: "Sign homomorphism (from the symmetric group)", description: "The sign homomorphism is how we extract the alternating group from the symmetric group.", domains: ["math"]}
+- {id: "group_isomorphism", title: "Group isomorphism", description: "“Isomorphism” is the proper notion of “sameness” or “equality” among groups.", domains: ["math"]}
+- {id: "order_of_a_group_element", title: "Order of a group element", domains: ["math"]}
+- {id: "dihedral_group", title: "Dihedral group", description: "The dihedral groups are natural examples of groups, arising from the symmetries of regular polygons.", domains: ["math"]}
+- {id: "dihedral_groups_are_non_abelian", title: "Dihedral groups are non-abelian", description: "The group of symmetries of the triangle and all larger regular polyhedra are not abelian.", domains: ["math"]}
+- {id: "group_conjugate", title: "Group conjugate", description: "Conjugation lets us perform permutations “from the point of view of” another permutation.", domains: ["math"]}
+- {id: "normal_subgroup", title: "Normal subgroup", description: "Normal subgroups are subgroups which are in some sense “the same from all points of view”.", domains: ["math"]}
+- {id: "subgroup_normal_iff_kernel_of_homomorphism", title: "Subgroup is normal if and only if it is the kernel of a homomorphism", description: "The “correct way” to think about normal subgroups is as kernels of homomorphisms.", domains: ["math"]}
+- {id: "quotient_by_subgroup_is_well_defined_iff_normal", title: "Quotient by subgroup is well defined if and only if subgroup is normal", domains: ["math"]}
+- {id: "subgroup_normal_iff_union_of_conjugacy_classes", title: "Subgroup is normal if and only if it is a union of conjugacy classes", description: "A useful way to think about normal subgroups, which meshes with their “closed under conjugation” interpretation.", domains: ["math"]}
+- {id: "alternating_group", title: "Alternating group", description: "The alternating group is the only normal subgroup of the symmetric group (on five or more generators).", domains: ["math"]}
+- {id: "even_signed_permutations_form_a_group", title: "The collection of even-signed permutations is a group", description: "This proves the well-definedness of one particular definition of the alternating group.", domains: ["math"]}
+- {id: "alternating_group_generated_by_three_cycles", title: "Alternating group is generated by its three-cycles", description: "A useful result which lets us prove things about the alternating group more easily.", domains: ["math"]}
+- {id: "alternating_group_is_simple", title: "The alternating groups on more than four letters are simple", description: "The alternating groups are the most accessible examples of simple groups, and this fact also tells us that the symmetric groups are “complicated” in some sense.", domains: ["math"]}
+- {id: "alternating_group_five_is_simple", title: "The alternating group on five elements is simple", description: "The smallest (nontrivial) simple group is the alternating group on five elements.", domains: ["math"]}
+- {id: "simplicity_of_alternating_group_five_simpler_proof", title: "The alternating group on five elements is simple: Simpler proof", description: "A proof which avoids some of the heavy machinery of the main proof.", domains: ["math"]}
+- {id: "alternating_group_five_conjugacy_classes", title: "Conjugacy classes of the alternating group on five elements", description: "A_5 has easily-characterised conjugacy classes, based on a rather surprising theorem about when conjugacy classes in the symmetric group split.", domains: ["math"]}
+- {id: "conjugacy_classes_alternating_five_simpler", title: "Conjugacy classes of the alternating group on five elements: Simpler proof", description: "A listing of the conjugacy classes of the alternating group on five letters, without using heavy theory.", domains: ["math"]}
+- {id: "splitting_conjugacy_classes_in_alternating_group", title: "Splitting conjugacy classes in alternating group", description: "The conjugacy classes in the alternating group are usually the same as those in the symmetric group; there is a surprisingly simple condition for when this does not hold.", domains: ["math"]}
+- {id: "group_coset", title: "Group coset", domains: ["math"]}
+- {id: "left_cosets_partition_parent_group", title: "Left cosets partition the parent group", description: "In a group, every element has a unique coset in which it lies, allowing us to compress some of the information about the group.", domains: ["math"]}
+- {id: "left_cosets_biject", title: "Left cosets are all in bijection", description: "The left cosets of a subgroup in a parent group are all the same size.", domains: ["math"]}
+- {id: "simple_group", title: "Simple group", description: "The simple groups form the “building blocks” of group theory, analogously to the prime numbers in number theory.", domains: ["math"]}
+- {id: "prime_order_group_is_cyclic", title: "Prime order groups are cyclic", description: "This is the first step on the road to classifying the finite groups.", domains: ["math"]}
+- {id: "lagrange_theorem_on_subgroup_size", title: "Lagrange theorem on subgroup size", description: "Lagrange’s Theorem is an important restriction on the sizes of subgroups of a finite group.", domains: ["math"]}
+- {id: "lagrange_theorem_on_subgroup_size_intuitive", title: "Lagrange theorem on subgroup size: Intuitive version", description: "Lagrange’s theorem strongly restricts the size a subgroup of a group can be.", domains: ["math"]}
+- {id: "cauchy_theorem_on_subgroup_existence", title: "Cauchy's theorem on subgroup existence", description: "Cauchy’s theorem is a useful condition for the existence of cyclic subgroups of finite groups.", domains: ["math"]}
+- {id: "cauchy_theorem_on_subgroup_existence_intuitive", title: "Cauchy's theorem on subgroup existence: intuitive version", domains: ["math"]}
+- {id: "group_orbit", title: "Group orbit", domains: ["math"]}
+- {id: "cyclic_group_intro_math_0", title: "Cyclic Group Intro (Math 0)", description: "A finite cyclic group is a little bit like a clock.", domains: ["math"]}
+- {id: "subgroup", title: "Subgroup", description: "A group that lives inside a bigger group.", domains: ["math"]}
+- {id: "group_presentation", title: "Group presentation", description: "Presentations are a fairly compact way of expressing groups.", domains: ["math"]}
+- {id: "every_group_is_quotient_of_free_group", title: "Every group is a quotient of a free group", domains: ["math"]}
+- {id: "free_group", title: "Free group", description: "The free group is “the purest way to make a group containing a given set”.", domains: ["math"]}
+- {id: "free_group_is_torsion_free", title: "Free groups are torsion-free", description: "An easy way to determine that many groups are not free: free groups contain no non-identity elements of finite order.", domains: ["math"]}
+- {id: "free_group_formal_definition", title: "Formal definition of the free group", description: "Van der Waerden’s trick lets us define the free groups in a slick but mostly incomprehensible way.", domains: ["math"]}
+- {id: "free_group_universal_property", title: "Free group universal property", domains: ["math"]}
+- {id: "algebraic_ring", title: "Ring", domains: ["math"]}
+- {id: "ordered_ring", title: "Ordered ring", description: "A ring with a total ordering compatible with its ring structure.", domains: ["math"]}
+- {id: "irreducible_element_ring_theory", title: "Irreducible element (ring theory)", description: "This is the appropriate abstraction of the concept of “prime number” to general rings.", domains: ["math"]}
+- {id: "prime_element_ring_theory", title: "Prime element of a ring", description: "Despite the name, “prime” in ring theory refers not to elements which are “multiplicatively irreducible” but to those such that if they divide a product then they divide some term of the product.", domains: ["math"]}
+- {id: "integral_domain", title: "Integral domain", description: "An integral domain is a ring where the only way to express zero as a product is by having zero as one of the terms.", domains: ["math"]}
+- {id: "pid_implies_prime_equals_irreducible", title: "In a principal ideal domain, \"prime\" and \"irreducible\" are the same", description: "Principal ideal domains have a very useful property that we don’t need to distinguish between the informal notion of “prime” (i.e. “irreducible”) and the formal notion.", domains: ["math"]}
+- {id: "unit_ring_theory", title: "Unit (ring theory)", description: "A unit in a ring is just an element with a multiplicative inverse.", domains: ["math"]}
+- {id: "principal_ideal_domain", title: "Principal ideal domain", description: "A principal ideal domain is a kind of ring, in which all ideals have a certain nice form.", domains: ["math"]}
+- {id: "kernel_of_ring_homomorphism", title: "Kernel of ring homomorphism", description: "The kernel of a ring homomorphism is the collection of things which that homomorphism sends to 0.", domains: ["math"]}
+- {id: "ideal_equals_kernel_of_ring_homomorphism", title: "Ideals are the same thing as kernels of ring homomorphisms", domains: ["math"]}
+- {id: "euclidean_domain_is_pid", title: "Euclidean domains are principal ideal domains", description: "A Euclidean domain is one where we may somehow perform the division algorithm; this gives us access to some of the nicest properties of the integers.", domains: ["math"]}
+- {id: "unique_factorisation_domain", title: "Unique factorisation domain", description: "This is the correct way to abstract from the integers the fact that every integer can be written uniquely as a product of prime numbers.", domains: ["math"]}
+- {id: "abelian_group", title: "Abelian group", description: "A group where the operation commutes. Named after Niels Henrik Abel.", domains: ["math"]}
+- {id: "algebraic_monoid", title: "Monoid", domains: ["math"]}
+- {id: "algebraic_structure_tree", title: "Algebraic structure tree", description: "When is a monoid a semilattice? What’s the difference between a semigroup and a groupoid? Find out here!", domains: ["math"]}
+- {id: "underlying_set", title: "Underlying set", domains: ["math"]}
+- {id: "associative_operation", title: "Associative operation", domains: ["math"]}
+- {id: "associativity_intuition", title: "Associativity: Intuition", domains: ["math"]}
+- {id: "generalized_associative_law", title: "Generalized associative law", domains: ["math"]}
+- {id: "associativity_examples", title: "Associativity: Examples", domains: ["math"]}
+- {id: "associativity_vs_commutativity", title: "Associativity vs commutativity", domains: ["math"]}
+- {id: "commutative_operation", title: "Commutative operation", domains: ["math"]}
+- {id: "commutativity_intuition", title: "Commutativity: Intuition", domains: ["math"]}
+- {id: "commutativity_examples", title: "Commutativity: Examples", domains: ["math"]}
+- {id: "associativity_vs_commutativity", title: "Associativity vs commutativity", domains: ["math"]}
+- {id: "text_string", title: "String (of text)", domains: ["math"]}
+- {id: "function", title: "Function", domains: ["math"]}
+- {id: "operator_mathematics", title: "Operator", domains: ["math"]}
+- {id: "function_arity", title: "Arity (of a function)", domains: ["math"]}
+- {id: "function_domain", title: "Domain (of a function)", domains: ["math"]}
+- {id: "string_concatenation", title: "concat (function)", domains: ["math"]}
+- {id: "binary_function", title: "Binary function", domains: ["math"]}
+- {id: "function_codomain", title: "Codomain (of a function)", domains: ["math"]}
+- {id: "codomain_vs_image", title: "Codomain vs image", domains: ["math"]}
+- {id: "function_image", title: "Image (of a function)", domains: ["math"]}
+- {id: "codomain_vs_image", title: "Codomain vs image", domains: ["math"]}
+- {id: "function_range", title: "Range (of a function)", domains: ["math"]}
+- {id: "codomain_vs_image", title: "Codomain vs image", domains: ["math"]}
+- {id: "function_physical_metaphor", title: "Function: Physical metaphor", domains: ["math"]}
+- {id: "mathematics_ceiling", title: "Ceiling", domains: ["math"]}
+- {id: "ackermann_function", title: "Ackermann function", description: "The slowest-growing fast-growing function.", domains: ["math"]}
+- {id: "bijective_function", title: "Bijective function", description: "A bijective function is a function with an inverse.", domains: ["math"]}
+- {id: "bijective_function_intro_math_0", title: "Bijective Function: Intro (Math 0)", description: "Two boxes are bijective if they contain the same number of items.", domains: ["math"]}
+- {id: "injective_function", title: "Injective function", domains: ["math"]}
+- {id: "surjective_function", title: "Surjective function", description: "A surjective function is one which “hits everything in the codomain”.", domains: ["math"]}
+- {id: "inverse_function", title: "Inverse function", description: "The inverse of a function returns an input of the original function when fed the original’s corresponding output.", domains: ["math"]}
+- {id: "exponential", title: "Exponential", description: "Any function that constantly gets larger as a proportion of itself.", domains: ["math"]}
+- {id: "currying", title: "Currying", description: "Transforms a function of many arguments into a function into a function of a single argument", domains: ["math"]}
+- {id: "convex_function", title: "Convex function", description: "A function that only curves upward", domains: ["math"]}
+- {id: "partial_function", title: "Partial function", description: "A partial function is one which “might not be defined everywhere one might expect it to be”. ", domains: ["math"]}
+- {id: "set_mathematics", title: "Set", description: "An unordered collection of distinct objects.", domains: ["math"]}
+- {id: "set_builder_notation", title: "Set builder notation", domains: ["math"]}
+- {id: "cardinality", title: "Cardinality", description: "The “size” of a set, or the “number of elements” that it has.", domains: ["math"]}
+- {id: "convex_set", title: "Convex set", description: "A set that contains all line segments between points in the set", domains: ["math"]}
+- {id: "set_theory_operation", title: "Operations in Set theory", domains: ["math"]}
+- {id: "cartesian_product", title: "Cartesian product", domains: ["math"]}
+- {id: "set_absolute_complement", title: "Absolute Complement", domains: ["math"]}
+- {id: "set_union", title: "Union", description: "The union of two sets is the set of elements which are in one or the other, or both", domains: ["math"]}
+- {id: "set_intersection", title: "Intersection", description: "The intersection of two sets is the set of elements they have in common", domains: ["math"]}
+- {id: "set_relative_complement", title: "Relative complement", domains: ["math"]}
+- {id: "cantor_schroeder_bernstein_theorem", title: "Cantor-Schröder-Bernstein theorem", description: "This theorem tells us that comparing sizes of sets makes sense: if one set is smaller than another, and the other is smaller than the one, then they are the same size.", domains: ["math"]}
+- {id: "set_disjoint_union", title: "Disjoint union of sets", description: "One of the most basic ways we have of joining two sets together.", domains: ["math"]}
+- {id: "disjoint_union_universal_property", title: "Universal property of the disjoint union", description: "Just as the empty set may be described by a universal property, so too may the disjoint union of sets.", domains: ["math"]}
+- {id: "empty_set", title: "Empty set", description: "The empty set does what it says on the tin: it is the set which is empty.", domains: ["math"]}
+- {id: "6gb", title: "Empty set", domains: ["math"]}
+- {id: "set_product", title: "Set product", description: "A fundamental way of combining sets is to take their product, making a set that contains all tuples of elements from the originals.", domains: ["math"]}
+- {id: "finite_set", title: "Finite set", description: "A finite set is one which is not infinite. Some of these are the least complicated sets.", domains: ["math"]}
+- {id: "category_of_finite_sets", title: "Category of finite sets", description: "The category of finite sets is exactly what it claims to be. It’s a useful training ground for some of the ideas of category theory.", domains: ["math"]}
+- {id: "extensionality_axiom", title: "Extensionality Axiom", description: "If two sets have exactly the same members, then they are equal", domains: ["math"]}
+- {id: "logarithm", title: "Logarithm", domains: ["math"]}
+- {id: "log_examples", title: "Logarithm: Examples", domains: ["math"]}
+- {id: "log_exercises", title: "Logarithm: Exercises", domains: ["math"]}
+- {id: "log_guide", title: "Introductory guide to logarithms", domains: ["math"]}
+- {id: "log_identities", title: "Logarithmic identities", domains: ["math"]}
+- {id: "log_inverts_exp", title: "Logarithms invert exponentials", domains: ["math"]}
+- {id: "log_tutorial_overview", title: "Logarithm tutorial overview", domains: ["math"]}
+- {id: "log_definition", title: "What is a logarithm?", domains: ["math"]}
+- {id: "log_as_length", title: "Log as generalized length", description: "To estimate the log (base 10) of a number, count how many digits it has.", domains: ["math"]}
+- {id: "log_base_1", title: "Logarithm base 1", description: "There is no log base 1.", domains: ["math"]}
+- {id: "digit_exchange_rates", title: "Exchange rates between digits", description: "In terms of data storage, if a coin is worth 1, a digit wheel is worth more than 3.32, but less than $3.33. Why?", domains: ["math"]}
+- {id: "why_is_log_like_length", title: "Why is log like length?", domains: ["math"]}
+- {id: "fractional_digits", title: "Fractional digits", domains: ["math"]}
+- {id: "log_as_comm_cost", title: "Log as the change in the cost of communicating", domains: ["math"]}
+- {id: "log_characteristic", title: "The characteristic of the logarithm", domains: ["math"]}
+- {id: "log_properties", title: "Properties of the logarithm", domains: ["math"]}
+- {id: "log_base_infinity", title: "Log base infinity", description: "There is no log base infinity, but if there were, it would send everything to zero", domains: ["math"]}
+- {id: "only_one_log", title: "There is only one logarithm", description: "All logarithm functions are the same, up to a multiplicative constant.        ", domains: ["math"]}
+- {id: "log_lattice", title: "The log lattice", domains: ["math"]}
+- {id: "logspace", title: "Life in logspace", domains: ["math"]}
+- {id: "log_tutorial_end", title: "The End (of the basic log tutorial)", domains: ["math"]}
+- {id: "log2_of_3_never_ends", title: "Why is the decimal expansion of log2(3) infinite?", description: "Because 2 and 3 are relatively prime.", domains: ["math"]}
+- {id: "relation_mathematics", title: "Relation", domains: ["math"]}
+- {id: "equivalence_relation", title: "Equivalence relation", description: "A relation that allows you to partition a set into equivalence classes.", domains: ["math"]}
+- {id: "order_relation", title: "Order relation", description: "A way of determining which elements of a set come “before” or “after” other elements.", domains: ["math"]}
+- {id: "transitive_relation", title: "Transitive relation", description: "If a is related to b and b is related to c, then a is related to c.        ", domains: ["math"]}
+- {id: "reflexive_relation", title: "Reflexive relation", domains: ["math"]}
+- {id: "antisymmetric_relation", title: "Antisymmetric relation", description: "A binary relation where no two distinct elements are related in both directions", domains: ["math"]}
+- {id: "information_theory", title: "Information theory", domains: ["math"]}
+- {id: "data_bit", title: "Bit (of data)", domains: ["math"]}
+- {id: "bit_examples", title: "Bit (of data): Examples", domains: ["math"]}
+- {id: "fractional_bit", title: "Fractional bits", domains: ["math"]}
+- {id: "fractional_bits_as_expected_cost", title: "Fractional bits: Expected cost interpretation", domains: ["math"]}
+- {id: "bits_in_a_trit", title: "How many bits to a trit?", domains: ["math"]}
+- {id: "trits_with_galcom_bits", title: "Encoding trits with GalCom bits", domains: ["math"]}
+- {id: "fractional_bit", title: "Fractional bits", domains: ["math"]}
+- {id: "fractional_bits_as_expected_cost", title: "Fractional bits: Expected cost interpretation", domains: ["math"]}
+- {id: "galcom", title: "GalCom", domains: ["math"]}
+- {id: "3v0", title: "GalCom: Rules", domains: ["math"]}
+- {id: "trits_with_galcom_bits", title: "Encoding trits with GalCom bits", domains: ["math"]}
+- {id: "n_message", title: "n-message", domains: ["math"]}
+- {id: "decit", title: "Decit", description: "Decimal digit", domains: ["math"]}
+- {id: "bits_in_a_trit", title: "How many bits to a trit?", domains: ["math"]}
+- {id: "trits_with_galcom_bits", title: "Encoding trits with GalCom bits", domains: ["math"]}
+- {id: "trit", title: "Trit", description: "Trinary digit", domains: ["math"]}
+- {id: "3x3", title: "Intradependent encodings can be compressed", domains: ["math"]}
+- {id: "intradependent_encoding", title: "Intradependent encoding", domains: ["math"]}
+- {id: "encoding_dependent_messages", title: "Dependent messages can be encoded cheaply", domains: ["math"]}
+- {id: "information", title: "Information", domains: ["math"]}
+- {id: "shannon", title: "Shannon", domains: ["math"]}
+- {id: "data_capacity", title: "Data capacity", domains: ["math"]}
+- {id: "multiple_compression", title: "Compressing multiple messages", domains: ["math"]}
+- {id: "magician_message", title: "Communication: magician example", domains: ["math"]}
 - {id: "Kolmogorov_complexity", title: "Algorithmic complexity", description: "When you compress the information, what you are left with determines the complexity.", domains: ["math"]}
-
-- {id: "calibrated_probabilities", title: "Well-calibrated probabilities", description: "Even if you're fairly ignorant, you can still strive to ensure that when you say \"70% probability\", it's true 70% of the time.", domains: ["math"]}
+- {id: "most_complexity_incompressible", title: "Most complex things are not very compressible", description: "We can’t _prove_ it’s impossible, but it would be _extremely surprising_ to discover a 500-state Turing machine that output the exact text of “Romeo and Juliet”.", domains: ["math"]}
+- {id: "type_theory", title: "Type theory", description: "Modern foundations for formal mathematics.", domains: ["math"]}
+- {id: "prog_dep_typ", title: "Programming in Dependent Type Theory", description: "Working with simple types in Lean", domains: ["math"]}
+- {id: "linear_algebra", title: "Linear algebra", domains: ["math"]}
+- {id: "eigenvalues_and_eigenvectors", title: "Eigenvalues and eigenvectors", description: "We applied this linear transformation to one of its eigenvectors; you won’t believe what happened next!", domains: ["math"]}
+- {id: "vector_space", title: "Vector space", domains: ["math"]}
+- {id: "vector_subspace", title: "Subspace", domains: ["math"]}
+- {id: "vector_space_sum", title: "Sum of vector spaces", domains: ["math"]}
+- {id: "vector_space_direct_sum", title: "Direct sum of vector spaces", domains: ["math"]}
+- {id: "vector_subspace", title: "Subspace", domains: ["math"]}
+- {id: "real_analysis", title: "Real analysis", description: "The study of real numbers and real-valued functions.", domains: ["math"]}
+- {id: "colon_to_notation", title: "Colon-to notation", description: "Find out what the notation “f : X → Y” means that everyone keeps using.", domains: ["math"]}
+- {id: "decit", title: "Decit", description: "Decimal digit", domains: ["math"]}
+- {id: "trit", title: "Trit", description: "Trinary digit", domains: ["math"]}
+- {id: "bit", title: "Bit", domains: ["math"]}
+- {id: "data_bit", title: "Bit (of data)", domains: ["math"]}
+- {id: "bit_examples", title: "Bit (of data): Examples", domains: ["math"]}
+- {id: "fractional_bit", title: "Fractional bits", domains: ["math"]}
+- {id: "fractional_bits_as_expected_cost", title: "Fractional bits: Expected cost interpretation", domains: ["math"]}
+- {id: "bits_in_a_trit", title: "How many bits to a trit?", domains: ["math"]}
+- {id: "trits_with_galcom_bits", title: "Encoding trits with GalCom bits", domains: ["math"]}
+- {id: "abstract_bit", title: "Bit (abstract)", domains: ["math"]}
+- {id: "shannon", title: "Shannon", domains: ["math"]}
+- {id: "abstract_bit", title: "Bit (abstract)", domains: ["math"]}
+- {id: "digit_wheel", title: "Digit wheel", domains: ["math"]}
+- {id: "natural_number", title: "Natural number", description: "The numbers we use to count: 0, 1, 2, 3, …", domains: ["math"]}
+- {id: "grahams_number", title: "Graham's number", description: "A fairly large number, as numbers go.", domains: ["math"]}
+- {id: "googolplex", title: "A googolplex", description: "A moderately large number, as large numbers go.", domains: ["math"]}
+- {id: "googol", title: "A googol", description: "A pretty small large number.", domains: ["math"]}
+- {id: "prime_number", title: "Prime number", description: "The prime numbers are the “building blocks” of the counting numbers.", domains: ["math"]}
+- {id: "infinitely_many_primes", title: "Proof that there are infinitely many primes", description: "Suppose there were finitely many primes. Then consider the product of all the primes plus 1…", domains: ["math"]}
+- {id: "uncomputability", title: "Uncomputability", description: "The diagonal function and the halting problem", domains: ["math"]}
+- {id: "iff", title: "Iff", description: "If and only if…", domains: ["math"]}
+- {id: "derivative_calculus", title: "Derivative", description: "How things change", domains: ["math"]}
+- {id: "integer", title: "Integer", domains: ["math"]}
+- {id: "integers_intro_math0", title: "Integers: Intro (Math 0)", description: "The integers are the whole numbers extended into the negatives.", domains: ["math"]}
+- {id: "pi", title: "Pi", domains: ["math"]}
+- {id: "pi_is_irrational", title: "Pi is irrational", description: "The number pi is famously not rational, in spite of joking attempts at legislation to fix its value at 3 or 22⁄7.", domains: ["math"]}
+- {id: "complexity_theory", title: "Complexity theory", description: "Study of the computational resources needed to compute something", domains: ["math"]}
+- {id: "complexity_zoo", title: "Complexity theory: Complexity zoo", description: "Pass and see the exotic beasts coming from the lands of afar!", domains: ["math"]}
+- {id: "P_vs_NP", title: "P vs NP", description: "Is creativity purely mechanical?", domains: ["math"]}
+- {id: "arguments_against_P_NP", title: "P vs NP: Arguments against P=NP", description: "Why we believe P and NP are different", domains: ["math"]}
+- {id: "decision_problem", title: "Decision problem", description: "Formalization of general problems", domains: ["math"]}
+- {id: "polynomial_time_complexity_class", title: "P (Polynomial Time Complexity Class)", description: "P is the class of problems which can be solved by algorithms whose run time is bounded by a polynomial.", domains: ["math"]}
+- {id: "expected_value", title: "Expected value", description: "Trying to assign value to an uncertain state? The weighted average of outcomes is probably the tool you need.", domains: ["math"]}
+- {id: "real_number", title: "Real number", domains: ["math"]}
+- {id: "real_number_as_cauchy_sequence", title: "Real number (as Cauchy sequence)", description: "There are several ways to construct real numbers; this is the most natural way to use them in computations.", domains: ["math"]}
+- {id: "reals_as_classes_of_cauchy_sequences_form_a_field", title: "The reals (constructed as classes of Cauchy sequences of rationals) form a field", description: "The reals are an archetypal example of a field, but if we are to construct them from simpler objects, we need to show that our construction does indeed have the right properties.", domains: ["math"]}
+- {id: "real_number_as_dedekind_cut", title: "Real number (as Dedekind cut)", description: "A way to construct the real numbers that follows the intuition of filling in the gaps.", domains: ["math"]}
+- {id: "reals_as_dedekind_cuts_form_a_field", title: "The reals (constructed as Dedekind cuts) form a field", description: "The reals are an archetypal example of a field, but if we are to construct them from simpler objects, we need to show that our construction does indeed have the right properties.", domains: ["math"]}
+- {id: "real_numbers_uncountable", title: "Real numbers are uncountable", description: "The real numbers are uncountable.", domains: ["math"]}
+- {id: "P_vs_NP", title: "P vs NP", description: "Is creativity purely mechanical?", domains: ["math"]}
+- {id: "arguments_against_P_NP", title: "P vs NP: Arguments against P=NP", description: "Why we believe P and NP are different", domains: ["math"]}
+- {id: "conjugacy_class", title: "Conjugacy class", description: "In a group, the elements can be partitioned naturally into certain classes.", domains: ["math"]}
+- {id: "CT_thesis", title: "Church-Turing thesis", description: "A thesis about computational models", domains: ["math"]}
+- {id: "strong_Church_Turing_thesis", title: "Strong Church Turing thesis", description: "A strengthening of the Church Turing thesis", domains: ["math"]}
+- {id: "evidence_for_CT_thesis", title: "Church-Turing thesis: Evidence for the Church-Turing thesis", description: "Why do we believe in CT thesis?", domains: ["math"]}
+- {id: "category_theory", title: "Category theory", description: "How mathematical objects are related to others in the same category.", domains: ["math"]}
+- {id: "category_mathematics", title: "Category (mathematics)", description: "A description of how a collection of mathematical objects are related to one another.", domains: ["math"]}
+- {id: "category_theory_equaliser", title: "Equaliser (category theory)", domains: ["math"]}
+- {id: "product_category_theory", title: "Product (Category Theory)", description: "How a product is characterized rather than how it’s constructed", domains: ["math"]}
+- {id: "product_universal_property", title: "Universal property of the product", description: "The product can be defined in a very general way, applicable to the natural numbers, to sets, to algebraic structures, and so on.", domains: ["math"]}
+- {id: "product_is_unique_up_to_isomorphism", title: "Product is unique up to isomorphism", description: "If something satisfies the universal property of the product, then it is uniquely specified by that property, up to isomorphism.", domains: ["math"]}
+- {id: "object_identity_via_interactions", title: "Object identity via interactions", description: "If we think of objects as opaque “black boxes”, how can we tell whether two objects are different? By looking at how they interact with other objects!", domains: ["math"]}
+- {id: "universal_property", title: "Universal property", description: "A universal property is a way of defining an object based purely on how it interacts with other objects, rather than by any internal property of the object itself.", domains: ["math"]}
+- {id: "empty_set_universal_property", title: "Universal property of the empty set", description: "The empty set can be characterised by how it interacts with other sets, rather than by any explicit property of the empty set itself.", domains: ["math"]}
+- {id: "only_empty_set_satisfies_up_of_emptyset", title: "The empty set is the only set which satisfies the universal property of the empty set", description: "This theorem tells us that the universal property provides a sensible way to define the empty set uniquely.", domains: ["math"]}
+- {id: "product_universal_property", title: "Universal property of the product", description: "The product can be defined in a very general way, applicable to the natural numbers, to sets, to algebraic structures, and so on.", domains: ["math"]}
+- {id: "product_is_unique_up_to_isomorphism", title: "Product is unique up to isomorphism", description: "If something satisfies the universal property of the product, then it is uniquely specified by that property, up to isomorphism.", domains: ["math"]}
+- {id: "disjoint_union_universal_property", title: "Universal property of the disjoint union", description: "Just as the empty set may be described by a universal property, so too may the disjoint union of sets.", domains: ["math"]}
+- {id: "category_of_finite_sets", title: "Category of finite sets", description: "The category of finite sets is exactly what it claims to be. It’s a useful training ground for some of the ideas of category theory.", domains: ["math"]}
+- {id: "morphism", title: "Morphism", domains: ["math"]}
+- {id: "isomorphism", title: "Isomorphism", description: "A morphism between two objects which describes how they are “essentially equivalent” for the purposes of the theory under consideration.", domains: ["math"]}
+- {id: "group_isomorphism", title: "Group isomorphism", description: "“Isomorphism” is the proper notion of “sameness” or “equality” among groups.", domains: ["math"]}
+- {id: "Isomorphism_intro_math_0", title: "Isomorphism: Intro (Math 0)", description: "Things which are basically the same, except for some stuff you don’t care about.", domains: ["math"]}
+- {id: "up_to_isomorphism", title: "Up to isomorphism", description: "A phrase mathematicians use when saying “we only care about the structure of an object, not about specific implementation details of the object”.", domains: ["math"]}
+- {id: "programming_familiarity", title: "Computer Programming Familiarity", description: "Want to see programming analogies and applications in your math explanations? Mark this as known.", domains: ["math"]}
+- {id: "n_digit", title: "n-digit", domains: ["math"]}
+- {id: "emulating_digits", title: "Emulating digits", domains: ["math"]}
+- {id: "decimal_notation", title: "Decimal notation", description: "The winning architecture for numerals", domains: ["math"]}
+- {id: "5r7", title: "0.999...=1", description: "No, it’s not “infinitesimally far” from 1 or anything like that. 0.999… and 1 are literally the same number.", domains: ["math"]}
+- {id: "quotient_group", title: "Quotient group", domains: ["math"]}
+- {id: "proportion", title: "Proportion", description: "A representation of a value as a fraction or multiple of another value.", domains: ["math"]}
+- {id: "rational_number", title: "Rational number", description: "The rational numbers are “fractions”.", domains: ["math"]}
+- {id: "rationals_are_a_field", title: "The rationals form a field", domains: ["math"]}
+- {id: "rational_numbers_intro_math_0", title: "Rational numbers: Intro (Math 0)", domains: ["math"]}
+- {id: "arithmetic_of_rational_numbers_math_0", title: "Arithmetic of rational numbers (Math 0)", description: "How do we combine rational numbers together?", domains: ["math"]}
+- {id: "addition_of_rational_numbers_math_0", title: "Addition of rational numbers (Math 0)", description: "The simplest operation on rational numbers is addition.", domains: ["math"]}
+- {id: "addition_of_rational_numbers_exercises", title: "Addition of rational numbers exercises", description: "Test and cement your understanding of how we add rational numbers!", domains: ["math"]}
+- {id: "subtraction_of_rational_numbers_math_0", title: "Subtraction of rational numbers (Math 0)", description: "In which we meet anti-apples.", domains: ["math"]}
+- {id: "division_of_rational_numbers_math_0", title: "Division of rational numbers (Math 0)", description: "“Division” is the idea of “dividing something up among some people so that we can give equal amounts to each person”.", domains: ["math"]}
+- {id: "rationals_form_a_field_math_0", title: "Rational arithmetic all works together", description: "The various operations of arithmetic all play nicely together in a certain specific way.", domains: ["math"]}
+- {id: "order_of_rational_operations_math_0", title: "Order of rational operations (Math 0)", description: "Our shorthand for all the operations on rationals is very useful, but full of brackets; this is how to get rid of some of the brackets.", domains: ["math"]}
+- {id: "field_structure_of_rational_numbers", title: "Field structure of rational numbers", description: "In which we describe the field structure on the rationals.", domains: ["math"]}
+- {id: "arithmetic_of_rational_numbers_math_0", title: "Arithmetic of rational numbers (Math 0)", description: "How do we combine rational numbers together?", domains: ["math"]}
+- {id: "addition_of_rational_numbers_math_0", title: "Addition of rational numbers (Math 0)", description: "The simplest operation on rational numbers is addition.", domains: ["math"]}
+- {id: "addition_of_rational_numbers_exercises", title: "Addition of rational numbers exercises", description: "Test and cement your understanding of how we add rational numbers!", domains: ["math"]}
+- {id: "subtraction_of_rational_numbers_math_0", title: "Subtraction of rational numbers (Math 0)", description: "In which we meet anti-apples.", domains: ["math"]}
+- {id: "division_of_rational_numbers_math_0", title: "Division of rational numbers (Math 0)", description: "“Division” is the idea of “dividing something up among some people so that we can give equal amounts to each person”.", domains: ["math"]}
+- {id: "rationals_form_a_field_math_0", title: "Rational arithmetic all works together", description: "The various operations of arithmetic all play nicely together in a certain specific way.", domains: ["math"]}
+- {id: "order_of_rational_operations_math_0", title: "Order of rational operations (Math 0)", description: "Our shorthand for all the operations on rationals is very useful, but full of brackets; this is how to get rid of some of the brackets.", domains: ["math"]}
+- {id: "currying", title: "Currying", description: "Transforms a function of many arguments into a function into a function of a single argument", domains: ["math"]}
+- {id: "rationals_are_countable", title: "The set of rational numbers is countable", description: "Although there are “lots and lots” of rational numbers, there are still only countably many of them.", domains: ["math"]}
+- {id: "elementary_algebra", title: "Elementary Algebra", domains: ["math"]}
+- {id: "modal_logic", title: "Modal logic", description: "The logic of boxes and bots.", domains: ["math"]}
+- {id: "standard_provability_predicate", title: "Standard provability predicate", description: "Encoding provability as a statement of arithmetic", domains: ["math"]}
+- {id: "normal_system_of_provability", title: "Normal system of provability logic", domains: ["math"]}
+- {id: "provability_logic", title: "Provability logic", description: "Learn how to reason about provability!", domains: ["math"]}
+- {id: "fixed_point_theorem_provability_logic", title: "Fixed point theorem of provability logic", description: "Deal with those pesky self-referential sentences!", domains: ["math"]}
+- {id: "arithmetical_adequacy_GL", title: "Solovay's theorems of arithmetical adequacy for GL", description: "Using GL to reason about PA, and viceversa", domains: ["math"]}
+- {id: "kripke_model", title: "Kripke model", description: "The semantics of modal logic", domains: ["math"]}
+- {id: "modalized_modal_sentence", title: "Modalized modal sentence", domains: ["math"]}
+- {id: "modal_combat", title: "Modal combat", description: "Modal combat", domains: ["math"]}
+- {id: "number_sets_intro", title: "Intro to Number Sets", description: "An introduction to number sets for people who have no idea what a number set is.", domains: ["math"]}
+- {id: "order_of_operations", title: "Order of operations", description: "Conventions used for disambiguating infix notation.", domains: ["math"]}
+- {id: "order_of_rational_operations_math_0", title: "Order of rational operations (Math 0)", description: "Our shorthand for all the operations on rationals is very useful, but full of brackets; this is how to get rid of some of the brackets.", domains: ["math"]}
+- {id: "irrational_number", title: "Irrational number", description: "Real numbers that are not rational numbers", domains: ["math"]}
+- {id: "pi_is_irrational", title: "Pi is irrational", description: "The number pi is famously not rational, in spite of joking attempts at legislation to fix its value at 3 or 22⁄7.", domains: ["math"]}
+- {id: "sqrt_2_is_irrational", title: "The square root of 2 is irrational", description: "The number whose square is 2 can’t be written is a quotient of natural numbers", domains: ["math"]}
+- {id: "logistic_function", title: "Logistic function", description: "A monotonic function from the real numbers to the open unit interval.", domains: ["math"]}
+- {id: "lobs_theorem", title: "Löb's theorem", description: "Löb’s theorem", domains: ["math"]}
+- {id: "proof_lobs_thorem", title: "Proof of Löb's theorem", description: "Proving that I am Santa Claus", domains: ["math"]}
+- {id: "5hr", title: "Löb's theorem and computer programs", domains: ["math"]}
+- {id: "5hs", title: "Gödel II and Löb's theorem", domains: ["math"]}
+- {id: "566", title: "The n-th root of m is either an integer or irrational", description: "In other words, no power of a rational number that is not an integer is ever an integer.", domains: ["math"]}
+- {id: "binary_notation", title: "Binary notation", description: "A way to write down numbers using powers of two.", domains: ["math"]}
+- {id: "boolean", title: "Boolean", description: "A value in logic that evaluates to either “true” or “false”.", domains: ["math"]}
+- {id: "diagonal_lemma", title: "Diagonal lemma", description: "Constructing self-referential sentences", domains: ["math"]}
+- {id: "quine", title: "Quine", description: "A computer program that prints (or does other computations to) its own source code, using indirect self-reference.", domains: ["math"]}
+- {id: "godels_first_incompleteness_theorem", title: "Gödel's first incompleteness theorem", description: "The theorem that destroyed Hilbert’s program", domains: ["math"]}
+- {id: "59h", title: "Proof of Gödel's first incompleteness theorem", domains: ["math"]}
+- {id: "multiplication_of_rational_numbers_math_0", title: "Multiplication of rational numbers (Math 0)", description: "“Multiplication” is the idea of “now do the same as you just did, but instead of doing it to one apple, do it to some other number”.", domains: ["math"]}
+- {id: "factorial", title: "Factorial", description: "The number of ways you can order things. (Alternately subtitled: Is that exclamation point a factorial, or are you just excited to see me?)", domains: ["math"]}
+- {id: "5wv", title: "Factorial", domains: ["math"]}
+- {id: "provability_predicate", title: "Provability predicate", domains: ["math"]}
+- {id: "freely_reduced_word", title: "Freely reduced word", description: "“Freely reduced” captures the idea of “no cancellation” in a free group.", domains: ["math"]}
+- {id: "5k7", title: "Exponential notation for function spaces", description: "Why Y^X is good notation for the space of maps from X to Y", domains: ["math"]}
+- {id: "consistency", title: "Consistency", domains: ["math"]}
+- {id: "irreducibles_are_prime_in_integers", title: "Euclid's Lemma on prime numbers", description: "A very basic but vitally important property of the prime numbers is that they “can’t be split between factors”: if a prime divides a product then it must divide one of the individual factors.", domains: ["math"]}
+- {id: "greatest_common_divisor", title: "Greatest common divisor", description: "The greatest common divisor of two natural numbers is… the largest number which is a divisor of both. The clue is in the name, really.", domains: ["math"]}
+- {id: "bezout_theorem", title: "Bézout's theorem", description: "Bézout’s theorem is an important link between highest common factors and the integer solutions of a certain equation.", domains: ["math"]}
+- {id: "metric", title: "Metric", description: "A metric is a function that defines a distance between elements in a set and follows some basic rules.", domains: ["math"]}
+- {id: "modular_arithmetic", title: "Modular arithmetic", description: "Addition as traveling around a circle, instead of along a line.", domains: ["math"]}
+- {id: "turing_machine", title: "Turing machine", description: "A Turing Machine is a simple mathematical model of computation that is powerful enough to describe any computation a computer can do.", domains: ["math"]}
+- {id: "rice_theorem", title: "Rice's Theorem", description: "Rice’s Theorem tells us that if we want to determine pretty much anything about the behaviour of an arbitrary computer program, we can’t in general do better than just running it.", domains: ["math"]}
+- {id: "rice_and_halt", title: "Rice's theorem and the Halting problem", domains: ["math"]}
+- {id: "proof_of_rice_theorem", title: "Proof of Rice's theorem", description: "A standalone proof of Rice’s theorem, including one surprising lemma.", domains: ["math"]}
+- {id: "6bf", title: "Rice's Theorem: Intro (Math 1)", description: "You can’t write a program that looks at another programs source code, and tells you whether it computes the Fibonacci sequence.", domains: ["math"]}
+- {id: "turing_machine_external_resources", title: "Turing machine: External resources", domains: ["math"]}
+- {id: "ordering_of_rational_numbers_math_0", title: "Ordering of rational numbers (Math 0)", description: "How do we know if one lot of apples is “more apples” than another lot?", domains: ["math"]}
+- {id: "fundamental_theorem_of_arithmetic", title: "Fundamental Theorem of Arithmetic", description: "The FTA tells us that natural numbers can be decomposed uniquely into prime factors; it is the basis of almost all number theory.", domains: ["math"]}
+- {id: "well_defined", title: "Well-defined", description: "A mathematical object is “well-defined” if we have given it a completely unambiguous definition.", domains: ["math"]}
+- {id: "ordered_field", title: "Ordered field", description: "An ordered ring with division.", domains: ["math"]}
+- {id: "LaTeX", title: "LaTeX", domains: ["math"]}
+- {id: "mapsto_notation", title: "Mapsto notation", description: "There’s an arrow called \\mapsto in LaTeX. What does it mean?", domains: ["math"]}
+- {id: "in_notation", title: "In notation", description: "There’s a weird E-looking symbol called \\in in LaTeX. What does it mean?", domains: ["math"]}
+- {id: "mathematical_object", title: "Mathematical object", domains: ["math"]}
+- {id: "bag_mathematics", title: "Bag", domains: ["math"]}
+- {id: "list_mathematics", title: "List", domains: ["math"]}
+- {id: "number", title: "Number", description: "An abstract object that expresses quantity or value of some sort.", domains: ["math"]}
+- {id: "complex_number", title: "Complex number", domains: ["math"]}
+- {id: "whole_number", title: "Whole number", description: "A term that can refer to three different sets of “numbers that are not fractions”.", domains: ["math"]}
+- {id: "transcendental_number", title: "Transcendental number", description: "A transcendental number is one which is not the root of any integer-coefficient polynomial.", domains: ["math"]}
+- {id: "element_mathematics", title: "Element", domains: ["math"]}
+- {id: "identity_element", title: "Identity element", description: "An element in a set with a binary operation that leaves every element unchanged when used as the other operand.", domains: ["math"]}
+- {id: "proof_technique", title: "Proof technique", domains: ["math"]}
+- {id: "proof_by_contradiction", title: "Proof by contradiction", description: "Discover what ‘reductio ad absurdum’ means!", domains: ["math"]}
+- {id: "mathematical_induction", title: "Mathematical induction", description: "Proving a statement about all positive integers by knocking them down like dominoes.", domains: ["math"]}
+- {id: "gen_elt", title: "Generalized element", description: "A category-theoretic generalization of the notion of element of a set.", domains: ["math"]}
+- {id: "examination_through_isomorphism", title: "Examination through isomorphism", domains: ["math"]}
+- {id: "least_common_multiple", title: "Least common multiple", domains: ["math"]}
+- {id: "intro_modern_logic", title: "An introductory guide to modern logic", description: "Logic, provability, Löb, Gödel and more!", domains: ["math"]}
+- {id: "axiom", title: "Axiom", domains: ["math"]}
+- {id: "axiom_of_choice", title: "Axiom of Choice", description: "The most controversial axiom of the 20th century.", domains: ["math"]}
+- {id: "axiom_of_choice_guide", title: "Axiom of Choice: Guide", description: "Learn about the most controversial axiom of the 20th century.", domains: ["math"]}
+- {id: "axiom_of_choice_introduction", title: "Axiom of Choice: Introduction", description: "What is the axiom of choice and why do I care?", domains: ["math"]}
+- {id: "axiom_of_choice_definition_mathematical", title: "Axiom of Choice: Definition (Formal)", description: "Mathematically speaking, what does the Axiom of Choice say?", domains: ["math"]}
+- {id: "axiom_of_choice_definition_intuitive", title: "Axiom of Choice Definition (Intuitive)", description: "Definition of the Axiom of Choice, without using heavy mathematical notation.", domains: ["math"]}
+- {id: "axiom_of_choice_history_and_controversy", title: "Axiom of Choice: History and Controversy", description: "Really? The _most_ controversial axiom of the 20th century? Yes.", domains: ["math"]}
+- {id: "axiom_of_choice_definition_intuitive", title: "Axiom of Choice Definition (Intuitive)", description: "Definition of the Axiom of Choice, without using heavy mathematical notation.", domains: ["math"]}
+- {id: "countability", title: "Countability", description: "Some infinities are bigger than others. Countable infinities are the smallest infinities.", domains: ["math"]}
+- {id: "featured_math", title: "Featured math content", description: "Some Arbital pages we think are great!", domains: ["math"]}
+- {id: "6hk", title: "Primer on Infinite Series", description: "What does it mean to add things together forever?", domains: ["math"]}
+- {id: "lambda_calculus", title: "Lambda calculus", description: "A minimal, inefficient, and hard-to-read, but still interesting and useful, programming language.", domains: ["math"]}
+- {id: "square_root", title: "Square root", description: "What is the opposite of multiplying a number by itself?", domains: ["math"]}
 
 ### Раздел Decision Theory:
 
@@ -417,7 +986,7 @@
 
 ### Другие разделы:
 
-- {id: "harmless_supernova", title: "Harmless supernova fallacy", domains: ["arbital_labs"]}
+### - {id: "harmless_supernova", title: "Harmless supernova fallacy", domains: ["arbital_labs"], translated: true}
 
 - {id: "ideological_turing_test", title: "Ideological Turing test", domains: ["arbital_labs"]}
 
