@@ -2,7 +2,7 @@
 layout: page
 permalink: /explore/math
 title: Математика
-excerpt: ""
+excerpt: "Математика"
 ---
 {% include domains.html domain = "math" %}
 

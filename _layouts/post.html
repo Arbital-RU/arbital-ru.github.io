@@ -45,8 +45,9 @@ layout: default
   </td>
   <td style="border: none; background-color: white; margin: 0; padding: 0">&nbsp;&nbsp;</td>
   <td style="float: right; border: none; background-color: white; margin: 0; padding: 0; white-space: nowrap">
-    Перевод: {% if page.translated_by %}{{ page.translated_by | split: ", " }}{% else %}Аноним{% endif %}
-    {%if page.translation_details %} ({{ page.translation_details }}){% endif %}
+    {% if page.translated_by %}Перевод: {{ page.translated_by | split: ", " }}
+      {% if page.translation_details %} ({{ page.translation_details }}){% endif %}
+    {% endif %}
   </td>
 </tr></table></small>
 

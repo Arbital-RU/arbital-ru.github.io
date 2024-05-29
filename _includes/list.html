@@ -1,7 +1,7 @@
 <ul class="tree">
 {% for a in include.list %}{% for b in site.data.p %}{% if b.id == a %}{% unless b.deleted %}
   <li>
-    {% if b.explore %}<details open><summary>{% include post.html id = b.id %}</summary>
+    {% if b.children %}<details open><summary>{% include post.html id = b.id %}</summary>
       {% include list.html list = b.children %}
     </details>{% else %}
     {% include post.html id = b.id %}

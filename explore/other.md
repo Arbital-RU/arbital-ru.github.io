@@ -3,7 +3,7 @@
 layout: page
 permalink: /explore/other
 title: Прочее
-excerpt: ""
+excerpt: "Прочее"
 ---
 {% include domains.html domain = "other" %}
 
