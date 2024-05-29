@@ -265,7 +265,7 @@
 
 - {id: "instrumental_goals_equally_tractable", title: "Instrumental goals are almost-equally as tractable as terminal goals", description: "Getting the milk from the refrigerator because you want to drink it, is not vastly harder than getting the milk from the refrigerator because you inherently desire it.", domains: ["ai_alignment"]}
 
-- {id: "mind_design_space_wide", title: "Mind design space is wide", description: "Imagine all human beings as one tiny dot inside a much vaster sphere of possibilities for \"The space of minds in general.\" It is wiser to make claims about *some* minds than *all* minds.", domains: ["ai_alignment"]}
+- {id: "mind_design_space_wide", title: "Mind design space is wide", description: "Imagine all human beings as one tiny dot inside a much vaster sphere of possibilities for \"The space of minds in general.\" It is wiser to make claims about *some* minds than *all* minds.", domains: ["ai_alignment"], translated: true, ru_description: "Представьте всех людей как одну маленькую точку в огромной сфере возможностей \"пространства умов в целом\". Будет мудрее делать какие-либо утверждения о *некоторых* умах, а не обо *всех* умах."}
 
 - {id: "unforeseen_maximum", title: "Unforeseen maximum", description: "When you tell AI to produce world peace and it kills everyone. (Okay, some SF writers saw that one coming.)", domains: ["ai_alignment"], children: "missing_weird", explore: "47"}
 
