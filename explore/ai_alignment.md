@@ -2,7 +2,7 @@
 layout: page
 permalink: /explore/ai_alignment
 title: Согласование ИИ
-excerpt: ""
+excerpt: "Согласование ИИ"
 ---
 {% include domains.html domain = "AI" %}
 
