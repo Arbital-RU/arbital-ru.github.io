@@ -1,7 +1,7 @@
 ---
 ### Раздел AI alignment:
 
-- {id: "ai_alignment", title: "AI alignment", description: "The great civilizational problem of creating artificially intelligent computer systems such that running them is a good idea.", domains: ["ai_alignment"], children: ["advanced_safety", "complexity_of_value", "corrigibility", "development_phase_unpredictable", "value_alignment_glossary", "5b", "mindcrime", "distant_SIs", "patch_resistant", "alignment_principle", "value_alignment_researchers", "AGI_typology", "task_agi", "advanced_agent_theory", "unforeseen_maximum", "value_alignment_value", "value_achievement_dilemma", "value_alignment_problem", "value_identification", "Vingean_reflection", "value_alignment_open_problem", "ai_arms_race", "4j", "correlated_coverage", "alignment_difficulty", "executable_philosophy", "inductive_ambiguity", "informed_oversight", "intended_goal", "value_alignment_subject_list", "4s", "bostrom_superintelligence", "object_level_goal", "value_alignment_programmer", "relevant_limited_AI", "relevant_powerful_agent", "powerful_agent_highly_optimized", "reliable_prediction", "4l", "safe_training_for_imitators", "selective_similarity_metric", "some_computations_are_people", "strong_uncontainability", "optimized_agent_appears_coherent", "rocket_alignment_metaphor", "3ck"], translated: true, ru_description: "Великая цивилизационная задача создания искусственных интеллектуальных компьютерных систем, запускать которые было бы хорошей идеей."}
+- {id: "ai_alignment", title: "AI alignment", description: "The great civilizational problem of creating artificially intelligent computer systems such that running them is a good idea.", domains: ["ai_alignment"], children: ["advanced_agent_theory", "advanced_safety", "Vingean_reflection", "AGI_typology", "alignment_principle", "corrigibility", "value_alignment_value", "value_alignment_problem", "value_identification", "complexity_of_value", "value_achievement_dilemma", "development_phase_unpredictable", "mindcrime", "distant_SIs", "patch_resistant", "task_agi", "unforeseen_maximum", "value_alignment_glossary", "5b", "value_alignment_researchers", "value_alignment_open_problem", "ai_arms_race", "4j", "correlated_coverage", "alignment_difficulty", "executable_philosophy", "inductive_ambiguity", "informed_oversight", "intended_goal", "value_alignment_subject_list", "4s", "bostrom_superintelligence", "object_level_goal", "value_alignment_programmer", "relevant_limited_AI", "relevant_powerful_agent", "powerful_agent_highly_optimized", "reliable_prediction", "4l", "safe_training_for_imitators", "selective_similarity_metric", "some_computations_are_people", "strong_uncontainability", "optimized_agent_appears_coherent", "rocket_alignment_metaphor", "3ck"], translated: true, ru_description: "Великая цивилизационная задача создания искусственных интеллектуальных компьютерных систем, запускать которые было бы хорошей идеей."}
 
 - {id: "advanced_safety", title: "Advanced safety", description: "An agent is *really* safe when it has the capacity to do anything, but chooses to do what the programmer wants.", domains: ["ai_alignment"], children: ["AI_safety_mindset", "unbounded_analysis", "actual_effectiveness", "context_disaster", "distinguish_advancement", "goodharts_curse", "goodness_estimate_bias", "foreseeable_difficulties", "nearest_unblocked", "daemons", "safe_useless"], explore: "2l"}
 
@@ -1026,19 +1026,23 @@
 
 - {id: "explicit_bayes_counters_worry", title: "Explicit Bayes as a counter for 'worrying'", description: "Explicitly walking through Bayes’s Rule can summarize your knowledge and thereby stop you from bouncing around pieces of it."}
 
-- {id: "expected_utility_formalism", title: "Expected utility formalism", description: "Expected utility is the central idea in the quantitative implementation of consequentialism", domains: ["decision_theory"]}
+### Раздел decision theory
+
+- {id: "decision_theory", title: "Decision theory", description: "The mathematical study of ideal decisionmaking", domains: ["decision_theory"], children: ["expected_utility_formalism", "logical_dt", "causal_dt", "evidential_dt", "modal_combat"], translated: true, ru_description: "Математическое исследование идеального принятия решений"}
+
+- {id: "expected_utility_formalism", title: "Expected utility formalism", description: "Expected utility is the central idea in the quantitative implementation of consequentialism", children: ["expected_utility", "utility_function", "expected_utility_agent", "intro_utility_coherence", "coherence_theorems"], domains: ["decision_theory"], translated: true, ru_description: "Ожидаемая полезность - центральная идея в количественном воплощении консеквенциализма"}
 
 - {id: "intro_utility_coherence", title: "Coherent decisions imply consistent utilities", description: "Why do we all use the 'expected utility' formalism? Because any behavior that can't be viewed from that perspective, must be qualitatively self-defeating (in various mathy ways).", domains: ["decision_theory"]}
 
 - {id: "coherence_theorems", title: "Coherence theorems", description: "A 'coherence theorem' shows that something bad happens to an agent if its decisions can't be viewed as 'coherent' in some sense. E.g., an inconsistent preference ordering leads to going in circles.", domains: ["decision_theory"]}
 
-- {id: "expected_utility", title: "Expected utility", description: "Scoring actions based on the average score of their probable consequences.", domains: ["decision_theory"]}
+- {id: "expected_utility", title: "Expected utility", description: "Scoring actions based on the average score of their probable consequences.", domains: ["decision_theory"], translated: true, ru_description: "Оценка действий на основе средних оценок их вероятных последствий."}
 
 - {id: "expected_utility_agent", title: "Expected utility agent", description: "If you're not some kind of expected utility agent, you're going in circles.", domains: ["decision_theory"]}
 
-- {id: "utility_function", title: "Utility function", description: "The only coherent way of wanting things is to assign consistent relative scores to outcomes.", domains: ["decision_theory"]}
+- {id: "utility_function", title: "Utility function", description: "The only coherent way of wanting things is to assign consistent relative scores to outcomes.", domains: ["decision_theory"], ru_description: "Единственно когерентный подход к желаниям - присвоить разным исходам согласованные друг с другом очки относительной полезности."}
 
-- {id: "logical_dt", title: "Logical decision theories", description: "Root page for topics on logical decision theory, with multiple intros for different audiences.", domains: ["decision_theory"]}
+- {id: "logical_dt", title: "Logical decision theories", description: "Root page for topics on logical decision theory, with multiple intros for different audiences.", domains: ["decision_theory"], children: ["5kv", "ldt_intro_phil", "ldt_intro_compsci", "ldt_intro_econ", "newcomblike", "fair_problem_class", "ldt_guide", "omega_troll", "updateless_dt"]}
 
 - {id: "5kv", title: "An Introduction to Logical Decision Theory for Everyone Else", description: "So like what the heck is 'logical decision theory' in terms a normal person can understand?", domains: ["decision_theory"]}
 
@@ -1048,9 +1052,9 @@
 
 - {id: "ldt_intro_econ", title: "Introduction to Logical Decision Theory for Economists", description: "An introduction to 'logical decision theory' and its implications for the Ultimatum Game, voting in elections, bargaining problems, and more.", domains: ["decision_theory"]}
 
-- {id: "newcomblike", title: "Newcomblike decision problems", description: "Decision problems in which your choice correlates with something other than its physical consequences (say, because somebody has predicted you very well) can do weird things to some decision theories.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
+- {id: "newcomblike", title: "Newcomblike decision problems", description: "Decision problems in which your choice correlates with something other than its physical consequences (say, because somebody has predicted you very well) can do weird things to some decision theories.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01", children: ["prisoners_dilemma", "rationality_of_voting", "pd_tournament_99ldt_1cdt", "absentminded_driver", "death_in_damascus", "newcombs_problem", "parfits_hitchhiker", "toxoplasmosis_dilemma", "transparent_newcombs_problem", "ultimatum_game"]}
 
-- {id: "prisoners_dilemma", title: "Prisoner's Dilemma", description: "You and an accomplice have been arrested. Both of you must decide, in isolation, whether to testify against the other prisoner--which subtracts one year from your sentence, and adds two to theirs.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
+- {id: "prisoners_dilemma", title: "Prisoner's Dilemma", description: "You and an accomplice have been arrested. Both of you must decide, in isolation, whether to testify against the other prisoner--which subtracts one year from your sentence, and adds two to theirs.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01", children: ["true_prisoners_dilemma"]}
 
 - {id: "true_prisoners_dilemma", title: "True Prisoner's Dilemma", description: "A scenario that would reproduce the ideal payoff matrix of the Prisoner's Dilemma about human beings who care about their public reputation and each other.", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
 
@@ -1082,7 +1086,9 @@
 
 - {id: "evidential_dt", title: "Evidential decision theories", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-08-01"}
 
-- {id: "causal_dt", title: "Causal decision theories ", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-07-30"}
+- {id: "causal_dt", title: "Causal decision theories", domains: ["decision_theory"], author: "Eliezer Yudkowsky", date: "2016-07-30"}
+
+- {id: "modal_combat", title: "Modal combat", description: "Modal combat", domains: ["decision_theory"]}
 
 ### Раздел не указан:
 
