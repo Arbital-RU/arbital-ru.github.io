@@ -407,38 +407,40 @@
 
 ### Раздел Mathematics:
 
-- {id: "probability_theory", title: "Probability theory", description: "The logic of science; coherence relations on quantitative degrees of belief.", domains: ["math"]}
+- {id: "probability_theory", title: "Probability theory", description: "The logic of science; coherence relations on quantitative degrees of belief.", domains: ["math"], translated: true, ru_description: "Логика науки; когерентные отношения численных степеней уверенности.", children: ["bayes_reasoning", "odds", "probability", "sample_space_probability", "496", "two_independent_events", "exclusive_exhaustive", "normalize_probabilities", "probability_distribution_countable", "probability_distribution_motivated_definition", "calibrated_probabilities"]}
+
 - {id: "calibrated_probabilities", title: "Well-calibrated probabilities", description: "Even if you’re fairly ignorant, you can still strive to ensure that when you say “70% probability”, it’s true 70% of the time.", domains: ["math"]}
-- {id: "bayes_reasoning", title: "Bayesian reasoning", description: "A probability-theory-based view of the world; a coherent way of changing probabilistic beliefs based on evidence.", domains: ["math"]}
-- {id: "bayes_update", title: "Bayesian update", description: "Bayesian updating: the ideal way to change probabilistic beliefs based on evidence.", domains: ["math"]}
-- {id: "bayes_extraordinary_claims", title: "Extraordinary claims require extraordinary evidence", description: "The people who adamantly claim they were abducted by aliens do provide some evidence for aliens. They just don’t provide quantitatively enough evidence.", domains: ["math"]}
+- {id: "bayes_reasoning", title: "Bayesian reasoning", description: "A probability-theory-based view of the world; a coherent way of changing probabilistic beliefs based on evidence.", domains: ["math"], children: ["bayes_rule", "bayes_update", "bayes_for_humans", "ignorance_prior", "bayesian_likelihood", "subjective_probability", "cromwells_rule", "bayes_guide_end", "bayes_want_foundations", "posterior_probability", "bayesian_prior", "prior_probability", "strictly_confused"]}
+- {id: "bayes_update", title: "Bayesian update", description: "Bayesian updating: the ideal way to change probabilistic beliefs based on evidence.", domains: ["math"], children: ["bayes_extraordinary_claims", "bayes_science_virtues", "bayes_ordinary_claims", "bayes_update_details", "bayes_strength_of_evidence"]}
+- {id: "bayes_extraordinary_claims", title: "Extraordinary claims require extraordinary evidence", description: "The people who adamantly claim they were abducted by aliens do provide some evidence for aliens. They just don’t provide quantitatively enough evidence.", domains: ["math"], children: ["extraordinary_claims"]}
 - {id: "extraordinary_claims", title: "Extraordinary claims", description: "What makes something an ‘extraordinary claim’ that requires extraordinary evidence?", domains: ["math"]}
 - {id: "bayes_science_virtues", title: "Bayesian view of scientific virtues", description: "Why is it that science relies on bold, precise, and falsifiable predictions? Because of Bayes’ rule, of course.", domains: ["math"]}
 - {id: "bayes_strength_of_evidence", title: "Strength of Bayesian evidence", description: "From a Bayesian standpoint, the strength of evidence can be identified with its likelihood ratio.", domains: ["math"]}
 - {id: "bayes_update_details", title: "Path: Insights from Bayesian updating", description: "A learning-path placeholder page for insights derived from the Bayesian rule for updating beliefs.", domains: ["math"]}
 - {id: "bayes_ordinary_claims", title: "Ordinary claims require ordinary evidence", description: "Extraordinary claims require extraordinary evidence, but ordinary claims _don’t_.", domains: ["math"]}
-- {id: "bayes_rule", title: "Bayes' rule", description: "Bayes’ rule is the core theorem of probability theory saying how to revise our beliefs when we make a new observation.", domains: ["math"]}
-- {id: "bayes_rule_examples", title: "Bayes' rule examples", description: "Interesting problems solvable by Bayes’ rule", domains: ["math"]}
+
+- {id: "bayes_rule", title: "Bayes' rule", description: "Bayes’ rule is the core theorem of probability theory saying how to revise our beliefs when we make a new observation.", domains: ["math"], children: ["bayes_rule_guide", "5f3", "bayes_rule_fast_intro", "bayes_rule_definition", "bayes_rule_probability", "bayes_frequency_diagram", "bayes_rule_details", "flee_from_surprise", "bayes_rule_odds", "bayes_rule_proof", "bayes_rule_examples", "bayes_waterfall_diagram", "bayes_rule_elimination", "bayes_probability_notation", "bayes_rule_multiple", "bayes_log_odds", "bayes_rule_functional", "bayes_rule_proportional"]}
+- {id: "bayes_rule_examples", title: "Bayes' rule examples", description: "Interesting problems solvable by Bayes’ rule", domains: ["math"], children: ["22w", "bayes_examples_realistic_math1"]}
 - {id: "bayes_examples_realistic_math1", title: "Realistic (Math 1)", description: "Real-life examples of Bayesian reasoning", domains: ["math"]}
-- {id: "22w", title: "Introductory Bayesian problems", description: "Bayesian problems to try to solve yourself, before beginning to learn about Bayes’ rule.", domains: ["math"]}
+- {id: "22w", title: "Introductory Bayesian problems", description: "Bayesian problems to try to solve yourself, before beginning to learn about Bayes’ rule.", domains: ["math"], children: ["blue_oysters", "diseasitis", "sockdresser_search", "sparking_widgets"]}
 - {id: "diseasitis", title: "Diseasitis", description: "20% of patients have Diseasitis. 90% of sick patients and 30% of healthy patients turn a tongue depressor black. You turn a tongue depressor black. What’s the chance you have Diseasitis?", domains: ["math"]}
 - {id: "blue_oysters", title: "Blue oysters", description: "A probability problem about blue oysters.", domains: ["math"]}
 - {id: "sparking_widgets", title: "Sparking widgets", domains: ["math"]}
 - {id: "sockdresser_search", title: "Sock-dresser search", description: "There’s a 4⁄5 chance your socks are in one of your dresser’s 8 drawers. You check 6 drawers at random. What’s the probability they’ll be in the next drawer you check?", domains: ["math"]}
-- {id: "bayes_waterfall_diagram", title: "Waterfall diagram", description: "Visualizing Bayes’ rule as the mixing of probability streams.", domains: ["math"]}
+- {id: "bayes_waterfall_diagram", title: "Waterfall diagram", description: "Visualizing Bayes’ rule as the mixing of probability streams.", domains: ["math"], children: ["bayes_waterfall_diseasitis"]}
 - {id: "bayes_waterfall_diseasitis", title: "Waterfall diagrams and relative odds", description: "A way to visualize Bayes’ rule that yields an easier way to solve some problems", domains: ["math"]}
-- {id: "bayes_rule_odds", title: "Bayes' rule: Odds form", description: "The simplest and most easily understandable form of Bayes’ rule uses relative odds.", domains: ["math"]}
+- {id: "bayes_rule_odds", title: "Bayes' rule: Odds form", description: "The simplest and most easily understandable form of Bayes’ rule uses relative odds.", domains: ["math"], children: ["bayes_rule_odds_intro"]}
 - {id: "bayes_rule_odds_intro", title: "Introduction to Bayes' rule: Odds form", description: "Bayes’ rule is simple, if you think in terms of relative odds.", domains: ["math"]}
-- {id: "bayes_rule_proof", title: "Proof of Bayes' rule", description: "Proofs of Bayes’ rule, with graphics", domains: ["math"]}
+- {id: "bayes_rule_proof", title: "Proof of Bayes' rule", description: "Proofs of Bayes’ rule, with graphics", domains: ["math"], children: ["bayes_rule_probability_proof"]}
 - {id: "bayes_rule_probability_proof", title: "Proof of Bayes' rule: Probability form", domains: ["math"]}
 - {id: "bayes_rule_elimination", title: "Belief revision as probability elimination", description: "Update your beliefs by throwing away large chunks of probability mass.", domains: ["math"]}
-- {id: "bayes_probability_notation", title: "Probability notation for Bayes' rule", description: "The probability notation used in Bayesian reasoning", domains: ["math"]}
+- {id: "bayes_probability_notation", title: "Probability notation for Bayes' rule", description: "The probability notation used in Bayesian reasoning", domains: ["math"], children: ["bayes_probability_notation_math1"]}
 - {id: "bayes_probability_notation_math1", title: "Probability notation for Bayes' rule: Intro (Math 1)", description: "How to read, and identify, the probabilities in Bayesian problems.", domains: ["math"]}
 - {id: "bayes_rule_multiple", title: "Bayes' rule: Vector form", description: "For when you want to apply Bayes’ rule to lots of evidence and lots of variables, all in one go. (This is more or less how spam filters work.)", domains: ["math"]}
 - {id: "bayes_log_odds", title: "Bayes' rule: Log-odds form", description: "A simple transformation of Bayes’ rule reveals tools for measuring degree of belief, and strength of evidence.", domains: ["math"]}
 - {id: "bayes_rule_functional", title: "Bayes' rule: Functional form", description: "Bayes’ rule for to continuous variables.", domains: ["math"]}
 - {id: "bayes_rule_proportional", title: "Bayes' rule: Proportional form", description: "The fastest way to say something both convincing and true about belief-updating.", domains: ["math"]}
-- {id: "bayes_rule_guide", title: "Bayes' rule: Guide", description: "The Arbital guide to Bayes’ rule", domains: ["math"]}
+- {id: "bayes_rule_guide", title: "Bayes' rule: Guide", description: "The Arbital guide to Bayes’ rule", domains: ["math"], children: ["62d", "62f", "61b", "62c", "692"]}
 - {id: "61b", title: "Comprehensive guide to Bayes' Rule", description: "This is an arc that includes all Bayes content.", domains: ["math"]}
 - {id: "62c", title: "Introduction to Bayes' Rule odds form", description: "This is an arc that includes just enough content to teach about Bayes’s Rule odds form.", domains: ["math"]}
 - {id: "62d", title: "Bayes' Rule and its different forms", description: "This is an arc that includes different ways to look at Bayes’ Rule.", domains: ["math"]}
@@ -447,58 +449,59 @@
 - {id: "bayes_rule_details", title: "Path: Multiple angles on Bayes's Rule", description: "A learning-path placeholder page for learning multiple angles on Bayes’s Rule.", domains: ["math"]}
 - {id: "flee_from_surprise", title: "Shift towards the hypothesis of least surprise", description: "When you see new evidence, ask: which hypothesis is _least surprised?_", domains: ["math"]}
 - {id: "bayes_rule_definition", title: "Bayes' rule: Definition", domains: ["math"]}
-- {id: "bayes_rule_probability", title: "Bayes' rule: Probability form", description: "The original formulation of Bayes’ rule.", domains: ["math"]}
+- {id: "bayes_rule_probability", title: "Bayes' rule: Probability form", description: "The original formulation of Bayes’ rule.", domains: ["math"], children: ["bayes_odds_to_probability", "bayes_rule_probability_proof"]}
 - {id: "bayes_odds_to_probability", title: "Odds form to probability form", domains: ["math"]}
 - {id: "bayes_rule_probability_proof", title: "Proof of Bayes' rule: Probability form", domains: ["math"]}
-- {id: "bayes_frequency_diagram", title: "Frequency diagram", description: "Visualizing Bayes’ rule by manipulating frequencies in large populations", domains: ["math"]}
+- {id: "bayes_frequency_diagram", title: "Frequency diagram", description: "Visualizing Bayes’ rule by manipulating frequencies in large populations", domains: ["math"], children: ["bayes_frequency_diagram_diseasitis"]}
 - {id: "bayes_frequency_diagram_diseasitis", title: "Frequency diagrams: A first look at Bayes", description: "The most straightforward visualization of Bayes’ rule.", domains: ["math"]}
 - {id: "5f3", title: "Bayes' rule: Beginner's guide", description: "Beginner’s guide to learning about Bayes’ rule.", domains: ["math"]}
 - {id: "bayes_rule_fast_intro", title: "High-speed intro to Bayes's rule", description: "A high-speed introduction to Bayes’s Rule on one page, for the impatient and mathematically adept.", domains: ["math"]}
+
 - {id: "prior_probability", title: "Prior probability", description: "What we believed before seeing the evidence.", domains: ["math"]}
 - {id: "bayes_want_foundations", title: "Interest in mathematical foundations in Bayesianism", description: "“Want” this requisite if you prefer to see extra information about the mathematical foundations in Bayesianism.", domains: ["math"]}
 - {id: "posterior_probability", title: "Posterior probability", description: "What we believe, after seeing the evidence and doing a Bayesian update.", domains: ["math"]}
-- {id: "bayes_for_humans", title: "Humans doing Bayes", description: "The human use of Bayesian reasoning in everyday life", domains: ["math"]}
+- {id: "bayes_for_humans", title: "Humans doing Bayes", description: "The human use of Bayesian reasoning in everyday life", domains: ["math"], children: ["explicit_bayes_counters_worry"]}
 - {id: "explicit_bayes_counters_worry", title: "Explicit Bayes as a counter for 'worrying'", description: "Explicitly walking through Bayes’s Rule can summarize your knowledge and thereby stop you from bouncing around pieces of it.", domains: ["math"]}
-- {id: "ignorance_prior", title: "Ignorance prior", description: "Key equations for quantitative Bayesian problems, describing exactly the right shape for what we believed before observation.", domains: ["math"]}
-- {id: "inductive_prior", title: "Inductive prior", description: "Some states of pre-observation belief can learn quickly; others never learn anything. An “inductive prior” is of the former type.", domains: ["math"]}
+- {id: "ignorance_prior", title: "Ignorance prior", description: "Key equations for quantitative Bayesian problems, describing exactly the right shape for what we believed before observation.", domains: ["math"], children: ["inductive_prior"]}
+- {id: "inductive_prior", title: "Inductive prior", description: "Some states of pre-observation belief can learn quickly; others never learn anything. An “inductive prior” is of the former type.", domains: ["math"], children: ["solomonoff_induction", "laplace_rule_of_succession", "universal_prior"]}
 - {id: "laplace_rule_of_succession", title: "Laplace's Rule of Succession", description: "Suppose you flip a coin with an unknown bias 30 times, and see 4 heads and 26 tails. The Rule of Succession says the next flip has a 5⁄32 chance of showing heads.", domains: ["math"]}
 - {id: "universal_prior", title: "Universal prior", description: "A “universal prior” is a probability distribution containing _all_ the hypotheses, for some reasonable meaning of “all”. E.g., “every possible computer program that computes probabilities”.", domains: ["math"]}
 - {id: "strictly_confused", title: "Strictly confused", description: "A hypothesis is strictly confused by the raw data, if the hypothesis did much worse in predicting it than the hypothesis itself expected.", domains: ["math"]}
 - {id: "bayes_guide_end", title: "Finishing your Bayesian path on Arbital", description: "The page that comes at the end of reading the Arbital Guide to Bayes’ rule", domains: ["math"]}
 - {id: "bayesian_prior", title: "Prior", description: "A state of prior knowledge, before seeing information on a new problem. Potentially complicated.", domains: ["math"]}
 - {id: "cromwells_rule", title: "Empirical probabilities are not exactly 0 or 1", description: "“Cromwell’s Rule” says that probabilities of exactly 0 or 1 should never be applied to empirical propositions—there’s always some probability, however tiny, of being mistaken.", domains: ["math"]}
-- {id: "subjective_probability", title: "Subjective probability", description: "Probability is in the mind, not in the environment. If you don’t know whether a coin came up heads or tails, that’s a fact about you, not a fact about the coin.", domains: ["math"]}
+- {id: "subjective_probability", title: "Subjective probability", description: "Probability is in the mind, not in the environment. If you don’t know whether a coin came up heads or tails, that’s a fact about you, not a fact about the coin.", domains: ["math"], children: ["probability_distribution_motivated_definition"]}
 - {id: "probability_distribution_motivated_definition", title: "Probability distribution: Motivated definition", description: "People keep writing things like P(sick)=0.3. What does this mean, on a technical level?", domains: ["math"]}
-- {id: "bayesian_likelihood", title: "Likelihood", domains: ["math"]}
+- {id: "bayesian_likelihood", title: "Likelihood", domains: ["math"], children: ["relative_likelihood", "likelihood_notation", "likelihood_function", "likelihood_ratio"]}
 - {id: "relative_likelihood", title: "Relative likelihood", description: "How relatively likely an observation is, given two or more hypotheses, determines the strength and direction of evidence.", domains: ["math"]}
 - {id: "likelihood_notation", title: "Likelihood notation", domains: ["math"]}
 - {id: "likelihood_function", title: "Likelihood function", domains: ["math"]}
 - {id: "likelihood_ratio", title: "Likelihood ratio", domains: ["math"]}
-- {id: "odds", title: "Odds", description: "Odds express a relative probability.", domains: ["math"]}
+- {id: "odds", title: "Odds", description: "Odds express a relative probability.", domains: ["math"], children: ["odds_intro", "odds_refresher", "odds_technical"]}
 - {id: "odds_intro", title: "Odds: Introduction", description: "What’s the difference between probabilities and odds? Why is a 20% probability of success equivalent to 1 : 4 odds favoring success?", domains: ["math"]}
 - {id: "odds_refresher", title: "Odds: Refresher", description: "A quick review of the notations and mathematical behaviors for odds (e.g. odds of 1 : 2 for drawing a red ball vs. green ball from a barrel).", domains: ["math"]}
 - {id: "odds_technical", title: "Odds: Technical explanation", description: "Formal definitions, alternate representations, and uses of odds and odds ratios (like a 1 : 2 chance of drawing a red ball vs. green ball from a barrel).", domains: ["math"]}
 - {id: "exclusive_exhaustive", title: "Mutually exclusive and exhaustive", description: "The condition needed for probabilities to sum to 1", domains: ["math"]}
-- {id: "probability", title: "Probability", description: "The degree to which someone believes something, measured on a scale from 0 to 1, allowing us to do math to it.", domains: ["math"]}
+- {id: "probability", title: "Probability", description: "The degree to which someone believes something, measured on a scale from 0 to 1, allowing us to do math to it.", domains: ["math"], children: ["conditional_probability", "probability_interpretations", "likelihoods_not_pvalues", "joint_probability"]}
 - {id: "joint_probability", title: "Joint probability", description: "The notation for writing the chance that both X and Y are true.", domains: ["math"]}
-- {id: "conditional_probability", title: "Conditional probability", description: "The notation for writing “The probability that someone has green eyes, if we know that they have red hair.”", domains: ["math"]}
+- {id: "conditional_probability", title: "Conditional probability", description: "The notation for writing “The probability that someone has green eyes, if we know that they have red hair.”", domains: ["math"], children: ["conditional_probability_refresher"]}
 - {id: "conditional_probability_refresher", title: "Conditional probability: Refresher", description: "Is P(yellow | banana) the probability that a banana is yellow, or the probability that a yellow thing is a banana?", domains: ["math"]}
-- {id: "probability_interpretations", title: "Interpretations of \"probability\"", description: "What does it _mean_ to say that a fair coin has a 50% probability of coming up heads?", domains: ["math"]}
-- {id: "subjective_probability", title: "Subjective probability", description: "Probability is in the mind, not in the environment. If you don’t know whether a coin came up heads or tails, that’s a fact about you, not a fact about the coin.", domains: ["math"]}
+- {id: "probability_interpretations", title: "Interpretations of \"probability\"", description: "What does it _mean_ to say that a fair coin has a 50% probability of coming up heads?", domains: ["math"], children: ["probability_interpretations_correspondence", "probability_interpretations_examples", "subjective_probability"]}
+- {id: "subjective_probability", title: "Subjective probability", description: "Probability is in the mind, not in the environment. If you don’t know whether a coin came up heads or tails, that’s a fact about you, not a fact about the coin.", domains: ["math"], children: ["probability_distribution_motivated_definition"]}
 - {id: "probability_distribution_motivated_definition", title: "Probability distribution: Motivated definition", description: "People keep writing things like P(sick)=0.3. What does this mean, on a technical level?", domains: ["math"]}
 - {id: "probability_interpretations_correspondence", title: "Correspondence visualizations for different interpretations of \"probability\"", domains: ["math"]}
 - {id: "probability_interpretations_examples", title: "Probability interpretations: Examples", domains: ["math"]}
-- {id: "likelihoods_not_pvalues", title: "Report likelihoods, not p-values", domains: ["math"]}
+- {id: "likelihoods_not_pvalues", title: "Report likelihoods, not p-values", domains: ["math"], children: ["likelihood_vs_pvalue", "likelihood_not_pvalue_faq"]}
 - {id: "likelihood_vs_pvalue", title: "Likelihood functions, p-values, and the replication crisis", description: "What’s the whole Bayesian-vs.-frequentist debate about?", domains: ["math"]}
 - {id: "likelihood_not_pvalue_faq", title: "Report likelihoods not p-values: FAQ", domains: ["math"]}
 - {id: "normalize_probabilities", title: "Normalization (probability)", description: "That thingy we do to make sure our probabilities sum to 1, when they should sum to 1.", domains: ["math"]}
-- {id: "sample_space_probability", title: "Sample space", description: "The set of possible things that could happen in a part of the world that you are uncertain about.", domains: ["math"]}
+- {id: "sample_space_probability", title: "Sample space", description: "The set of possible things that could happen in a part of the world that you are uncertain about.", domains: ["math"], children: ["sample_spaces_are_too_large", "uncountable_sample_spaces_are_too_large"]}
 - {id: "sample_spaces_are_too_large", title: "Sample spaces are too large", description: "Sample spaces are often large, so it is hard to do probabilistic computations using a raw distribution over the sample space.", domains: ["math"]}
 - {id: "uncountable_sample_spaces_are_too_large", title: "Uncountable sample spaces are way too large", description: "We can’t define probability distributions over uncountable sample spaces by just assigning numbers to each point in the sample space.", domains: ["math"]}
 - {id: "probability_distribution_countable", title: "Probability distribution (countable sample space)", description: "A function assigning a probability to each point in the sample space.", domains: ["math"]}
-- {id: "496", title: "Square visualization of probabilities on two events", domains: ["math"]}
+- {id: "496", title: "Square visualization of probabilities on two events", domains: ["math"], children: ["4fh"]}
 - {id: "4fh", title: "Square visualization of probabilities on two events: (example) Diseasitis", description: "But it _seems_ like the patient with the black tongue depressor has diseasitis…", domains: ["math"]}
-- {id: "two_independent_events", title: "Two independent events", description: "What do pair of dice, pair of coins, and pair of people on opposite sides of the planet all have in common?", domains: ["math"]}
+- {id: "two_independent_events", title: "Two independent events", description: "What do pair of dice, pair of coins, and pair of people on opposite sides of the planet all have in common?", domains: ["math"], children: ["4cl"]}
 - {id: "4cl", title: "Two independent events: Square visualization", domains: ["math"]}
 - {id: "probability_distribution_motivated_definition", title: "Probability distribution: Motivated definition", description: "People keep writing things like P(sick)=0.3. What does this mean, on a technical level?", domains: ["math"]}
 - {id: "reads_algebra", title: "Ability to read algebra", description: "Do you have sufficient mathematical ability that you can read a sentence that uses some algebra or invokes a mathematical idea, without slowing down too much?", domains: ["math"]}
@@ -838,7 +841,9 @@
 - {id: "arguments_against_P_NP", title: "P vs NP: Arguments against P=NP", description: "Why we believe P and NP are different", domains: ["math"]}
 - {id: "decision_problem", title: "Decision problem", description: "Formalization of general problems", domains: ["math"]}
 - {id: "polynomial_time_complexity_class", title: "P (Polynomial Time Complexity Class)", description: "P is the class of problems which can be solved by algorithms whose run time is bounded by a polynomial.", domains: ["math"]}
-- {id: "expected_value", title: "Expected value", description: "Trying to assign value to an uncertain state? The weighted average of outcomes is probably the tool you need.", domains: ["math"]}
+
+- {id: "expected_value", title: "Expected value", description: "Trying to assign value to an uncertain state? The weighted average of outcomes is probably the tool you need.", domains: ["math"], translated: true, ru_description: "Пытаетесь присвоить значение неопределенному состоянию? Возможно, взвешенное среднее от исходов - это то, что вы ищете."}
+
 - {id: "real_number", title: "Real number", domains: ["math"]}
 - {id: "real_number_as_cauchy_sequence", title: "Real number (as Cauchy sequence)", description: "There are several ways to construct real numbers; this is the most natural way to use them in computations.", domains: ["math"]}
 - {id: "reals_as_classes_of_cauchy_sequences_form_a_field", title: "The reals (constructed as classes of Cauchy sequences of rationals) form a field", description: "The reals are an archetypal example of a field, but if we are to construct them from simpler objects, we need to show that our construction does indeed have the right properties.", domains: ["math"]}
