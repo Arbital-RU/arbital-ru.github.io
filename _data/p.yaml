@@ -199,7 +199,7 @@
 
 - {id: "rich_domain", title: "Rich domain", description: "", domains: ["ai_alignment"], children: ["real_is_rich", "logical_game"], explore: "9j", translated: true, ru_description: ""}
 
-- {id: "real_is_rich", title: "Almost all real-world domains are rich", description: "Anything you're trying to accomplish in the real world can potentially be accomplished in a *lot* of different ways.", domains: ["ai_alignment"]}
+- {id: "real_is_rich", title: "Almost all real-world domains are rich", description: "Anything you're trying to accomplish in the real world can potentially be accomplished in a *lot* of different ways.", domains: ["ai_alignment"], translated: true, ru_description: "Все, что вы пытаетесь сделать в реальном мире, может быть сделано *множеством* разных способов."}
 
 - {id: "logical_game", title: "Logical game", description: "Game's mathematical structure at its purest form.", domains: ["ai_alignment"], translated: true, ru_description: "Математическая структура игры в ее чистейшем виде."}
 
