@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ожидаемое значение
-translated_by: '<a href="https://kkirdan.github.io">К. Кирдан</a>'
+translated_by: К. Кирдан
 translation_details: "добавлены термины и ссылки, поправлены формулы"
 excerpt: "Ожидаемое значение чего-либо — это усредненный числовой исход от возможных исходов, взвешенных по их вероятности."
 math: true
