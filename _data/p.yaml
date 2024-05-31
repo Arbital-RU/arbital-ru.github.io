@@ -195,7 +195,7 @@
 
 - {id: "advanced_agent", title: "Advanced agent properties", description: "How smart does a machine intelligence need to be, for its niceness to become an issue? \"Advanced\" is a broad term to cover cognitive abilities such that we'd need to start considering AI alignment.", domains: ["ai_alignment"], children: ["uncontainability", "efficiency", "standard_agent", "Vingean_uncertainty", "advanced_nonagent", "agi", "consequentialist", "big_picture_awareness", "corps_vs_si", "general_intelligence", "relative_ability", "intelligence_explosion", "real_world", "sufficiently_advanced_ai", "superintelligent"], explore: "2c"}
 
-- {id: "uncontainability", title: "Cognitive uncontainability", description: "'Cognitive uncontainability' is when we can't hold all of an agent's possibilities inside our own minds.", domains: ["ai_alignment"], children: ["rich_domain"], explore: "9f"}
+- {id: "uncontainability", title: "Cognitive uncontainability", description: "'Cognitive uncontainability' is when we can't hold all of an agent's possibilities inside our own minds.", domains: ["ai_alignment"], children: ["rich_domain"], explore: "9f", translated: true, ru_description: "'Когнитивная невместимость' - это когда мы не можем держать в уме все возможные варианты поведения агента."}
 
 - {id: "rich_domain", title: "Rich domain", description: "", domains: ["ai_alignment"], children: ["real_is_rich", "logical_game"], explore: "9j", translated: true, ru_description: ""}
 
