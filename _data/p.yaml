@@ -301,7 +301,7 @@
 
 - {id: "value_alignment_problem", title: "Value alignment problem", description: "You want to build an advanced AI with the right values... but how?", domains: ["ai_alignment"], children: ["preference_framework", "total_alignment"], explore: "5s", translated: true, ru_description: "Вы хотите построить продвинутый ИИ с правильными ценностями... Но как?"}
 
-- {id: "preference_framework", title: "Preference framework", description: "What's the thing an agent uses to compare its preferences?", domains: ["ai_alignment"], children: ["moral_uncertainty", "attainable_optimum", "meta_utility"], explore: "5f"}
+- {id: "preference_framework", title: "Preference framework", description: "What's the thing an agent uses to compare its preferences?", domains: ["ai_alignment"], children: ["moral_uncertainty", "attainable_optimum", "meta_utility"], explore: "5f", translated: true, ru_description: "Что агент использует, чтобы сравнивать предпочитаемое им?"}
 
 - {id: "moral_uncertainty", title: "Moral uncertainty", description: "A meta-utility function in which the utility function as usually considered, takes on different values in different possible worlds, potentially distinguishable by evidence.", domains: ["ai_alignment"], children: "ideal_target", explore: "7s2"}
 
