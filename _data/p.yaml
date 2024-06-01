@@ -207,7 +207,7 @@
 
 - {id: "timemachine_efficiency_metaphor", title: "Time-machine metaphor for efficient agents", description: "Don't imagine a paperclip maximizer as a mind. Imagine it as a time machine that always spits out the output leading to the greatest number of future paperclips.", domains: ["ai_alignment"]}
 
-- {id: "standard_agent", title: "Standard agent properties", description: "What's a Standard Agent, and what can it do?", domains: ["ai_alignment"], children: ["bounded_agent"], explore: "6t"}
+- {id: "standard_agent", title: "Standard agent properties", description: "What's a Standard Agent, and what can it do?", domains: ["ai_alignment"], children: ["bounded_agent"], explore: "6t", translated: true, ru_description: "Что такое \"стандартный агент\" и что он может?"}
 
 - {id: "bounded_agent", title: "Bounded agent", description: "An agent that operates in the real world, using realistic amounts of computing power, that is uncertain of its environment, etcetera.", domains: ["ai_alignment"], translated: true, ru_description: "Агент, действующий в реальном мире, использующий реалистичные объемы вычислительной мощности, неуверенный насчет своего окружения, и т. д."}
 
