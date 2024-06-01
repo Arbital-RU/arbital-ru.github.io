@@ -39,15 +39,13 @@ layout: default
 
 <hr class="hrdark" style="margin-bottom: 8px; margin-top: 8px">
 
-<small><table style="border: none; margin: 8px 0 8px 0; background-color: white"><tr style="margin: 0; padding: 0">
-  <td style="border: none; background-color: white; margin: 0; padding: 0">
+<small><table style="border: none; margin: 8px 0 8px 0; background-color: white; width: 100%;"><tr style="margin: 0; padding: 0">
+  <td style="border: none; background-color: white; margin: 0; padding: 0; width: 48%; vertical-align: top">
     Оригинал: <a href="https://arbital.com/p/{{ id }}">{{ q.title }}</a> (читать на <a href="https://arbital.greaterwrong.com/p/{{ id }}">GreaterWrong</a>)
   </td>
-  <td style="border: none; background-color: white; margin: 0; padding: 0">&nbsp;&nbsp;</td>
-  <td style="float: right; border: none; background-color: white; margin: 0; padding: 0; white-space: nowrap">
-    {% if page.translated_by %}Перевод: {{ page.translated_by | split: ", " }}
-      {% if page.translation_details %} ({{ page.translation_details }}){% endif %}
-    {% endif %}
+  <td style="border: none; background-color: white; margin: 0; padding: 0; width: 4%">&nbsp;&nbsp;</td>
+  <td style="border: none; background-color: white; margin: 0; padding: 0; width: 48%; text-align: right; vertical-align: top">
+    {% if page.translated_by %}Перевод: {{ page.translated_by | split: ", " }}{% endif %}{% if page.translation_details %} ({{ page.translation_details }}){% endif %}{% if page.edited_by %}, редактура: {{ page.edited_by | split: ", " }}{% endif %}
   </td>
 </tr></table></small>
 
