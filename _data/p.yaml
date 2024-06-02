@@ -35,7 +35,7 @@
 
 - {id: "hypercomputer", title: "Hypercomputer", description: "Some formalisms demand computers larger than the limit of all finite computers", domains: ["ai_alignment"], translated: true, ru_description: "Некоторые формализмы требуют компьютеров, которые больше, чем предел всех конечных компьютеров."}
 
-- {id: "mechanical_turk", title: "Mechanical Turk (example)", description: "The 19th-century chess-playing automaton known as the Mechanical Turk actually had a human operator inside. People at the time had interesting thoughts about the possibility of mechanical chess.", domains: ["ai_alignment"]}
+- {id: "mechanical_turk", title: "Mechanical Turk (example)", description: "The 19th-century chess-playing automaton known as the Mechanical Turk actually had a human operator inside. People at the time had interesting thoughts about the possibility of mechanical chess.", domains: ["ai_alignment"], translated: true, ru_description: "Шахматный автомат 19-го века, известный как \"Механический Турок\", на самом деле имел внутри себя оператора-человека. У современников автомата были интересные мысли на счет возможности механических шахмат."}
 
 - {id: "nofreelunch_irrelevant", title: "No-Free-Lunch theorems are often irrelevant", description: "There's often a theorem proving that some problem has no optimal answer across every possible world. But this may not matter, since the real world is a special case. (E.g., a low-entropy universe.)", domains: ["ai_alignment"]}
 
@@ -1013,7 +1013,7 @@
 
 - {id: "conceivability", title: "Conceivability", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-02"}
 
-- {id: "prove_too_much", title: "Proving too much", description: "If your argument could just as naturally be used to prove that Bigfoot exists and that Peano arithmetic is inconsistent, maybe it’s an untrustworthy kind of argument.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-05-26"}
+- {id: "prove_too_much", title: "Proving too much", description: "If your argument could just as naturally be used to prove that Bigfoot exists and that Peano arithmetic is inconsistent, maybe it’s an untrustworthy kind of argument.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-05-26", translated: true, ru_description: "Если ваш аргумент можно естественным образом использовать для доказательства существования бигфута или противоречивости арифметики Пеано, наверное таким аргументам не стоит верить."}
 
 - {id: "bulverism", title: "Bulverism", description: "Bulverism is when you explain what goes so horribly wrong in people’s minds when they believe X, before you’ve actually explained why X is wrong. Forbidden on Arbital.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-06-09"}
 
