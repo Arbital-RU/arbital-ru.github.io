@@ -261,7 +261,7 @@
 
 - {id: "orthogonality", title: "Orthogonality Thesis", description: "Will smart AIs automatically become benevolent, or automatically become hostile? Or do different AI designs imply different goals?", domains: ["ai_alignment"], children: ["paperclip_maximizer", "instrumental_goals_equally_tractable", "mind_design_space_wide"], explore: "1y"}
 
-- {id: "random_utility_function", title: "Random utility function", description: "A 'random' utility function is one chosen at random according to some simple probability measure (e.g. weight by Kolmorogov complexity) on a logical space of formal utility functions.", domains: ["ai_alignment"]}
+- {id: "random_utility_function", title: "Random utility function", description: "A 'random' utility function is one chosen at random according to some simple probability measure (e.g. weight by Kolmorogov complexity) on a logical space of formal utility functions.", domains: ["ai_alignment"], translated: true, ru_description: "\"Случайная\" функция полезности - это случайно выбранная в соответствии с какой-то простой вероятностной мерой (например, взвешиванием по колмогоровской сложности) на логическом пространстве формальных функций полезности."}
 
 - {id: "instrumental_goals_equally_tractable", title: "Instrumental goals are almost-equally as tractable as terminal goals", description: "Getting the milk from the refrigerator because you want to drink it, is not vastly harder than getting the milk from the refrigerator because you inherently desire it.", domains: ["ai_alignment"]}
 
