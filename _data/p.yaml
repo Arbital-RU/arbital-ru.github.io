@@ -249,7 +249,7 @@
 
 - {id: "preference_stability", title: "Consequentialist preferences are reflectively stable by default", description: "Gandhi wouldn't take a pill that made him want to kill people, because he knows in that case more people will be murdered. A paperclip maximizer doesn't want to stop maximizing paperclips.", domains: ["ai_alignment"], translated: true, ru_description: "Ганди не принял бы таблетку, вызывающую желание убивать людей, потому что знает, что в этом случае умерло бы больше людей. Максимизатор скрепок не хочет прекращать максимизировать скрепки."}
 
-- {id: "instrumental", title: "Instrumental", description: "What is \"instrumental\" in the context of Value Alignment Theory?", domains: ["ai_alignment"], translation: true, ru_description: "Что означает \"инструментальный\" в контексте теории согласования ценностей?"}
+- {id: "instrumental", title: "Instrumental", description: "What is \"instrumental\" in the context of Value Alignment Theory?", domains: ["ai_alignment"], translated: true, ru_description: "Что означает \"инструментальный\" в контексте теории согласования ценностей?"}
 
 - {id: "instrumental_pressure", title: "Instrumental pressure", description: "A consequentialist agent will want to bring about certain instrumental events that will help to fulfill its goals.", domains: ["ai_alignment"]}
 
