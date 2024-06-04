@@ -111,7 +111,7 @@
 
 - {id: "mindcrime_introduction", title: "Mindcrime: Introduction", description: "", domains: ["ai_alignment"]}
 
-- {id: "nonperson_predicate", title: "Nonperson predicate", description: "If we knew which computations were definitely not people, we could tell AIs which programs they were definitely allowed to compute.", domains: ["ai_alignment"]}
+- {id: "nonperson_predicate", title: "Nonperson predicate", description: "If we knew which computations were definitely not people, we could tell AIs which programs they were definitely allowed to compute.", domains: ["ai_alignment"], translated: true, ru_description: "Если бы мы знали, какие вычисления точно не являются личностями, мы могли бы научить ИИ, что такие вычисления ему точно дозволены."}
 
 - {id: "distant_SIs", title: "Modeling distant superintelligences", description: "The several large problems that might occur if an AI starts to think about alien superintelligences.", domains: ["ai_alignment"], children: "probable_environment_hacking", explore: "1fz"}
 
