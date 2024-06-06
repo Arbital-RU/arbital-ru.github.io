@@ -107,9 +107,9 @@
 
 - {id: "value_alignment_utility", title: "Utility", description: "What is \"utility\" in the context of Value Alignment Theory?", domains: ["ai_alignment"]}
 
-- {id: "mindcrime", title: "Mindcrime", description: "Might a machine intelligence contain vast numbers of unhappy conscious subprocesses?", domains: ["ai_alignment"], children: ["mindcrime_introduction", "nonperson_predicate"], explore: "6v"}
+- {id: "mindcrime", title: "Mindcrime", description: "Might a machine intelligence contain vast numbers of unhappy conscious subprocesses?", domains: ["ai_alignment"], children: ["mindcrime_introduction", "nonperson_predicate"], explore: "6v", translated: false, ru_description: "Может ли машинный интеллект содержать огромные количества несчастных сознательных подпроцессов?"}
 
-- {id: "mindcrime_introduction", title: "Mindcrime: Introduction", description: "", domains: ["ai_alignment"]}
+- {id: "mindcrime_introduction", title: "Mindcrime: Introduction", domains: ["ai_alignment"], translated: true}
 
 - {id: "nonperson_predicate", title: "Nonperson predicate", description: "If we knew which computations were definitely not people, we could tell AIs which programs they were definitely allowed to compute.", domains: ["ai_alignment"], translated: true, ru_description: "Если бы мы знали, какие вычисления точно не являются личностями, мы могли бы научить ИИ, что такие вычисления ему точно дозволены."}
 
