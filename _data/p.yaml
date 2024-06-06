@@ -853,7 +853,7 @@
 - {id: "P_vs_NP", title: "P vs NP", description: "Is creativity purely mechanical?", domains: ["math"]}
 - {id: "arguments_against_P_NP", title: "P vs NP: Arguments against P=NP", description: "Why we believe P and NP are different", domains: ["math"]}
 - {id: "conjugacy_class", title: "Conjugacy class", description: "In a group, the elements can be partitioned naturally into certain classes.", domains: ["math"]}
-- {id: "CT_thesis", title: "Church-Turing thesis", description: "A thesis about computational models", domains: ["math"]}
+- {id: "CT_thesis", title: "Church-Turing thesis", description: "A thesis about computational models", domains: ["math"], translated: true, ru_description: "Тезис о моделях вычислений"}
 - {id: "strong_Church_Turing_thesis", title: "Strong Church Turing thesis", description: "A strengthening of the Church Turing thesis", domains: ["math"]}
 - {id: "evidence_for_CT_thesis", title: "Church-Turing thesis: Evidence for the Church-Turing thesis", description: "Why do we believe in CT thesis?", domains: ["math"]}
 - {id: "category_theory", title: "Category theory", description: "How mathematical objects are related to others in the same category.", domains: ["math"]}
@@ -987,11 +987,13 @@
 
 ### Другие разделы:
 
+- {id: "rationality", title: "Rationality", description: "The subject domain for epistemic and instrumental rationality.", domains: ["arbital_labs"], children: ["probability_theory", "bayes_for_humans", "epistemology", "ideological_turing_test", "ea_intro"], translated: true, ru_description: ""}
+
 - {id: "ea_intro", title: "Introduction to Effective Altruism", author: "Aaron Gertler", date: "2016-03-19"}
 
 - {id: "ideological_turing_test", title: "Ideological Turing test", description: "Can you explain the opposing position well enough that people can’t tell whether you or a real advocate of that position created the explanation?", domains: ["arbital_labs"]}
 
-- {id: "epistemology", title: "Epistemology", description: "What is truth?", domains: ["arbital_labs"]}
+- {id: "epistemology", title: "Epistemology", description: "What is truth?", domains: ["arbital_labs"], children: ["fallacy", "psychologizing", "central_example", "108", "intension_extension", "guarded_definition", "strained_argument", "perfect_rolling_sphere", "factual_question", "conceivability"], translated: true, ru_description: "Что есть истина?"}
 
 - {id: "central_example", title: "Central examples", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-14"}
 
@@ -1007,9 +1009,9 @@
 
 - {id: "factual_question", title: "Strictly factual question", description: "A “question of strict fact” is one which is true or false about the material universe (and maybe some math) without introducing any issues of values, perspectives, etcetera.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-05-26"}
 
-- {id: "fallacy", title: "Fallacies", description: "To call something a fallacy is to assert that you think people shouldn’t think like that.", domains: ["arbital_labs"]}
+- {id: "fallacy", title: "Fallacies", description: "To call something a fallacy is to assert that you think people shouldn’t think like that.", domains: ["arbital_labs"], children: ["bulverism", "emphemeral_premises", "gotcha_button", "harmless_supernova", "invisible_background", "mind_projection", "multiple_stage_fallacy", "prove_too_much"]}
 
-- {id: "psychologizing", title: "Psychologizing", description: "It’s sometimes important to consider how other people might be led into error. But psychoanalyzing them is also dangerous! Arbital discussion norms say to explicitly note this as “psychologizing”.", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2016-06-09"}
+- {id: "psychologizing", title: "Psychologizing", description: "It’s sometimes important to consider how other people might be led into error. But psychoanalyzing them is also dangerous! Arbital discussion norms say to explicitly note this as “psychologizing”.", domains: ["arbital_labs"], children: ["bulverism"], author: "Eliezer Yudkowsky", date: "2016-06-09"}
 
 - {id: "conceivability", title: "Conceivability", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-02"}
 
