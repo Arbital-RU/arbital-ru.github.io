@@ -1029,7 +1029,7 @@
 
 - {id: "gotcha_button", title: "Gotcha button", description: "A conversational point which, when pressed, causes the other person to shout “Gotcha!” and leap on what they think is a weakness allowing them to dismiss the conversation.", domains: ["arbital_labs"]}
 
-## - {id: "harmless_supernova", title: "Harmless supernova fallacy", description: "False dichotomies and continuum fallacies which can be used to argue that anything, including a supernova, must be harmless.", domains: ["arbital_labs"], translated: true}
+- {id: "harmless_supernova", title: "Harmless supernova fallacy", description: "False dichotomies and continuum fallacies which can be used to argue that anything, including a supernova, must be harmless.", domains: ["arbital_labs"], translated: true, ru_description: "Ложные дихотомии и ошибки континуума, которые могут быть использованы в аргументации за безопасность чего угодно, включая сверхновую звезду."}
 
 - {id: "explicit_bayes_counters_worry", title: "Explicit Bayes as a counter for 'worrying'", description: "Explicitly walking through Bayes’s Rule can summarize your knowledge and thereby stop you from bouncing around pieces of it."}
 
