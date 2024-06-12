@@ -991,7 +991,7 @@
 
 - {id: "ea_intro", title: "Introduction to Effective Altruism", author: "Aaron Gertler", date: "2016-03-19"}
 
-- {id: "ideological_turing_test", title: "Ideological Turing test", description: "Can you explain the opposing position well enough that people can’t tell whether you or a real advocate of that position created the explanation?", domains: ["arbital_labs"]}
+- {id: "ideological_turing_test", title: "Ideological Turing test", description: "Can you explain the opposing position well enough that people can’t tell whether you or a real advocate of that position created the explanation?", domains: ["arbital_labs"], translated: true, ru_description: "Можете ли вы объяснить противоположную позицию настолько хорошо, чтобы люди не могли отличить ваше объяснение от такого, которое дал бы сторонник этой позиции?"}
 
 - {id: "epistemology", title: "Epistemology", description: "What is truth?", domains: ["arbital_labs"], children: ["fallacy", "psychologizing", "central_example", "108", "intension_extension", "guarded_definition", "strained_argument", "perfect_rolling_sphere", "factual_question", "conceivability"], translated: true, ru_description: "Что есть истина?"}
 
