@@ -3,3 +3,4 @@ url: arbital-ru.github.io
 baseurl: ""
 markdown: kramdown
 permalink: /p/:title/
+google_analytics: G-RZHTCYCH7N
