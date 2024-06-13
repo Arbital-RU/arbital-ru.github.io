@@ -486,7 +486,9 @@
 - {id: "joint_probability", title: "Joint probability", description: "The notation for writing the chance that both X and Y are true.", domains: ["math"]}
 - {id: "conditional_probability", title: "Conditional probability", description: "The notation for writing “The probability that someone has green eyes, if we know that they have red hair.”", domains: ["math"], children: ["conditional_probability_refresher"]}
 - {id: "conditional_probability_refresher", title: "Conditional probability: Refresher", description: "Is P(yellow | banana) the probability that a banana is yellow, or the probability that a yellow thing is a banana?", domains: ["math"]}
-- {id: "probability_interpretations", title: "Interpretations of \"probability\"", description: "What does it _mean_ to say that a fair coin has a 50% probability of coming up heads?", domains: ["math"], children: ["probability_interpretations_correspondence", "probability_interpretations_examples", "subjective_probability"]}
+
+- {id: "probability_interpretations", title: "Interpretations of \"probability\"", description: "What does it _mean_ to say that a fair coin has a 50% probability of coming up heads?", domains: ["math"], children: ["probability_interpretations_correspondence", "probability_interpretations_examples", "subjective_probability"], translated: true, ru_description: "Что _означает_, что честная монета имеет 50% вероятность выпасть решкой?"}
+
 - {id: "subjective_probability", title: "Subjective probability", description: "Probability is in the mind, not in the environment. If you don’t know whether a coin came up heads or tails, that’s a fact about you, not a fact about the coin.", domains: ["math"], children: ["probability_distribution_motivated_definition"]}
 - {id: "probability_distribution_motivated_definition", title: "Probability distribution: Motivated definition", description: "People keep writing things like P(sick)=0.3. What does this mean, on a technical level?", domains: ["math"]}
 - {id: "probability_interpretations_correspondence", title: "Correspondence visualizations for different interpretations of \"probability\"", domains: ["math"]}
