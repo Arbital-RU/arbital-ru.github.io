@@ -45,7 +45,7 @@ layout: default
   </td>
   <td style="border: none; background-color: white; margin: 0; padding: 0; width: 4%">&nbsp;&nbsp;</td>
   <td style="border: none; background-color: white; margin: 0; padding: 0; width: 48%; text-align: right; vertical-align: top">
-    {% if page.translated_by %}Перевод: {{ page.translated_by | split: ", " }}{% endif %}{% if page.translation_details %} ({{ page.translation_details }}){% endif %}{% if page.edited_by %}, редактура: {{ page.edited_by | split: ", " }}{% endif %}
+    {% if page.translated_by %}Перевод: {{ page.translated_by | split: ", " }}{% endif %}{% if page.translation_details %} ({{ page.translation_details }}){% endif %}{% if page.edited_by %}, редактура: {{ page.edited_by | split: ", " }}{% if page.edition_details %} ({{ page.edition_details }}){% endif %}{% endif %}
   </td>
 </tr></table></small>
 
