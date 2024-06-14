@@ -5,6 +5,8 @@ translated_by: "<a href=\"https://lesswrong.ru/w/%D0%98%D0%BD%D1%82%D0%B5%D1%80%
 edited_by: "К. Кирдан"
 edition_details: "добавлены ссылки и недостающие фрагменты"
 excerpt: "Какой смысл вкладывают во фразу «вероятность выпадения решки 50%»?"
+original: https://arbital.com/p/probability_interpretations
+license: https://creativecommons.org/licenses/by/3.0/deed.ru
 ---
 Какой _смысл_ вкладывают во фразу «вероятность выпадения решки 50%»?
 

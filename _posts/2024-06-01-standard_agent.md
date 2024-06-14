@@ -4,6 +4,8 @@ title: Свойства стандартных агентов
 translated_by: К. Кирдан
 translation_details: "с небольшими дополнениями, добавлены ссылки"
 excerpt: "Ограниченно рациональные, экономические и натуралистические агенты."
+original: https://arbital.com/p/standard_agent
+license: https://creativecommons.org/licenses/by/3.0/deed.ru
 ---
 ### Ограниченно рациональные агенты
 

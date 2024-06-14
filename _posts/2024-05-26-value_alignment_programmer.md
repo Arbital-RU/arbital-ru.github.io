@@ -4,6 +4,8 @@ title: Программист
 translated_by: К. Кирдан
 translation_details: "добавлены ссылки"
 excerpt: "«Программисты» тех или иных продвинутых агентов — это люди, которые их создают."
+original: https://arbital.com/p/value_alignment_programmer
+license: https://creativecommons.org/licenses/by/3.0/deed.ru
 ---
 «Программисты» тех или иных [продвинутых агентов][advanced_agent] — это люди, которые их создают.
 
