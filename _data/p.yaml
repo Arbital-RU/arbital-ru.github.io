@@ -1049,7 +1049,7 @@
 
 - {id: "expected_utility_agent", title: "Expected utility agent", description: "If you're not some kind of expected utility agent, you're going in circles.", domains: ["decision_theory"]}
 
-- {id: "utility_function", title: "Utility function", description: "The only coherent way of wanting things is to assign consistent relative scores to outcomes.", domains: ["decision_theory"], ru_description: "Единственно когерентный подход к желаниям - присвоить разным исходам согласованные друг с другом очки относительной полезности."}
+- {id: "utility_function", title: "Utility function", description: "The only coherent way of wanting things is to assign consistent relative scores to outcomes.", domains: ["decision_theory"], translated: true, ru_description: "Единственно когерентный подход к желаниям - присвоить разным исходам согласованные друг с другом очки относительной полезности."}
 
 - {id: "logical_dt", title: "Logical decision theories", description: "Root page for topics on logical decision theory, with multiple intros for different audiences.", domains: ["decision_theory"], children: ["5kv", "ldt_intro_phil", "ldt_intro_compsci", "ldt_intro_econ", "newcomblike", "fair_problem_class", "ldt_guide", "omega_troll", "updateless_dt"]}
 
