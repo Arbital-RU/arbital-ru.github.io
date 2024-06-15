@@ -141,9 +141,9 @@
 
 - {id: "hyperexistential_separation", title: "Separation from hyperexistential risk", description: "The AI should be widely separated in the design space from any AI that would constitute a \"hyperexistential risk\" (anything worse than death).", domains: ["ai_alignment"]}
 
-- {id: "value_alignment_researchers", title: "Researchers in value alignment theory", description: "Who's working full-time in value alignment theory?", domains: ["ai_alignment"], children: "NickBostrom", explore: "18m"}
+- {id: "value_alignment_researchers", title: "Researchers in value alignment theory", description: "Who's working full-time in value alignment theory?", domains: ["ai_alignment"], children: ["NickBostrom", "EliezerYudkowsky"], explore: "18m"}
 
-- {id: "NickBostrom", title: "Nick Bostrom", description: "Nick Bostrom, secretly the inventor of Friendly AI", domains: ["ai_alignment"]}
+- {id: "NickBostrom", title: "Nick Bostrom", description: "Nick Bostrom, secretly the inventor of Friendly AI", domains: ["ai_alignment"], translated: true, ru_description: "Ник Бостром, секретный автор идеи Дружественного ИИ"}
 
 - {id: "AGI_typology", title: "Strategic AGI typology", description: "What broad types of advanced AIs, corresponding to which strategic scenarios, might it be possible or wise to create?", domains: ["ai_alignment"], children: ["Oracle", "task_agi", "Sovereign", "KANSI"], explore: "1g0", translated: true, ru_description: "Какие широкие классы продвинутых ИИ было бы возможно или благоразумно создавать в каких стратегических сценариях?"}
 
@@ -401,7 +401,7 @@
 
 - {id: "rocket_alignment_metaphor", title: "The rocket alignment problem", description: "If people talked about the problem of space travel the way they talked about AI...", domains: ["ai_alignment"]}
 
-- {id: "EliezerYudkowsky", title: "Eliezer Yudkowsky", description: "", domains: ["ai_alignment"]}
+- {id: "EliezerYudkowsky", title: "Eliezer Yudkowsky", domains: ["ai_alignment"], translated: true}
 
 - {id: "3ck", title: "VAT playpen", description: "Playpen page for VAT domain.", domains: ["ai_alignment"], deleted: true}
 
