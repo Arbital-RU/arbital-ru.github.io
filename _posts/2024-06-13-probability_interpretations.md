@@ -3,7 +3,7 @@ layout: post
 title: Интерпретации «вероятности»
 translated_by: "<a href=\"https://lesswrong.ru/w/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%82%D0%B0%D1%86%D0%B8%D0%B8_%C2%AB%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8%C2%BB\">Muyyd</a>"
 edited_by: "К. Кирдан"
-edition_details: "добавлены ссылки и недостающие фрагменты"
+edition_details: "добавлены ссылки"
 excerpt: "Какой смысл вкладывают во фразу «вероятность выпадения решки 50%»?"
 original: https://arbital.com/p/probability_interpretations
 license: https://creativecommons.org/licenses/by/3.0/deed.ru
