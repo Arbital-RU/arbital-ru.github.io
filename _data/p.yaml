@@ -1047,7 +1047,7 @@
 
 - {id: "expected_utility", title: "Expected utility", description: "Scoring actions based on the average score of their probable consequences.", domains: ["decision_theory"], translated: true, ru_description: "Оценка действий на основе средних оценок их вероятных последствий."}
 
-- {id: "expected_utility_agent", title: "Expected utility agent", description: "If you're not some kind of expected utility agent, you're going in circles.", domains: ["decision_theory"]}
+- {id: "expected_utility_agent", title: "Expected utility agent", description: "If you're not some kind of expected utility agent, you're going in circles.", domains: ["decision_theory"], translated: true, ru_description: "Если вы не оптимизируете ожидаемую полезность, то вы ходите кругами."}
 
 - {id: "utility_function", title: "Utility function", description: "The only coherent way of wanting things is to assign consistent relative scores to outcomes.", domains: ["decision_theory"], translated: true, ru_description: "Единственно когерентный подход к желаниям - присвоить разным исходам согласованные друг с другом очки относительной полезности."}
 
