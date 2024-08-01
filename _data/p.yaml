@@ -233,7 +233,7 @@
 
 - {id: "real_world", title: "Real-world domain", description: "Some AIs play chess, some AIs play Go, some AIs drive cars. These different 'domains' present different options. All of reality, in all its messy entanglement, is the 'real-world domain'.", domains: ["ai_alignment"]}
 
-- {id: "sufficiently_advanced_ai", title: "Sufficiently advanced Artificial Intelligence", description: "'Sufficiently advanced Artificial Intelligences' are AIs with enough 'advanced agent properties' that we start needing to do 'AI alignment' to them.", domains: ["ai_alignment"]}
+- {id: "sufficiently_advanced_ai", title: "Достаточно продвинутый Искусственный Интеллект", description: "'Достаточно продвинутый Искусственный Интеллект' - это ИИ с такими свойствами 'продвинутого агента', что нам приходится применять к нему 'согласование ИИ'.", translated: true, domains: ["ai_alignment"]}
 
 - {id: "superintelligent", title: "Superintelligent", description: "A \"superintelligence\" is strongly superhuman (strictly higher-performing than any and all humans) on every cognitive problem.", domains: ["ai_alignment"]}
 
