@@ -1001,7 +1001,7 @@
 
 - {id: "108", title: "The empiricist-theorist false dichotomy", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-15"}
 
-- {id: "intension_extension", title: "Intension vs. extension", description: "“Red is a light with a wavelength of 700 nm” vs. “Look at this red apple, red car, and red cup.”", domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-16"}
+- {id: "intension_extension", title: "Интенсионал и экстенсионал", description: "“Красный - это свет с длиной волны 700 нм” и “Посмотри на это красное яблоко, красную машину, и красную кружку.”", translated: true, domains: ["arbital_labs"], author: "Eliezer Yudkowsky", date: "2015-07-16"}
 
 - {id: "guarded_definition", title: "Guarded definition", domains: ["arbital_labs"]}
 
