@@ -245,7 +245,8 @@
 
 - {id: "convergent_strategies", title: "Convergent instrumental strategies", description: "Paperclip maximizers can make more paperclips by improving their cognitive abilities or controlling more resources. What other strategies would almost-any AI try to use?", domains: ["ai_alignment"], children: ["preference_stability", "convergent_self_modification"], explore: "2vl"}
 
-- {id: "convergent_self_modification", title: "Конвергентные стратегии самомодификации", description: "Стратегии, применение которых мы ожидаем тем ИИ, который понимает важность своего кода и оборудования для достижения его целей, и как следствие, имеет какие-то цели в отношении своего кода и оборудования.", domains: ["ai_alignment"], translated: true}
+- {id: "convergent_self_modification", title: "
+Convergent strategies of self-modification", description: "The strategies we'd expect to be employed by an AI that understands the relevance of its code and hardware to achieving its goals, which therefore has subgoals about its code and hardware.", ru_description: "Стратегии, применение которых мы ожидаем тем ИИ, который понимает важность своего кода и оборудования для достижения его целей, и как следствие, имеет какие-то цели в отношении своего кода и оборудования.", domains: ["ai_alignment"], translated: true}
 
 - {id: "preference_stability", title: "Consequentialist preferences are reflectively stable by default", description: "Gandhi wouldn't take a pill that made him want to kill people, because he knows in that case more people will be murdered. A paperclip maximizer doesn't want to stop maximizing paperclips.", domains: ["ai_alignment"], translated: true, ru_description: "Ганди не принял бы таблетку, вызывающую желание убивать людей, потому что знает, что в этом случае умерло бы больше людей. Максимизатор скрепок не хочет прекращать максимизировать скрепки."}
 
@@ -345,7 +346,7 @@
 
 - {id: "otherizer", title: "Other-izing (wanted: new optimization idiom)", description: "Maximization isn't possible for bounded agents, and satisficing doesn't seem like enough. What other kind of 'izing' might be good for realistic, bounded agents?", domains: ["ai_alignment"]}
 
-- {id: "reflective_consistency", title: "Reflective consistency", description: "A decision system is reflectively consistent if it can approve of itself, or approve the construction of similar decision systems (as well as perhaps approving other decision systems too).", domains: ["ai_alignment"]}
+- {id: "reflective_consistency", title: "Reflective consistency", description: "A decision system is reflectively consistent if it can approve of itself, or approve the construction of similar decision systems (as well as perhaps approving other decision systems too).", domains: ["ai_alignment"], ru_description: "Система принятия решений рефлексивно устойчива, если она может одобрить саму себя или создание таких же систем принятия решений (возможно, и создание других систем).", translated: true}
 
 - {id: "tiling_agents", title: "Tiling agents theory", description: "The theory of self-modifying agents that build successors that are very similar to themselves, like repeating tiles on a tesselated plane.", domains: ["ai_alignment"], translated: true, ru_description: "Теория самомодифицирующихся агентов, которые очень похожи на них, подобно повторяющимся тайлам (плиткам) в замощении плоскости."}
 
