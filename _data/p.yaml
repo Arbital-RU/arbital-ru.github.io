@@ -328,7 +328,7 @@ Convergent strategies of self-modification", description: "The strategies we'd e
 
 - {id: "identify_goal_concept", title: "Goal-concept identification", description: "Figuring out how to say \"strawberry\" to an AI that you want to bring you strawberries (and not fake plastic strawberries, either).", domains: ["ai_alignment"]}
 
-- {id: "happiness_maximizer", title: "Happiness maximizer", description: "", domains: ["ai_alignment"]}
+- {id: "happiness_maximizer", title: "Happiness maximizer", description: "", domains: ["ai_alignment"], translated: true, ru_description: ""}
 
 - {id: "identify_causal_goals", title: "Identifying causal goal concepts from sensory data", description: "If the intended goal is \"cure cancer\" and you show the AI healthy patients, it sees, say, a pattern of pixels on a webcam. How do you get to a goal concept *about* the real patients?", domains: ["ai_alignment"], ru_description: "Если намеченная цель - \"вылечить рак\" и вы показываете ИИ здоровых пациентов, он видит, скажем, паттерны из пикселей через камеру. Как вам прийти к концепции цели *о* реальных пациентах?"}
 
