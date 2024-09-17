@@ -69,7 +69,7 @@
 
 - {id: "programmer_deception", title: "Programmer deception", domains: ["ai_alignment"], children: "cognitive_steganography", explore: "10f"}
 
-- {id: "cognitive_steganography", title: "Cognitive steganography", description: "Disaligned AIs that are modeling human psychology and trying to deceive their programmers will want to hide their internal thought processes from their programmers.", domains: ["ai_alignment"]}
+- {id: "cognitive_steganography", title: "Cognitive steganography", description: "Disaligned AIs that are modeling human psychology and trying to deceive their programmers will want to hide their internal thought processes from their programmers.", domains: ["ai_alignment"], translated: true, ru_description: "Несогласованные ИИ, которые моделируют человеческую психологию и пытаются обмануть своих программистов, захотят скрыть свои внутренние процессы мышления от программистов."}
 
 - {id: "shutdown_problem", title: "Shutdown problem", description: "How to build an AGI that lets you shut it down, despite the obvious fact that this will interfere with whatever the AGI's goals are.", domains: ["ai_alignment"], children: "no_coffee_if_dead", explore: "2xd"}
 
