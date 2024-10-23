@@ -258,7 +258,7 @@ Convergent strategies of self-modification", description: "The strategies we'd e
 
 - {id: "paperclip_maximizer", title: "Paperclip maximizer", description: "This agent will not stop until the entire universe is filled with paperclips.", domains: ["ai_alignment"], children: ["paperclip", "random_utility_function"], explore: "10h", translated: true, ru_description: "Этот агент не остановится, пока вся вселенная не будет заполнена скрепками."}
 
-- {id: "paperclip", title: "Paperclip", description: "A configuration of matter that we'd see as being worthless even from a very cosmopolitan perspective.", domains: ["ai_alignment"]}
+- {id: "paperclip", title: "Paperclip", description: "A configuration of matter that we'd see as being worthless even from a very cosmopolitan perspective.", domains: ["ai_alignment"], ru_description: "Конфигурация материи, которую мы бы сочли бесполезной даже с очень космополитичной точки зрения.", translated: true}
 
 - {id: "orthogonality", title: "Orthogonality Thesis", description: "Will smart AIs automatically become benevolent, or automatically become hostile? Or do different AI designs imply different goals?", domains: ["ai_alignment"], children: ["paperclip_maximizer", "instrumental_goals_equally_tractable", "mind_design_space_wide"], explore: "1y"}
 
