@@ -229,7 +229,7 @@
 
 - {id: "relative_ability", title: "Infrahuman, par-human, superhuman, efficient, optimal", description: "A categorization of AI ability levels relative to human, with some gotchas in the ordering. E.g., in simple domains where humans can play optimally, optimal play is not superhuman.", domains: ["ai_alignment"]}
 
-- {id: "intelligence_explosion", title: "Intelligence explosion", description: "What happens if a self-improving AI gets to the point where each amount x of self-improvement triggers >x further self-improvement, and it stays that way for a while.", domains: ["ai_alignment"]}
+- {id: "intelligence_explosion", title: "Intelligence explosion", description: "What happens if a self-improving AI gets to the point where each amount x of self-improvement triggers >x further self-improvement, and it stays that way for a while.", domains: ["ai_alignment"], ru_description: "То, что случается, если самоулучшающийся ИИ доходит до того, что каждое дополнительное самоулучшение на величину x вызывает следующее самоулучшение на величину >x, и так происходит какое-то время.", translated: true}
 
 - {id: "real_world", title: "Real-world domain", description: "Some AIs play chess, some AIs play Go, some AIs drive cars. These different 'domains' present different options. All of reality, in all its messy entanglement, is the 'real-world domain'.", domains: ["ai_alignment"]}
 
