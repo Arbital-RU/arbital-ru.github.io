@@ -3,7 +3,7 @@ layout: post
 title: Скрепка
 translated_by: К. Кирдан
 excerpt: "В контексте согласования ИИ «скрепкой» называется любая конфигурация материи, которая покажется скучной и не имеющей ценности даже с очень космополитичной точки зрения."
-original: https://arbital.com/p/reflective_consistency/
+original: https://arbital.com/p/paperclip/
 license: https://creativecommons.org/licenses/by/3.0/deed.ru
 ---
 В контексте [согласования ИИ][ai_alignment] «скрепкой» называется любая конфигурация материи, которая покажется скучной и не имеющей [ценности][value_alignment_value] даже с очень [космополитичной][value_cosmopolitan] точки зрения.
