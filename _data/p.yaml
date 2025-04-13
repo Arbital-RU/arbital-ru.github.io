@@ -282,7 +282,7 @@ Convergent strategies of self-modification", description: "The strategies we'd e
 
 - {id: "detrimental", title: "'Detrimental'", description: "The opposite of beneficial.", domains: ["ai_alignment"]}
 
-- {id: "cev", title: "Когерентное экстраполированное волеизъявление (цель согласования)", description: "A proposed direction for an extremely well-aligned autonomous superintelligence - do what humans would want, if we knew what the AI knew, thought that fast, and understood ourselves.", translated: true, ru_description: "Предлагаемое направление для крайне хорошо согласованного автономного сверхинтеллекта - делать то, что люди хотели бы, если бы знали все, что знает ИИ, думали бы столь же быстро, и понимали бы самих себя.", domains: ["ai_alignment"]}
+- {id: "cev", title: "Coherent extrapolated volition (alignment target)", description: "A proposed direction for an extremely well-aligned autonomous superintelligence - do what humans would want, if we knew what the AI knew, thought that fast, and understood ourselves.", translated: true, ru_description: "Предлагаемое направление для крайне хорошо согласованного автономного сверхинтеллекта - делать то, что люди хотели бы, если бы знали все, что знает ИИ, думали бы столь же быстро, и понимали бы самих себя.", domains: ["ai_alignment"]}
 
 - {id: "value_cosmopolitan", title: "Cosmopolitan value", description: "Intuitively: Value as seen from a broad, embracing standpoint that is aware of how other entities may not always be like us or easily understandable to us, yet still worthwhile.", domains: ["ai_alignment"]}
 
