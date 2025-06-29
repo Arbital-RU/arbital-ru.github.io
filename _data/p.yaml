@@ -57,7 +57,7 @@
 
 - {id: "daemons", title: "Optimization daemons", description: "When you optimize something so hard that it crystalizes into an optimizer, like the way natural selection optimized apes so hard they turned into human-level intelligences", domains: ["ai_alignment"]}
 
-- {id: "safe_useless", title: "Safe but useless", description: "Sometimes, at the end of locking down your AI so that it seems extremely safe, you'll end up with an AI that can't be used to do anything interesting.", domains: ["ai_alignment"]}
+- {id: "safe_useless", title: "Safe but useless", description: "Sometimes, at the end of locking down your AI so that it seems extremely safe, you'll end up with an AI that can't be used to do anything interesting.", translated: true, ru_description: "Порой, доводя блокировки своего ИИ до конца ради его максимальной безопасности, вы получаете такой ИИ, который уже невозможно будет использовать ни для чего интересного.", domains: ["ai_alignment"]}
 
 - {id: "complexity_of_value", title: "Complexity of value", description: "There's no simple way to describe the goals we want Artificial Intelligences to want.", domains: ["ai_alignment"], children: ["meta_unsolved", "underestimate_value_complexity_perceputal_property"], explore: "5l"}
 
@@ -278,9 +278,9 @@ Convergent strategies of self-modification", description: "The strategies we'd e
 
 - {id: "rescue_utility", title: "Rescuing the utility function", description: "If your utility function values 'heat', and then you discover to your horror that there's no ontologically basic heat, switch to valuing disordered kinetic energy.", domains: ["ai_alignment"]}
 
-- {id: "beneficial", title: "'Beneficial'", description: "Really actually good. A metasyntactic variable to mean \"favoring whatever the speaker wants ideally to accomplish\", although different speakers have different morals and metaethics.", domains: ["ai_alignment"]}
+- {id: "beneficial", title: "'Beneficial'", description: "Really actually good. A metasyntactic variable to mean \"favoring whatever the speaker wants ideally to accomplish\", although different speakers have different morals and metaethics.", ru_description: "По настоящему хорошо. Метасинтаксическая переменная для обозначения \"предпочтения того, что говорящий хотел бы в идеале достичь\", хотя у разных говорящих различные моральные взгляды и метаэтика.", translated: true, domains: ["ai_alignment"]}
 
-- {id: "detrimental", title: "'Detrimental'", description: "The opposite of beneficial.", domains: ["ai_alignment"]}
+- {id: "detrimental", title: "'Detrimental'", description: "The opposite of beneficial.", ru_description: "Противоположность благотворности.", translated: true, domains: ["ai_alignment"]}
 
 - {id: "cev", title: "Coherent extrapolated volition (alignment target)", description: "A proposed direction for an extremely well-aligned autonomous superintelligence - do what humans would want, if we knew what the AI knew, thought that fast, and understood ourselves.", translated: true, ru_description: "Предлагаемое направление для крайне хорошо согласованного автономного сверхинтеллекта - делать то, что люди хотели бы, если бы знали все, что знает ИИ, думали бы столь же быстро, и понимали бы самих себя.", domains: ["ai_alignment"]}
 
@@ -990,7 +990,9 @@ Convergent strategies of self-modification", description: "The strategies we'd e
 
 ### Другие разделы:
 
-- {id: "rationality", title: "Rationality", description: "The subject domain for epistemic and instrumental rationality.", domains: ["arbital_labs"], children: ["probability_theory", "bayes_for_humans", "epistemology", "ideological_turing_test", "ea_intro"], translated: true, ru_description: ""}
+- {id: "make_glossary_pages", title: "Link glossary pages for overloaded words", author: "Eliezer Yudkowsky", date: "2025-07-03"}
+
+- {id: "rationality", title: "Rationality", description: "The subject domain for epistemic and instrumental rationality.", domains: ["arbital_labs"], children: ["probability_theory", "bayes_for_humans", "epistemology", "ideological_turing_test", "ea_intro"], translated: true, ru_description: "Раздел, посвященный эпистемической и инструментальной рациональности"}
 
 - {id: "ea_intro", title: "Introduction to Effective Altruism", author: "Aaron Gertler", date: "2016-03-19"}
 
