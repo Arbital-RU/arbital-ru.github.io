@@ -127,7 +127,7 @@
 
 - {id: "cognitive_alignment", title: "Generalized principle of cognitive alignment", description: "When we're asking how we want the AI to think about an alignment problem, one source of inspiration is trying to have the AI mirror our own thoughts about that problem.", domains: ["ai_alignment"]}
 
-- {id: "niceness_defense", title: "Niceness is the first line of defense", description: "The *first* line of defense in dealing with any partially superhuman AI system advanced enough to possibly be dangerous is that it does not *want* to hurt you or defeat your safety measures.", domains: ["ai_alignment"]}
+- {id: "niceness_defense", title: "Niceness is the first line of defense", description: "The *first* line of defense in dealing with any partially superhuman AI system advanced enough to possibly be dangerous is that it does not *want* to hurt you or defeat your safety measures.", ru_description: "Когда речь о любой частично сверхчеловеческой ИИ-системе, достаточно развитой, чтобы быть потенциально опасной, первая линия обороны заключается в том, чтобы она не *хотела* вам навредить или разрушить ваши меры безопасности.", translated: true, domains: ["ai_alignment"]}
 
 - {id: "omni_test", title: "Omnipotence test for AI safety", description: "Would your AI produce disastrous outcomes if it suddenly gained omnipotence and omniscience? If so, why did you program something that *wants* to hurt you and is held back only by lacking the power?", domains: ["ai_alignment"]}
 
