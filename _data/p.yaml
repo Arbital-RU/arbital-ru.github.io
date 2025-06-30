@@ -334,7 +334,7 @@ Convergent strategies of self-modification", description: "The strategies we'd e
 
 - {id: "Vingean_reflection", title: "Vingean reflection", description: "The problem of thinking about your future self when it's smarter than you.", domains: ["MIRI", "ai_alignment"], children: ["reflective_stability", "reflective_consistency", "tiling_agents", "Vinge_principle"], explore: "1c1", translated: true, ru_description: "Проблема размышлений о будущей версии вас, когда она умнее нынешней."}
 
-- {id: "MIRI", title: "Machine Intelligence Research Institute", description: "", domains: ["MIRI"]}
+- {id: "MIRI", title: "Machine Intelligence Research Institute", description: "", ru_description: "", translated: true, domains: ["MIRI"]}
 
 - {id: "reflective_stability", title: "Reflective stability", description: "Wanting to think the way you currently think, building other agents and self-modifications that think the same way.", domains: ["ai_alignment"], children: ["reflective_degree_of_freedom", "preference_stability", "otherizer"], explore: "1fx", translated: true, ru_description: "Желание в будущем думать также, как и сейчас, создание других агентов и самомодификаций, которые думают также как вы сейчас."}
 
