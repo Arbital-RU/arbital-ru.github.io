@@ -344,7 +344,7 @@ Convergent strategies of self-modification", description: "The strategies we'd e
 
 - {id: "value_laden", title: "Value-laden", description: "Cure cancer, but avoid any bad side effects? Categorizing \"bad side effects\" requires knowing what's \"bad\". If an agent needs to load complex human goals to evaluate something, it's \"value-laden\".", domains: ["ai_alignment"]}
 
-- {id: "otherizer", title: "Other-izing (wanted: new optimization idiom)", description: "Maximization isn't possible for bounded agents, and satisficing doesn't seem like enough. What other kind of 'izing' might be good for realistic, bounded agents?", domains: ["ai_alignment"]}
+- {id: "otherizer", title: "Other-izing (wanted: new optimization idiom)", description: "Maximization isn't possible for bounded agents, and satisficing doesn't seem like enough. What other kind of 'izing' might be good for realistic, bounded agents?", ru_description: "Максимизация невозможна для ограниченных агентов, а сатисфаизация, похоже, недостаточна для них. Какой другой вид \"изации\" был бы хорош для реалистичных ограниченных агентов?", translated: true, domains: ["ai_alignment"]}
 
 - {id: "reflective_consistency", title: "Reflective consistency", description: "A decision system is reflectively consistent if it can approve of itself, or approve the construction of similar decision systems (as well as perhaps approving other decision systems too).", domains: ["ai_alignment"], ru_description: "Система принятия решений рефлексивно устойчива, если она может одобрить саму себя или создание таких же систем принятия решений (возможно, и создание других систем).", translated: true}
 
