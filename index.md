@@ -28,5 +28,5 @@ excerpt: "Здесь выкладываются переводы статей с
 <hr class="hrdark" style="margin-bottom: 16px">
 
 <small>
-Все материалы распространяются по лицензии <a href="https://creativecommons.org/licenses/by/3.0/deed.ru">CC BY 3.0</a>, если не отмечено иное. Предложить свои переводы или правки можно <a href="https://github.com/Arbital-RU/arbital-ru.github.io">через GitHub</a>, либо по почте: <a href="mailto:latif.rosh@gmail.com">latif.rosh@gmail.com</a>
+Все материалы распространяются по лицензии <a href="https://creativecommons.org/licenses/by/3.0/deed.ru">CC BY 3.0</a>, если не отмечено иное. Предложить свои переводы или правки можно по почте: <a href="mailto:latif.rosh@gmail.com">latif.rosh@gmail.com</a>
 </small>
